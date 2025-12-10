@@ -182,17 +182,24 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden md:flex col-span-2 justify-end items-center space-x-5">
-            <a href="tel:+919999999999">
-              <Phone size={23} className="text-black hover:text-[#dc3545] transition" />
+            <a
+              href="https://wa.me/8189977700"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#dc3545] text-white w-[60px] h-[30px] rounded-full flex items-center justify-center 
+             hover:bg-black transition duration-300"
+            >
+              <Phone size={15} />
             </a>
 
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+
+            {/* <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={23} className="text-black hover:text-[#dc3545] transition" />
             </a>
 
             <Link to="/cart" onClick={closeAllMenus}>
               <ShoppingBasket size={23} className="text-black hover:text-[#dc3545] transition" />
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Button */}
