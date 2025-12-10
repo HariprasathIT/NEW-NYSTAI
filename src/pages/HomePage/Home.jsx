@@ -25,6 +25,25 @@ import sampleVideo3 from "../../assets/Images/HomePage-Images/HeroBanner/video-c
 import Waterlevel from "../../assets/Images/HomePage-Images/tankmanager.jpg"
 
 import partner1 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-1.webp"
+import partner2 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-2.webp"
+import partner3 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-3.webp"
+import partner4 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-4.webp"
+import partner5 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-5.avif"
+import partner6 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-6.webp"
+import partner7 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-7.webp"
+import partner8 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-8.webp"
+import partner9 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-9.webp"
+import partner10 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-10.webp"
+import partner11 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-11.webp"
+import partner12 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-12.webp"
+import partner13 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-13.webp"
+import partner14 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-14.webp"
+import partner15 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-15.webp"
+import partner16 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-16.webp"
+import partner17 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-17.webp"
+import partner18 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-18.webp"
+import partner19 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-19.webp"
+import partner20 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-20.webp"
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -595,28 +614,28 @@ function Waterlevelontroller() {
                                 <div className="space-y-4 mb-8">
                                     <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <Shield className="w-5 h-5 text-white" />
+                                            <Shield className="w-5 h-8 text-white" />
                                         </div>
                                         <span className="text-gray-700">Automated water level control with real-time monitoring.</span>
                                     </div>
 
                                     <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <Wifi className="w-5 h-5 text-white" />
+                                            <Wifi className="w-5 h-8 text-white" />
                                         </div>
                                         <span className="text-gray-700">10 Kilometer range for flexible installation with Access.</span>
                                     </div>
 
                                     <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <Smartphone className="w-5 h-5 text-white" />
+                                            <Smartphone className="w-5 h-8 text-white" />
                                         </div>
                                         <span className="text-gray-700">Mobile and Desktop connectivity for remote access.</span>
                                     </div>
 
                                     {/* <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <House className="w-5 h-5 text-white" />
+                                            <House className="w-5 h-8 text-white" />
                                         </div>
                                         <span className="text-gray-700">Ideal for residential, agricultural, and industrial use.</span>
                                     </div> */}
@@ -771,77 +790,75 @@ function WhyNystai() {
 
 function PartnersLogo() {
     const partners = [
-        partner1,
-        partner1,
-        partner1,
-        partner1,
-        partner1,
-        partner1,
-        partner1,
-        partner1,
+        partner1, partner2, partner3, partner4, partner5,
+        partner6, partner7, partner8, partner9, partner10,
+        partner11, partner12, partner13, partner14, partner15,
+        partner16, partner17, partner18, partner19, partner20
     ];
+
+    const row1 = partners.slice(0, 10);
+    const row2 = partners.slice(10, 20);
 
     return (
         <section className="max-w-[1540px] mx-auto py-10 px-4 bg-white">
 
-            {/* Heading */}
             <div className="pb-10">
                 <h2 className="text-3xl font-bold tracking-wide">
                     Partners & <span className="text-[#dc3545]">Testimonials</span>
                 </h2>
             </div>
 
-            {/* Row 1 */}
+            {/* ROW 1 → LTR (ONE BY ONE) */}
             <Swiper
                 modules={[Autoplay]}
-                autoplay={{ delay: 1500, disableOnInteraction: false }}
+                autoplay={{
+                    delay: 1200, // Moves one-by-one every 1.2 sec
+                    disableOnInteraction: false,
+                }}
                 loop={true}
                 slidesPerView={6}
                 spaceBetween={20}
+                speed={600} // smooth slide
                 breakpoints={{
-                    320: { slidesPerView: 2, spaceBetween: 10 },
-                    640: { slidesPerView: 3, spaceBetween: 12 },
-                    1024: { slidesPerView: 4, spaceBetween: 15 },
-                    1280: { slidesPerView: 6, spaceBetween: 20 },
+                    320: { slidesPerView: 2 },
+                    640: { slidesPerView: 3 },
+                    1024: { slidesPerView: 4 },
+                    1280: { slidesPerView: 6 },
                 }}
             >
-                {partners.map((logo, i) => (
+                {row1.map((logo, i) => (
                     <SwiperSlide key={`row1-${i}`}>
                         <div className="h-24 bg-[#f5f5f5] rounded-xl flex items-center justify-center shadow-sm">
-                            <img
-                                src={logo}
-                                alt={`Partner ${i}`}
-                                className="h-5 w-auto object-contain"
-                            />
+                            <img src={logo} className="w-[100px] object-contain" />
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
 
-            {/* Row 2 */}
+            {/* ROW 2 → RTL (ONE BY ONE) */}
             <Swiper
-
                 modules={[Autoplay]}
-                autoplay={{ delay: 1500, disableOnInteraction: false }}
+                autoplay={{
+                    delay: 1200,
+                    reverseDirection: true, // RTL movement
+                    disableOnInteraction: false,
+                }}
                 loop={true}
                 slidesPerView={6}
                 spaceBetween={20}
+                speed={600}
                 className="mt-6"
                 breakpoints={{
-                    320: { slidesPerView: 2, spaceBetween: 10 },
-                    640: { slidesPerView: 3, spaceBetween: 12 },
-                    1024: { slidesPerView: 4, spaceBetween: 15 },
-                    1280: { slidesPerView: 6, spaceBetween: 20 },
+                    320: { slidesPerView: 2 },
+                    640: { slidesPerView: 3 },
+                    1024: { slidesPerView: 4 },
+                    1280: { slidesPerView: 6 },
                 }}
             >
-                {partners.map((logo, i) => (
+                {row2.map((logo, i) => (
                     <SwiperSlide key={`row2-${i}`}>
                         <div className="h-24 bg-[#f5f5f5] rounded-xl flex items-center justify-center shadow-sm">
-                            <img
-                                src={logo}
-                                alt={`Partner ${i}`}
-                                className="h-5 w-auto object-contain"
-                            />
+                            <img src={logo} className="w-[100px] object-contain" />
                         </div>
                     </SwiperSlide>
                 ))}
