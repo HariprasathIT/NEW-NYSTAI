@@ -292,7 +292,7 @@ const ProductModal = ({ product, onClose, open }) => {
                   <img
                     src={img.imageUrl}
                     alt={`thumb-${index}`}
-                    className="h-16 w-auto object-contain"
+                    className="h-[80px] w-auto object-contain"
                   />
                 </div>
               ))}

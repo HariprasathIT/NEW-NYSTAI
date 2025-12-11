@@ -53,8 +53,8 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "Products", path: "/products", dropdown: true, hasMegaMenu: true, type: "products" },
-    { name: "Integrated Solutions", path: "/solutions", dropdown: true, hasMegaMenu: true, type: "solutions" },
+    { name: "Products", path: "/", dropdown: true, hasMegaMenu: true, type: "products" },
+    { name: "Integrated Solutions", path: "/", dropdown: true, hasMegaMenu: true, type: "solutions" },
     { name: "Protect Plan", path: "/protect" },
     { name: "Service", path: "/service" },
     { name: "Support", path: "/support" },
