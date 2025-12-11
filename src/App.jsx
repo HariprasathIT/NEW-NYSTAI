@@ -32,6 +32,7 @@ import NystaiFooter from "./components/common/Footer";
 import Productpage from "./pages/ProductPage/Products";
 import Protectplan from "./pages/ProtectplanPage/protectplan";
 import Service from "./pages/ServicePage/service";
+import Support from "./pages/SupportPage/Support";
 
 // IMPORT CATEGORY PAGE
 
@@ -70,6 +71,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/protect" element={<Protectplan />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/support" element={<Support />} />
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />
