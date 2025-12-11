@@ -10,7 +10,7 @@ import ser5 from "../../assets/Images/Services-Images/ser5.jpeg"
 
 import ser6 from "../../assets/Images/Services-Images/ser6.jpeg"
 
-import Faqimg1 from "../../assets/Images/Services-Images/faqimg1.jpeg"
+import Faqimg1 from "../../assets/Images/Services-Images/FAQIMG1.jpeg"
 import Faqimg2 from "../../assets/Images/Services-Images/faqimg2.jpeg"
 import Faqimg3 from "../../assets/Images/Services-Images/faqimg3.jpeg"
 import Faqimg4 from "../../assets/Images/Services-Images/faqimg4.jpeg"
