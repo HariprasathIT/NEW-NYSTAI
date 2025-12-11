@@ -5,6 +5,10 @@ import message from "../../assets/Images/Support-Images/messageicon.png"
 import call from "../../assets/Images/Support-Images/callicon.png"
 import location from "../../assets/Images/Support-Images/locationicon.png"
 
+import sales from "../../assets/Images/Support-Images/sales.jpeg"
+import support from "../../assets/Images/Support-Images/support.jpeg"
+import partner from "../../assets/Images/Support-Images/partner.jpeg"
+
 const Support = () => {
   return (
     <>
@@ -97,16 +101,30 @@ function Formdesign() {
 
 
                 <div className="grid grid-cols-3 gap-6 mb-6 h-[110px]">
-                  <button className="bg-gray-500 text-white rounded-lg font-semibold hover:bg-gray-600 transition">
-                    SALES
+
+                  <button
+                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition"
+                    style={{ backgroundImage: `url(${sales})` }}
+                  >
+                    {/* SALES */}
                   </button>
-                  <button className="bg-gray-500 text-white rounded-lg font-semibold hover:bg-gray-600 transition">
-                    SUPPORT
+
+                  <button
+                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition"
+                    style={{ backgroundImage: `url(${support})` }}
+                  >
+                    {/* SUPPORT */}
                   </button>
-                  <button className="bg-gray-500 text-white rounded-lg font-semibold hover:bg-gray-600 transition">
-                    PARTNER
+
+                  <button
+                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition"
+                    style={{ backgroundImage: `url(${partner})` }}
+                  >
+                    {/* PARTNER */}
                   </button>
+
                 </div>
+
 
                 <p className="text-[15px] text-gray-600 mt-10 mb-5">Fill out the form below for Support inquiries.</p>
 
@@ -185,7 +203,7 @@ function Formdesign() {
                     />
                   </div>
 
-                  <div className="flex gap-4 justify-center mt-5">
+                  <div className="flex gap-4 justify-center">
                     <div className="w-[300px] flex items-center gap-2 p-4 border border-gray-300 rounded-lg bg-gray-50">
                       <input type="checkbox" className="w-5 h-5" />
                       <span className="text-[14px] text-gray-600">I'm not a robot</span>
