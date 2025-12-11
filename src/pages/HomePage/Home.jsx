@@ -225,7 +225,7 @@ function ProductCategories() {
                         <h2 className="text-3xl md:text-3xl font-bold tracking-wide">
                             PRODUCT <span className="text-[#dc3545]">CATEGORIES</span>
                         </h2>
-                        <p className="mt-4 text-gray-600 max-w-3xl text-sm leading-relaxed">
+                        <p className="mt-4 text-gray-600 max-w-3xl text-sm leading-relaxed tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
@@ -331,7 +331,7 @@ function ServicesSection() {
                             <h2 className="text-3xl md:text-3xl font-bold tracking-wide">
                                 OUR TOP-SELLING <span className="text-[#dc3545]">PRODUCTS</span>
                             </h2>
-                            <p className="text-gray-600 mt-2 text-sm">
+                            <p className="text-gray-600 mt-2 text-sm tracking-wider">
                                 The subtext helps customers quickly understand the value.
                             </p>
                         </div>
@@ -469,7 +469,7 @@ function SolutionsSection() {
                 <h2 className="text-3xl md:text-3xl font-bold tracking-wide">
                     NYSTAI-IoT <span className="text-[#dc3545]">SOLUTIONS</span>
                 </h2>
-                <p className="mt-4 text-gray-600 text-sm">
+                <p className="mt-4 text-gray-600 text-sm tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
@@ -606,7 +606,7 @@ function Waterlevelontroller() {
                                     Automated <span className="text-red-500">Water Level Controller</span>
                                 </h2>
 
-                                <p className="text-gray-600 text-base leading-relaxed mb-8">
+                                <p className="text-gray-600 text-[17px] leading-relaxed mb-8">
                                     Introducing our Automated Water Level Controller with a built-in level monitor and 1000-meter range, ensuring efficient water management for your home or business. With a 1-year warranty, this system guarantees reliability, automates water usage, and prevents overflows. Stay in control with real-time monitoring from anywhere, even on your mobile device.
                                 </p>
 
@@ -616,21 +616,21 @@ function Waterlevelontroller() {
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                             <Shield className="w-5 h-8 text-white" />
                                         </div>
-                                        <span className="text-gray-700">Automated water level control with real-time monitoring.</span>
+                                        <span className="text-gray-700 tracking-wide">Automated water level control with real-time monitoring.</span>
                                     </div>
 
                                     <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                             <Wifi className="w-5 h-8 text-white" />
                                         </div>
-                                        <span className="text-gray-700">10 Kilometer range for flexible installation with Access.</span>
+                                        <span className="text-gray-700 tracking-wide">10 Kilometer range for flexible installation with Access.</span>
                                     </div>
 
                                     <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                             <Smartphone className="w-5 h-8 text-white" />
                                         </div>
-                                        <span className="text-gray-700">Mobile and Desktop connectivity for remote access.</span>
+                                        <span className="text-gray-700 tracking-wide">Mobile and Desktop connectivity for remote access.</span>
                                     </div>
 
                                     {/* <div className="flex items-center gap-3">

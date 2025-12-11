@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import planbanner from "../../assets/Images/Services-Images/Servicebanner.jpeg"
 
 import ser1 from "../../assets/Images/Services-Images/ser1.jpeg"
@@ -10,7 +10,12 @@ import ser5 from "../../assets/Images/Services-Images/ser5.jpeg"
 
 import ser6 from "../../assets/Images/Services-Images/ser6.jpeg"
 
-import Faqimg1 from "../../assets/Images/Services-Images/FAQIMG1.jpeg"
+import Faqimg1 from "../../assets/Images/Services-Images/faqimg1.jpeg"
+import Faqimg2 from "../../assets/Images/Services-Images/faqimg2.jpeg"
+import Faqimg3 from "../../assets/Images/Services-Images/faqimg3.jpeg"
+import Faqimg4 from "../../assets/Images/Services-Images/faqimg4.jpeg"
+
+import { ChevronDown } from 'lucide-react'
 
 const Service = () => {
     return (
@@ -62,7 +67,7 @@ function SectionTwo() {
                     {/* Header */}
                     <div className="text-center py-16">
                         <h2 className="text-[35px] font-bold text-red-600 mb-2">How we Work</h2>
-                        <p className="text-[15px] text-gray-600">
+                        <p className="text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
@@ -158,7 +163,7 @@ function SectionThree() {
                     {/* Header */}
                     <div className="text-center py-16">
                         <h2 className="text-[35px] font-bold text-red-600 mb-2">Our Services</h2>
-                        <p className="text-[15px] text-gray-600" style={{ letterSpacing: "1px" }}>
+                        <p className="text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
@@ -242,40 +247,104 @@ function SectionFour() {
     return (
         <>
             <div className="mt-10">
-                <img src={ser6} className='w-full h-[540px]' alt="" />
+                <img src={ser6} className='w-full h-[540px]' alt="" style={{objectFit:"cover"}} />
             </div>
         </>
     )
 }
 
 function SectionFiveFAQ() {
+    const [openIndex, setOpenIndex] = useState(0);
+
+    const faqs = [
+        {
+            question: "What is the Maiden Unified Platform?",
+            answer: "The Maiden Unified Platform is an all-in-one solution that integrates video surveillance, alarm systems, and access control into a single, easy-to-use platform.",
+            image: Faqimg4
+        },
+        {
+            question: "How does the access control system work?",
+            answer: "Our access control system allows you to manage and monitor entry points remotely, set permissions for different users, and track all access events in real-time.",
+            image: Faqimg2
+        },
+        {
+            question: "Can I integrate existing security cameras?",
+            answer: "Yes, our platform supports integration with most major security camera brands and protocols, making it easy to incorporate your existing equipment.",
+            image: Faqimg3
+        },
+        {
+            question: "Is the system scalable for growing businesses?",
+            answer: "Absolutely! The Maiden Unified Platform is designed to scale seamlessly from small offices to large enterprises with multiple locations.",
+            image: Faqimg1
+        }
+    ];
+
+    const toggleAccordion = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
 
     return (
-        <section className=" py-16 lg:py-24">
-            <div className="bg-[#f9f9f9] max-w-[1540px] mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <section className="py-16 lg:py-24">
+            <div className="max-w-[1540px] mx-auto px-4">
+                <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center rounded-[15px]">
 
                     {/* Left Image */}
                     <div className="">
                         <img
-                            src={Faqimg1}
+                            src={faqs[openIndex !== null ? openIndex : 0].image}
                             alt="FAQ Illustration"
-                            className="w-full rounded-lg h-[550px]"
+                            className="w-full rounded-[15px] h-[660px] transition-all duration-300"
                             style={{objectFit:"cover"}}
                         />
                     </div>
 
                     {/* Right FAQ Content */}
-                    <div>
+                    <div className='max-w-[680px]'>
                         <div className="text-center lg:text-left mb-10">
-                            <h2 className="text-[35px] font-bold text-red-600">
+                            <h2 className="text-[30px] font-bold text-[#dc3545]">
                                 FREQUENTLY ASKED QUESTIONS
                             </h2>
-                            <p className="text-[15px] text-gray-600 mt-2">
+                            <p className="text-[15px] text-gray-600 mt-2 tracking-wide">
                                 Maiden Unified All-in-One Video, Alarm & Access Control Platform
                             </p>
                         </div>
 
+
+                        {/* Accordion */}
+                        <div className="space-y-4">
+                            {faqs.map((faq, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-[#D9D9D9] rounded-[15px] shadow-sm overflow-hidden"
+                                >
+                                    <button
+                                        onClick={() => toggleAccordion(index)}
+                                        className="w-full px-6 py-5 flex items-center justify-between text-left "
+                                    >
+                                        <span className="font-bold text-gray-800 pr-4 text-[16px]">
+                                            {faq.question}
+                                        </span>
+                                        <div className="bg-[#D9D9D9] rounded-full p-2 flex-shrink-0" style={{border:"2px solid #fff"}}>
+                                            <ChevronDown
+                                                className={`w-5 h-5 text-[#fff] transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
+                                                    }`}
+                                            />
+                                        </div>
+                                    </button>
+                                    <div
+                                        className={`transition-all duration-300 ease-in-out ${openIndex === index
+                                            ? 'max-h-48 opacity-100'
+                                            : 'max-h-0 opacity-0'
+                                            } overflow-hidden`}
+                                    >
+                                        <div className="px-6 pb-4 text-gray-600 text-[15px]">
+                                            {faq.answer}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
 
                     </div>
 
