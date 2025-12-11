@@ -11,9 +11,9 @@ import ser5 from "../../assets/Images/Services-Images/ser5.jpeg"
 import ser6 from "../../assets/Images/Services-Images/ser6.jpeg"
 
 import Faqimg1 from "../../assets/Images/Services-Images/FAQIMG1.jpeg"
-import Faqimg2 from "../../assets/Images/Services-Images/faqimg2.jpeg"
-import Faqimg3 from "../../assets/Images/Services-Images/faqimg3.jpeg"
-import Faqimg4 from "../../assets/Images/Services-Images/faqimg4.jpeg"
+import Faqimg2 from "../../assets/Images/Services-Images/FAQIMG2.jpeg"
+import Faqimg3 from "../../assets/Images/Services-Images/FAQIMG3.jpeg"
+import Faqimg4 from "../../assets/Images/Services-Images/FAQIMG4.jpeg"
 
 import { ChevronDown } from 'lucide-react'
 
@@ -300,7 +300,7 @@ function SectionFiveFAQ() {
                     </div>
 
                     {/* Right FAQ Content */}
-                    <div className='max-w-[680px]'>
+                    <div className='max-w-[680px] h-[550px]'>
                         <div className="text-center lg:text-left mb-10">
                             <h2 className="text-[30px] font-bold text-[#dc3545]">
                                 FREQUENTLY ASKED QUESTIONS
@@ -312,11 +312,12 @@ function SectionFiveFAQ() {
 
 
                         {/* Accordion */}
-                        <div className="space-y-4">
+                        <div className="space-y-2">
                             {faqs.map((faq, index) => (
                                 <div
                                     key={index}
-                                    className="bg-[#D9D9D9] rounded-[15px] shadow-sm overflow-hidden"
+                                    className="bg-[#D9D9D9] shadow-sm overflow-hidden"
+                                    style={{borderRadius:"15px 15px 0px 0px"}}
                                 >
                                     <button
                                         onClick={() => toggleAccordion(index)}
