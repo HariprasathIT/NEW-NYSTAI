@@ -90,7 +90,7 @@ function Formdesign() {
 
           {/* Right contents */}
           <div className="lg:col-span-8" style={{ marginTop: "-100px" }}>
-            <div className="bg-white rounded-lg shadow-lg py-10">
+            <div className="bg-white rounded-[20px] shadow-lg py-10">
 
               <div className="max-w-[870px] mx-auto px-4">
 
@@ -214,13 +214,13 @@ function Formdesign() {
 
                     <button
                       type="reset"
-                      className="px-8 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition"
+                      className="px-8 py-3 border-2 text-[14px] border-gray-300 rounded-lg hover:bg-gray-50 transition"
                     >
                       Reset
                     </button>
                     <button
                       type="submit"
-                      className="px-8 py-3 bg-[#dc3545] text-white rounded-lg font-semibold hover:bg-red-700 transition"
+                      className="px-8 py-3 bg-[#dc3545] text-[14px] text-white rounded-lg hover:bg-red-700 transition"
                     >
                       Submit
                     </button>
