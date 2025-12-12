@@ -44,7 +44,11 @@ const Navbar = () => {
     try {
       const response = await fetch("https://api.nystai.in/api/categories/list");
       const data = await response.json();
-      setCategories(data);
+
+      // Sort ASC by name (change key if needed)
+      const sorted = data.sort((a, b) => a.name.localeCompare(b.name));
+
+      setCategories(sorted);
     } catch (error) {
       console.error("Error fetching categories:", error);
     } finally {

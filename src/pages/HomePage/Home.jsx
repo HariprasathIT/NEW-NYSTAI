@@ -119,33 +119,45 @@ function HeroSection() {
                             <img
                                 src={item.img}
                                 alt="Banner-Nystai"
-                                className="w-full object-cover rounded-b-3xl"
-                                style={{ height: "85vh" }}
+                                className="
+        w-full rounded-b-3xl object-cover
+        h-[70vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh]
+    "
                             />
 
-                            <div className="absolute top-0 left-0 h-full flex items-center px-10 md:px-[80px] overflow-hidden">
+                            <div className="absolute top-0 left-0 h-full flex items-center px-6 sm:px-10 md:px-[80px] overflow-hidden">
                                 <div className="max-w-xl">
 
+                                    {/* Title */}
                                     <div className="overflow-hidden">
-                                        <h1 className="text-4xl md:text-4xl font-bold text-red-600 leading-tight">
+                                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-600 leading-snug md:leading-tight">
                                             {item.title}
                                         </h1>
                                     </div>
 
-                                    <div className="w-40 h-[3px] border-b border-dotted mt-4"
-                                        style={{ borderColor: "#dc3545" }}
-                                    ></div>
+                                    {/* Divider */}
+                                    <div className="w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#dc3545]"></div>
 
-                                    <div className="overflow-hidden mt-4">
-                                        <p className="text-gray-700 text-sm leading-relaxed">
+                                    {/* Description */}
+                                    <div className="overflow-hidden mt-3 sm:mt-4">
+                                        <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
                                             {item.desc}
                                         </p>
                                     </div>
 
-                                    <button className="mt-6 bg-red-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors text-[14px]">
+                                    {/* Button */}
+                                    <button
+                                        className="
+                mt-5 sm:mt-6 
+                bg-red-600 text-white 
+                px-5 sm:px-6 py-2.5 sm:py-3 
+                rounded-full font-semibold 
+                hover:bg-red-700 transition-colors 
+                text-xs sm:text-sm md:text-[14px]
+            "
+                                    >
                                         Explore Nystai Products
                                     </button>
-
 
                                 </div>
                             </div>
@@ -218,25 +230,36 @@ function ProductCategories() {
     }, []);
 
     return (
-        <section className="md:py-12 py-10 bg-white px-4">
-            <div className="max-w-[1500px] mx-auto">
-                <div className="flex items-center justify-between w-full">
+        <section className="md:py-12 py-10 bg-white">
+            <div className="max-w-[1540px] mx-auto px-4">
+                <div className="w-full flex flex-col md:flex-row justify-between md:items-start gap-4">
+
+                    {/* Left Text */}
                     <div>
-                        <h2 className="text-3xl md:text-3xl font-bold tracking-wide">
+                        <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
                             PRODUCT <span className="text-[#dc3545]">CATEGORIES</span>
                         </h2>
-                        <p className="mt-4 text-gray-600 max-w-3xl text-sm leading-relaxed tracking-wider">
+
+                        <p className="mt-3 text-gray-600 max-w-3xl text-sm sm:text-base leading-relaxed tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
 
-                    <button className="flex items-center gap-2 px-6 py-2 bg-[#dc3545] text-white font-medium rounded-full shadow hover:bg-red-700 transition-all duration-300">
-                        View More
-                        <span className="text-lg">→</span>
+                    {/* Right Button */}
+                    <button
+                        className="
+            w-full sm:w-auto 
+            flex items-center justify-center md:justify-start
+            gap-2 px-6 py-2
+            bg-[#dc3545] text-white 
+            font-medium rounded-full shadow
+            hover:bg-red-700 transition-all duration-300
+        "
+                    >
+                        View More <span className="text-lg">→</span>
                     </button>
 
                 </div>
-
 
                 {/* Cards */}
                 <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
@@ -322,24 +345,35 @@ function ServicesSection() {
 
     return (
         <>
-            <section className="py-12 px-4 bg-[#f5f5f5] rounded-2xl">
-                <div className="max-w-[1500px] mx-auto">
+            <section className="py-12 bg-[#f5f5f5] rounded-2xl">
+                <div className="max-w-[1540px] mx-auto px-4">
 
                     {/* Heading Row */}
-                    <div className="w-full flex justify-between items-start">
+                    <div className="w-full flex flex-col md:flex-row justify-between md:items-start gap-4">
+
+                        {/* Heading + Subtext */}
                         <div>
-                            <h2 className="text-3xl md:text-3xl font-bold tracking-wide">
+                            <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
                                 OUR TOP-SELLING <span className="text-[#dc3545]">PRODUCTS</span>
                             </h2>
-                            <p className="text-gray-600 mt-2 text-sm tracking-wider">
+                            <p className="text-gray-600 mt-1 text-sm sm:text-base tracking-wide">
                                 The subtext helps customers quickly understand the value.
                             </p>
                         </div>
 
-                        <button className="mt-2 flex items-center gap-2 px-6 py-2 bg-[#ffffff70] text-[#1a1a1a] font-medium rounded-full shadow hover:bg-[#ffffff] transition-all duration-300">
+                        {/* Button */}
+                        <button className="
+        w-full sm:w-auto
+        flex items-center justify-center sm:justify-start 
+        gap-2 px-6 py-2
+        bg-[#ffffff70] text-[#1a1a1a] 
+        font-medium rounded-full shadow
+        hover:bg-[#ffffff] transition-all duration-300
+    ">
                             View More <span className="text-lg">→</span>
                         </button>
                     </div>
+
 
 
                     {/* GRID LAYOUT */}
@@ -364,7 +398,6 @@ function ServicesSection() {
         </>
     );
 }
-
 
 function TopSellCard({ item, active, setActive }) {
     const isOpen = active === item.id;
@@ -408,7 +441,6 @@ function TopSellCard({ item, active, setActive }) {
     );
 }
 
-
 function SolutionsSection() {
     const slides = [
         {
@@ -416,23 +448,22 @@ function SolutionsSection() {
             category: "Smart Living",
             title: "Transform Your Space with Intelligent Home Automation",
             tags: ["Smart Home", "Automation", "Convenience"],
-            src: sampleVideo1, // local video file
+            src: sampleVideo1,
         },
         {
             type: "video",
             category: "Success Story",
             title: "Crafting a digital oasis: a Saudi university's journey to smart education",
             tags: ["Education", "Saudi Arabia", "Security and Intelligence"],
-            src: sampleVideo2, // local video file
+            src: sampleVideo2,
         },
         {
             type: "video",
             category: "Innovation",
             title: "Pan Tilt and Zoom (PTZ) CCTV: Next-Gen Security Solutions",
             tags: ["Security", "IoT", "Smart Technology"],
-            src: sampleVideo3, // local video file
+            src: sampleVideo3,
         },
-
     ];
 
     const settings = {
@@ -449,38 +480,45 @@ function SolutionsSection() {
         focusOnSelect: true,
         responsive: [
             {
+                breakpoint: 1280,
+                settings: { centerPadding: "10%" }
+            },
+            {
                 breakpoint: 1024,
-                settings: {
-                    centerPadding: "10%",
-                }
+                settings: { centerPadding: "5%" }
             },
             {
                 breakpoint: 768,
-                settings: {
-                    centerPadding: "5%",
-                }
+                settings: { centerPadding: "0px" }
             }
         ]
     };
 
     return (
         <>
+            {/* Heading */}
             <div className="pt-10 px-4 max-w-[1540px] mx-auto">
-                <h2 className="text-3xl md:text-3xl font-bold tracking-wide">
+                <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
                     NYSTAI-IoT <span className="text-[#dc3545]">SOLUTIONS</span>
                 </h2>
-                <p className="mt-4 text-gray-600 text-sm tracking-wider">
+
+                <p className="mt-3 text-gray-600 text-sm sm:text-base tracking-wider leading-relaxed">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
 
-            <section className="">
-                <div className="relative my-10">
+            {/* Slider Section */}
+            <section>
+                <div className="relative my-10 px-2 sm:px-4">
                     <Slider {...settings}>
                         {slides.map((slide, i) => (
                             <div key={i} className="px-2">
-                                <div className="relative w-full h-[600px] rounded-[20px] overflow-hidden">
-                                    {/* Background: Image or Video */}
+                                <div className="
+                                    relative w-full 
+                                    h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] 
+                                    rounded-[20px] overflow-hidden
+                                ">
+                                    {/* Background (Video / Image) */}
                                     {slide.type === "video" ? (
                                         <video
                                             src={slide.src}
@@ -489,43 +527,44 @@ function SolutionsSection() {
                                             muted
                                             playsInline
                                             className="absolute inset-0 w-full h-full object-cover"
-                                        ></video>
+                                        />
                                     ) : (
                                         <div
                                             className="absolute inset-0 bg-cover bg-center"
                                             style={{ backgroundImage: `url(${slide.src})` }}
-                                        ></div>
+                                        />
                                     )}
 
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20"></div>
+                                    {/* Dark overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
 
-                                    {/* Content */}
-                                    <div className="relative h-full flex items-end pb-24 px-8 md:px-16">
+                                    {/* Text Content */}
+                                    <div className="relative h-full flex items-end pb-12 sm:pb-16 md:pb-20 px-6 sm:px-10 md:px-16">
                                         <div className="max-w-[500px]">
-                                            {/* Category Badge */}
-                                            <div className="inline-block mb-4">
-                                                <span className="text-white/90 text-sm md:text-base font-medium tracking-wider uppercase">
-                                                    {slide.category}
-                                                </span>
-                                            </div>
+                                            {/* Category */}
+                                            <span className="text-white/90 text-xs sm:text-sm md:text-base font-semibold tracking-wide uppercase">
+                                                {slide.category}
+                                            </span>
 
                                             {/* Title */}
-                                            <h1 className="text-white text-3xl md:text-3xl lg:text-3xl font-bold leading-tight mb-6">
+                                            <h1 className="
+                                                text-white 
+                                                text-xl sm:text-2xl md:text-3xl lg:text-3xl 
+                                                font-bold leading-snug md:leading-tight 
+                                                mt-3 mb-4
+                                            ">
                                                 {slide.title}
                                             </h1>
 
                                             {/* Dotted Line */}
-                                            <div className="max-w-[400px] h-[2px] border-b border-dotted border-white/50 mb-6"></div>
+                                            <div className="max-w-[350px] h-[2px] border-b border-dotted border-white/60 mb-4"></div>
 
                                             {/* Tags */}
-                                            <div className="flex flex-wrap gap-2">
+                                            <div className="flex flex-wrap gap-1 sm:gap-2">
                                                 {slide.tags.map((tag, idx) => (
-                                                    <span
-                                                        key={idx}
-                                                        className="text-white/90 text-sm md:text-base"
-                                                    >
+                                                    <span key={idx} className="text-white/90 text-xs sm:text-sm md:text-base">
                                                         {tag}
-                                                        {idx < slide.tags.length - 1 && <span className="ml-2">,</span>}
+                                                        {idx < slide.tags.length - 1 && ","}
                                                     </span>
                                                 ))}
                                             </div>
@@ -537,42 +576,33 @@ function SolutionsSection() {
                     </Slider>
                 </div>
 
-                {/* Custom Styles */}
+                {/* Slider Custom CSS */}
                 <style>{`
                     .slick-slide {
                         transition: all 0.3s ease;
-                        opacity: 0.5;
+                        opacity: 0.4;
                         transform: scale(0.85);
                     }
-                    
-                    .slick-slide.slick-active {
-                        opacity: 1;
-                        transform: scale(1);
-                    }
-                    
+                    .slick-slide.slick-active,
                     .slick-center {
                         opacity: 1;
                         transform: scale(1);
                     }
-
                     .slick-dots {
-                        bottom: 32px;
-                        z-index: 10;
+                        bottom: 22px;
                     }
-
                     .slick-dots li button:before {
                         width: 10px;
                         height: 10px;
                         background: white;
-                        opacity: 0.5;
+                        opacity: 0.4;
                         border-radius: 50%;
                         content: '';
                     }
-
                     .slick-dots li.slick-active button:before {
                         opacity: 1;
-                        width: 15px;
-                        border-radius: 5px;
+                        width: 18px;
+                        border-radius: 6px;
                     }
                 `}</style>
             </section>
@@ -580,89 +610,105 @@ function SolutionsSection() {
     );
 }
 
+
 function Waterlevelontroller() {
     return (
         <>
-            <section className="py-12 md:py-16 bg-white">
+            <section className="py-5 md:py-16 bg-white">
                 <div className="max-w-[1540px] mx-auto px-4">
-                    <div className="grid lg:grid-cols-2 gap-8 lg:gap-6 items-center">
+
+                    <div className="grid lg:grid-cols-2 gap-5 items-center">
+
                         {/* Left Image */}
                         <div className="relative overflow-hidden rounded-2xl">
                             <img
                                 src={Waterlevel}
-                                alt="CCTV Installation"
+                                alt="Water Level Controller"
                                 className="
-                                    h-[580px] w-full object-cover rounded-2xl
-                                    transition-transform duration-500 ease-out
-                                    hover:scale-110
-                                "
+                        w-full h-[320px] sm:h-[420px] md:h-[500px] lg:h-[580px]
+                        object-cover rounded-2xl
+                        transition-transform duration-500 ease-out
+                        hover:scale-110
+                    "
                             />
                         </div>
 
                         {/* Right Content */}
-                        <div className="h-[580px] rounded-2xl bg-[#f9f9f9] flex flex-col items-center justify-center">
-                            <div className="max-w-[600px]">
-                                <h2 className="text-4xl md:text-[36px] font-bold text-gray-900 mb-6 leading-tight">
-                                    Automated <span className="text-red-500">Water Level Controller</span>
-                                </h2>
+                        <div className="
+                rounded-2xl bg-[#f9f9f9]
+                flex flex-col justify-center
+                p-6 sm:p-10
+            ">
 
-                                <p className="text-gray-600 text-[17px] leading-relaxed mb-8">
-                                    Introducing our Automated Water Level Controller with a built-in level monitor and 1000-meter range, ensuring efficient water management for your home or business. With a 1-year warranty, this system guarantees reliability, automates water usage, and prevents overflows. Stay in control with real-time monitoring from anywhere, even on your mobile device.
-                                </p>
+                            <div className="max-w-[600px] lg:h-[500px] mx-auto flex items-center">
 
-                                {/* Features List */}
-                                <div className="space-y-4 mb-8">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <Shield className="w-5 h-8 text-white" />
+                                <div className="">
+
+                                    <h2 className="text-3xl sm:text-4xl md:text-[36px] font-bold text-gray-900 mb-4 leading-tight">
+                                        Automated <span className="text-red-500">Water Level Controller</span>
+                                    </h2>
+
+                                    <p className="text-gray-600 text-base sm:text-[17px] leading-relaxed mb-6">
+                                        Introducing our Automated Water Level Controller with a built-in level monitor and
+                                        1000-meter range, ensuring efficient water management for your home or business.
+                                        With a 1-year warranty, this system guarantees reliability, automates water usage,
+                                        and prevents overflows. Stay in control with real-time monitoring anywhere, even on
+                                        your mobile device.
+                                    </p>
+
+                                    {/* Features */}
+                                    <div className="space-y-4 mb-6">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Shield className="w-5 h-5 text-white" />
+                                            </div>
+                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                                Automated water level control with real-time monitoring.
+                                            </span>
                                         </div>
-                                        <span className="text-gray-700 tracking-wide">Automated water level control with real-time monitoring.</span>
+
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Wifi className="w-5 h-5 text-white" />
+                                            </div>
+                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                                10 Kilometer range for flexible installation with Access.
+                                            </span>
+                                        </div>
+
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Smartphone className="w-5 h-5 text-white" />
+                                            </div>
+                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                                Mobile and Desktop connectivity for remote access.
+                                            </span>
+                                        </div>
                                     </div>
 
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <Wifi className="w-5 h-8 text-white" />
-                                        </div>
-                                        <span className="text-gray-700 tracking-wide">10 Kilometer range for flexible installation with Access.</span>
-                                    </div>
-
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <Smartphone className="w-5 h-8 text-white" />
-                                        </div>
-                                        <span className="text-gray-700 tracking-wide">Mobile and Desktop connectivity for remote access.</span>
-                                    </div>
-
-                                    {/* <div className="flex items-center gap-3">
-                                        <div className="w-9 h-9 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                            <House className="w-5 h-8 text-white" />
-                                        </div>
-                                        <span className="text-gray-700">Ideal for residential, agricultural, and industrial use.</span>
-                                    </div> */}
+                                    {/* Button */}
+                                    <button className="
+                        flex items-center gap-2
+                        px-6 py-2 bg-[#dc3545] text-white
+                        font-medium rounded-full shadow
+                        hover:bg-red-700 transition-all duration-300
+                    ">
+                                        View More
+                                        <span className="text-lg">→</span>
+                                    </button>
 
                                 </div>
 
-                                <button className="flex items-center gap-2 px-6 py-2 bg-[#dc3545] text-white font-medium rounded-full shadow hover:bg-red-700 transition-all duration-300" style={{ marginTop: "15px" }}>
-                                    View More
-                                    <span className="text-lg">→</span>
-                                </button>
                             </div>
                         </div>
-
                     </div>
 
-                    {/* Scroll to Top Button */}
-                    {/* <button className="fixed bottom-8 right-8 w-14 h-14 bg-white border-2 border-red-500 rounded-full flex items-center justify-center shadow-lg hover:bg-red-500 group transition-colors duration-300">
-                        <svg className="w-6 h-6 text-red-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                        </svg>
-                    </button> */}
                 </div>
             </section>
+
         </>
     )
 }
-
 
 function WhyNystai() {
     const containerRef = useRef(null);
@@ -787,7 +833,6 @@ function WhyNystai() {
     );
 }
 
-
 function PartnersLogo() {
     const partners = [
         partner1, partner2, partner3, partner4, partner5,
@@ -802,8 +847,8 @@ function PartnersLogo() {
     return (
         <section className="max-w-[1540px] mx-auto py-10 px-4 bg-white">
 
-            <div className="pb-10">
-                <h2 className="text-3xl font-bold tracking-wide">
+            <div className="pb-8 sm:pb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
                     Partners & <span className="text-[#dc3545]">Testimonials</span>
                 </h2>
             </div>
@@ -867,7 +912,6 @@ function PartnersLogo() {
         </section>
     );
 }
-
 
 function Testimonial() {
     const testimonials = [

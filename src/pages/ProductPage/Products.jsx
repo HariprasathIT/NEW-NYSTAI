@@ -54,7 +54,7 @@ const Productpage = () => {
       sm:h-[50vh]    
       md:h-[60vh]    
       lg:h-[70vh]    
-      xl:h-[72vh]   
+      xl:h-[75vh]   
       object-cover 
       rounded-b-[20px]
     "
