@@ -121,7 +121,7 @@ function HeroSection() {
                                 alt="Banner-Nystai"
                                 className="
         w-full rounded-b-3xl object-cover
-        h-[70vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh]
+        h-[70dvh] sm:h-[60dvh] md:h-[70dvh] lg:h-[85dvh]
     "
                             />
 
@@ -248,7 +248,7 @@ function ProductCategories() {
                     {/* Right Button */}
                     <button
                         className="
-            w-full sm:w-auto 
+            w-[160px] md:w-auto lg:w-auto
             flex items-center justify-center md:justify-start
             gap-2 px-6 py-2
             bg-[#dc3545] text-white 
@@ -363,7 +363,7 @@ function ServicesSection() {
 
                         {/* Button */}
                         <button className="
-        w-full sm:w-auto
+        w-[160px] md:w-auto lg:w-auto
         flex items-center justify-center sm:justify-start 
         gap-2 px-6 py-2
         bg-[#ffffff70] text-[#1a1a1a] 
@@ -509,7 +509,7 @@ function SolutionsSection() {
 
             {/* Slider Section */}
             <section>
-                <div className="relative my-10 px-2 sm:px-4">
+                <div className="relative my-10 sm:px-4">
                     <Slider {...settings}>
                         {slides.map((slide, i) => (
                             <div key={i} className="px-2">
