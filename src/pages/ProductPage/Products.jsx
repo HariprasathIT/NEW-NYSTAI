@@ -62,12 +62,12 @@ const Productpage = () => {
       </div>
 
 
-      <div className="max-w-[1540px] mx-auto px-3">
+      <div className="max-w-[1540px] mx-auto px-4 py-16 ">
         {/* CATEGORY TITLE */}
-        <h1 className="text-2xl font-bold md:py-12 py-10 text-[#dc3545] tracking-wide">{category.name}</h1>
+        <h1 className="text-2xl font-bold text-[#dc3545] tracking-wide">{category.name}</h1>
 
         {/* PRODUCTS GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">
           {category.products.map((product) => (
             <div
               key={product.id}

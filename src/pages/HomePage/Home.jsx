@@ -65,6 +65,7 @@ import 'slick-carousel/slick/slick-theme.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+
     return (
         <div className="w-full">
             <HeroSection />
@@ -230,7 +231,7 @@ function ProductCategories() {
     }, []);
 
     return (
-        <section className="md:py-12 py-10 bg-white">
+        <section className="md:py-16 py-16 bg-white">
             <div className="max-w-[1540px] mx-auto px-4">
                 <div className="w-full flex flex-col md:flex-row justify-between md:items-start gap-4">
 
@@ -345,7 +346,7 @@ function ServicesSection() {
 
     return (
         <>
-            <section className="py-12 bg-[#f5f5f5] rounded-2xl">
+            <section className="py-16 bg-[#f5f5f5] rounded-2xl">
                 <div className="max-w-[1540px] mx-auto px-4">
 
                     {/* Heading Row */}
@@ -497,7 +498,7 @@ function SolutionsSection() {
     return (
         <>
             {/* Heading */}
-            <div className="pt-10 px-4 max-w-[1540px] mx-auto">
+            <div className="pt-16 px-4 max-w-[1540px] mx-auto">
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
                     NYSTAI-IoT <span className="text-[#dc3545]">SOLUTIONS</span>
                 </h2>
@@ -609,7 +610,6 @@ function SolutionsSection() {
         </>
     );
 }
-
 
 function Waterlevelontroller() {
     return (
@@ -845,7 +845,7 @@ function PartnersLogo() {
     const row2 = partners.slice(10, 20);
 
     return (
-        <section className="max-w-[1540px] mx-auto py-10 px-4 bg-white">
+        <section className="max-w-[1540px] mx-auto py-16 px-4 bg-white">
 
             <div className="pb-8 sm:pb-10">
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">

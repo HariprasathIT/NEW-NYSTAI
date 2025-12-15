@@ -3,7 +3,7 @@ import nyslogo from "../../assets/nyslogo.png"
 const NystaiFooter = () => {
     return (
         <>
-            <footer class="w-full bg-[#f5f5f5] md:mt-14 mt-12" style={{ borderRadius: "30px 30px 0px 0px" }}>
+            <footer class="w-full bg-[#f5f5f5]" style={{ borderRadius: "30px 30px 0px 0px" }}>
                 <div class="mx-auto max-w-[1540px] px-4 sm:px-6 lg:px-0">
                     <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
                         <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
