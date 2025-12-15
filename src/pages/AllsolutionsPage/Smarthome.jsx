@@ -100,7 +100,7 @@ function Sectiontwo() {
                         {/* Right Content (Takes remaining space) */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
                             <div className="max-w-[730px] p-5 md:px-0">
-                                <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6 uppercase">
+                                <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Specialized Safeguarding
                                 </h2>
                                 <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>

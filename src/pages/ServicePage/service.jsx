@@ -210,7 +210,7 @@ function SectionThree() {
                 {/* Text SECOND on mobile */}
                 <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto md:h-[400px] order-2 md:order-2">
                     <div className="max-w-[730px] p-5 md:px-6 lg:px-8">
-                        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6 uppercase">
+                        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
                             Specialized Safeguarding
                         </h2>
 
@@ -244,7 +244,7 @@ function SectionThree() {
                 {/* Text SECOND on mobile */}
                 <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto md:h-[400px] order-2 md:order-1">
                     <div className="max-w-[730px] p-5 md:px-6 lg:px-8">
-                        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6 uppercase">
+                        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
                             Deployment Services
                         </h2>
 

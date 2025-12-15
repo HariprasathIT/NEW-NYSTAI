@@ -142,7 +142,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="col-span-2 flex items-center">
             <Link to="/" onClick={closeAllMenus}>
-              <img src={nyslogo} alt="Logo" className="md:h-[35px] w-full" />
+              <img src={nyslogo} alt="Logo" className="md:h-[50px] w-full" />
             </Link>
           </div>
 

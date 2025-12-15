@@ -718,22 +718,26 @@ function WhyNystai() {
     const sections = [
         {
             title: "Why Nystai",
-            description: "We manage your projects using established agile techniques to ensure collaboration between all parties involved. Our streamlined process results in quicker completion times and the attainment of even the most challenging objectives.",
+            description:
+                "Nystai delivers enterprise-grade IoT and security solutions designed for reliability, scalability, and real-world performance. Our approach focuses on long-term value, operational efficiency, and future-ready infrastructure.",
             image: null
         },
         {
-            title: "Discovery Phase",
-            description: "We conduct thorough research on the client's business to identify areas for improvement before beginning any development work. Our planning phase is crucial to successful outcomes and delivering better results.",
+            title: "Engineered for Critical Environments",
+            description:
+                "Our systems are built using industrial-grade hardware and intelligent software architecture to ensure continuous operation, high accuracy, and dependable performance across demanding environments.",
             image: WhynysImg1
         },
         {
-            title: "Discovery Phase",
-            description: "We create a comprehensive product from start to finish and offer customized web UX/UI design to meet your specifications. We always keep in mind the end-users to enhance their experience.",
+            title: "Unified & Scalable Architecture",
+            description:
+                "Nystai solutions integrate devices, networking, analytics, and management platforms into a single ecosystem. This unified approach allows seamless expansion without disrupting existing infrastructure.",
             image: WhynysImg2
         },
         {
-            title: "Discovery Phase",
-            description: "We employ diverse web development methods for smooth project execution. Our full web development services cover different programming languages and technical solution architectures.",
+            title: "Security & Intelligence by Design",
+            description:
+                "We embed security, data integrity, and intelligent monitoring at every layer. With real-time insights and compliance-ready systems, Nystai empowers organizations to make confident, data-driven decisions.",
             image: WhynysImg3
         }
     ];
@@ -785,7 +789,7 @@ function WhyNystai() {
                                     <div className="max-w-6xl w-full">
                                         {index === 0 ? (
                                             <div className="space-y-6">
-                                                <h2 className="text-4xl md:text-4xl font-bold text-[#dc3545]">
+                                                <h2 className="text-4xl md:text-2xl font-bold text-[#dc3545]">
                                                     {section.title}
                                                 </h2>
                                                 <p className="text-  text-gray-600 max-w-md leading-relaxed">
@@ -795,7 +799,7 @@ function WhyNystai() {
                                         ) : (
                                             <div className="space-y-8">
                                                 <div className="space-y-4">
-                                                    <h3 className="text-4xl md:text-4xl font-bold text-[#dc3545]">
+                                                    <h3 className="text-4xl md:text-2xl font-bold text-[#dc3545]">
                                                         {section.title}
                                                     </h3>
                                                     <p className="text-sm text-gray-600 max-w-lg leading-relaxed">
@@ -926,7 +930,7 @@ function Testimonial() {
 
     return (
         <>
-            <section className="max-w-[1540px] mx-auto px-4 bg-white">
+            <section className="max-w-[1540px] mx-auto px-4 pb-16 bg-white">
 
                 <Swiper
                     modules={[Autoplay]}
