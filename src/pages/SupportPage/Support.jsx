@@ -51,7 +51,7 @@ function Formdesign() {
   return (
     <>
       <div className="max-w-[1540px] mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-12">
 
           {/* Left contents */}
           <div className="lg:col-span-4 mx-auto">

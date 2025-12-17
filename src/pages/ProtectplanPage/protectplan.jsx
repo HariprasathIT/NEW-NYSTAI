@@ -195,10 +195,10 @@ function SectionThree() {
 
     return (
         <section className="relative">
-            <div className="max-w-[1540px] mx-auto">
+            <div className="max-w-[1540px] mx-auto mb-10">
 
                 {/* Header */}
-                <div className="text-center py-16 ">
+                <div className="text-center py-16">
                     <h2 className="text-[35px] font-bold text-red-600 mb-2">Key Features</h2>
                     <p className="text-[15px] text-gray-600">
                         Maiden Unified All-in-One Video, Alarm & Access Control Platform
