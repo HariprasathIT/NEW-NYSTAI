@@ -27,22 +27,53 @@ function Hero() {
     return (
         <>
             {/* CATEGORY BANNER */}
-            <div className="w-full">
+            <section className="relative w-full">
+                {/* Banner Image */}
                 <img
                     src={planbanner}
                     alt="Category Banner"
                     className="
-                      w-full 
-                      h-[40vh]       
-                      sm:h-[50vh]    
-                      md:h-[60vh]    
-                      lg:h-[75vh]    
-                      xl:h-[85vh]    
-                      object-cover 
-                      rounded-b-[20px]
-                    "
+            w-full
+            h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[85vh]
+            object-cover
+            rounded-b-3xl
+        "
                 />
-            </div>
+
+                {/* Overlay Content */}
+                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
+                    <div className="text-right">
+
+                        {/* Title */}
+                        <h1 className="text-2xl sm:text-3xl md:text-[35px] font-bold text-white leading-snug md:leading-tight">
+                            Enhanced Protection, Anytime
+                        </h1>
+
+                        {/* Divider */}
+                        <div className="ml-auto w-32 sm:w-60 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-white" />
+
+                        {/* Description */}
+                        <p className="mt-3 sm:mt-4 text-white text-xs sm:text-sm md:text-[17px] leading-relaxed" style={{lineHeight:"25px"}}>
+                            Add monitoring and emergency support to<br /> your Nystai Protect Plan.
+                        </p>
+
+                        {/* Button */}
+                        <button
+                            className="
+                    mt-5 sm:mt-6
+                    bg-white text-red
+                    px-5 sm:px-6 py-2.5 sm:py-3
+                    rounded-full font-semibold
+                    hover:bg-red-700 transition-colors
+                    text-xs sm:text-sm md:text-[14px]
+                "
+                        >
+                            Explore Nystai Products
+                        </button>
+
+                    </div>
+                </div>
+            </section>
 
         </>
     )

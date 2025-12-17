@@ -34,6 +34,8 @@ import Protectplan from "./pages/ProtectplanPage/protectplan";
 import Service from "./pages/ServicePage/service";
 import Support from "./pages/SupportPage/Support";
 import Smarthome from "./pages/AllsolutionsPage/Smarthome";
+import Industrial from "./pages/AllsolutionsPage/Industry";
+import Education from "./pages/AllsolutionsPage/Education";
 
 // IMPORT CATEGORY PAGE
 
@@ -76,6 +78,8 @@ function App() {
 
         {/* Solutions */}
         <Route path="/solutions/smarthome" element={<Smarthome />} />
+        <Route path="/solutions/industrial" element={<Industrial />} />
+        <Route path="/solutions/education" element={<Education />} />
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />

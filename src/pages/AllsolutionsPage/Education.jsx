@@ -1,25 +1,30 @@
 import { useState } from 'react'
 
-import smarthomebanner from "../../assets/Images/Allsolutions-Images/Smarthome/smarthomebanner.jpeg"
+import { Home } from 'lucide-react';
 
-import leftimg1 from "../../assets/Images/Allsolutions-Images/Smarthome/leftimg1.jpeg"
-import icon1 from "../../assets/Images/Allsolutions-Images/Smarthome/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Smarthome/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Smarthome/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Smarthome/icon4.png"
+import educationbanner from "../../assets/Images/Allsolutions-Images/Education/educationbanner.jpeg"
 
-const Smarthome = () => {
+import solu from "../../assets/Images/Allsolutions-Images/Education/solu.webp"
+
+
+import leftimg1 from "../../assets/Images/Allsolutions-Images/Education/leftimg1.jpeg"
+import icon1 from "../../assets/Images/Allsolutions-Images/Industry/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Industry/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Industry/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Industry/icon4.png"
+
+const Education = () => {
     return (
         <>
             <Hero />
             <Sectiontwo />
             <Sectionthree />
-            <SectionFour />
+            {/* <SectionFour /> */}
         </>
     )
 }
 
-export default Smarthome
+export default Education
 
 
 function Hero() {
@@ -28,7 +33,7 @@ function Hero() {
             {/* CATEGORY BANNER */}
             <div className="w-full">
                 <img
-                    src={smarthomebanner}
+                    src={educationbanner}
                     alt="Category Banner"
                     className="
                       w-full 
@@ -78,14 +83,15 @@ function Sectiontwo() {
         <>
             <section className="max-w-[1540px] mx-auto px-4">
                 <div>
-                    {/* Header */}
-                    <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOME AUTOMATION</h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
-                        </p>
+                    <div>
+                        {/* Header */}
+                        <div className="text-center py-16">
+                            <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S INTERACTIVE FLAT-PANEL DISPLAY (IFPD)</h2>
+                            <p className="text-[15px] text-gray-600 tracking-wider">
+                                The subtext helps customers quickly understand the value or specific
+                            </p>
+                        </div>
                     </div>
-
 
                     {/* First Section */}
                     <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
@@ -122,8 +128,9 @@ function Sectiontwo() {
                     </div>
 
                 </div>
+
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7">
+                <div className="flex items-center justify-center py-7 mt-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
@@ -147,16 +154,19 @@ function Sectiontwo() {
                         ))}
                     </div>
                 </div>
+
             </section>
         </>
     )
 }
 
 function Sectionthree() {
-    const [activeCard, setActiveCard] = useState(1);
+
+
     return (
         <>
-            <section className="max-w-[1540px] mx-auto px-4">
+            <section className="max-w-[1540px] mx-auto ">
+
                 {/* Header */}
                 <div className="text-center py-16">
                     <h2 className="text-[30px] font-bold text-red-600 mb-2">
@@ -167,84 +177,6 @@ function Sectionthree() {
                     </p>
                 </div>
 
-                {/* Cards */}
-                <div className="flex gap-4 h-[500px]">
-                    {/* Card 1 */}
-                    <div
-                        onMouseEnter={() => setActiveCard(1)}
-                        className={`
-                            group relative 
-                            ${activeCard === 1 ? 'flex-[5]' : 'flex-1'}
-                            transition-all duration-500 ease-in-out
-                            rounded-2xl overflow-hidden bg-black cursor-pointer
-                        `}
-                    >
-                        <img
-                            src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80"
-                            alt="CCTV Security"
-                            className="absolute inset-0 w-full h-full object-cover opacity-80"
-                        />
-                        <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
-                            <h3 className={`text-[30px] font-bold mb-2 transition duration-300 ${activeCard === 1 ? 'opacity-100' : 'opacity-0'}`}>
-                                Solutions Provided by CCTV, Alarms, and Automation
-                            </h3>
-                            <p className={`text-[17px] transition duration-300 ${activeCard === 1 ? 'opacity-100' : 'opacity-0'}`}>
-                                Modern CCTV cameras, alarms, & automation provide real-time security,
-                                control & convenience from a single platform. With live video feeds and instant alerts, homeowners can quickly respond to threats.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Card 2 */}
-                    <div
-                        onMouseEnter={() => setActiveCard(2)}
-                        className={`
-                            group relative 
-                            ${activeCard === 2 ? 'flex-[5]' : 'flex-1'}
-                            transition-all duration-500 ease-in-out
-                            rounded-2xl overflow-hidden bg-gray-900 cursor-pointer
-                        `}
-                    >
-                        <img
-                            src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&q=80"
-                            alt="Security Monitoring"
-                            className="absolute inset-0 w-full h-full object-cover opacity-80"
-                        />
-                        <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
-                            <h3 className={`text-[30px] font-bold mb-2 transition duration-300 ${activeCard === 2 ? 'opacity-100' : 'opacity-0'}`}>
-                                24/7 Monitoring Services
-                            </h3>
-                            <p className={`text-[17px] transition duration-300 ${activeCard === 2 ? 'opacity-100' : 'opacity-0'}`}>
-                                Professional monitoring ensures your property is protected around the clock with instant response to any security events.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Card 3 */}
-                    <div
-                        onMouseEnter={() => setActiveCard(3)}
-                        className={`
-                            group relative 
-                            ${activeCard === 3 ? 'flex-[5]' : 'flex-1'}
-                            transition-all duration-1000 ease-in-out
-                            rounded-2xl overflow-hidden bg-gray-900 cursor-pointer
-                        `}
-                    >
-                        <img
-                            src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80"
-                            alt="Access Control"
-                            className="absolute inset-0 w-full h-full object-cover opacity-80"
-                        />
-                        <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
-                            <h3 className={`text-[30px] font-bold mb-2 transition duration-500 ${activeCard === 3 ? 'opacity-100' : 'opacity-0'}`}>
-                                Advanced Access Control
-                            </h3>
-                            <p className={`text-[17px] transition duration-500 ${activeCard === 3 ? 'opacity-100' : 'opacity-0'}`}>
-                                Secure entry systems with biometric authentication, smart locks, and keyless access management for complete control over who enters your property.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </section>
         </>
     )
@@ -257,10 +189,10 @@ function SectionFour() {
                 {/* Header */}
                 <div className="text-center py-16">
                     <h2 className="text-[30px] font-bold text-red-600 mb-2">
-                        WHO IS NYSTAI?
+                        Features
                     </h2>
                     <p className="text-[15px] text-gray-600 tracking-wider">
-                        Maiden Unified All-in-One Video, Alarm & Access Control Platform
+                        The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
 
