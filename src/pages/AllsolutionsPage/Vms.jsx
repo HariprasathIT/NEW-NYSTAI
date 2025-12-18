@@ -16,7 +16,7 @@ import threecardimg1 from "../../assets/Images/Allsolutions-Images/Worship/cardi
 import threecardimg2 from "../../assets/Images/Allsolutions-Images/Worship/cardimg2.jpeg"
 import threecardimg3 from "../../assets/Images/Allsolutions-Images/Worship/cardimg3.jpeg"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Worship/icon.png"
+import featureicon from "../../assets/Images/Allsolutions-Images/Worship/featureicon.png"
 
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
 
