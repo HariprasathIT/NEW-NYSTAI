@@ -7,10 +7,10 @@ import vmsbanner from "../../assets/Images/Allsolutions-Images/Vms/vmsbanner.jpe
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Vms/leftimg1.jpeg"
 
-import icon1 from "../../assets/Images/Allsolutions-Images/Industry/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Industry/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Industry/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Industry/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
 
 import threecardimg1 from "../../assets/Images/Allsolutions-Images/Worship/cardimg1.jpeg"
 import threecardimg2 from "../../assets/Images/Allsolutions-Images/Worship/cardimg2.jpeg"
@@ -235,7 +235,7 @@ function Sectionthree() {
                 <Slider {...settings}>
                     {slides.map((slide, index) => (
                         <div key={index} className="outline-none">
-                            <div className="relative rounded-3xl overflow-hidden h-[500px] md:h-[600px]">
+                            <div className="relative rounded-xl overflow-hidden h-[500px] md:h-[600px]">
                                 {/* Background Image */}
                                 <div
                                     className="absolute inset-0 bg-cover bg-center"
