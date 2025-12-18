@@ -36,6 +36,8 @@ import Support from "./pages/SupportPage/Support";
 import Smarthome from "./pages/AllsolutionsPage/Smarthome";
 import Industrial from "./pages/AllsolutionsPage/Industry";
 import Education from "./pages/AllsolutionsPage/Education";
+import Worship from "./pages/AllsolutionsPage/Worship";
+import Vms from "./pages/AllsolutionsPage/Vms";
 
 // IMPORT CATEGORY PAGE
 
@@ -80,6 +82,8 @@ function App() {
         <Route path="/solutions/smarthome" element={<Smarthome />} />
         <Route path="/solutions/industrial" element={<Industrial />} />
         <Route path="/solutions/education" element={<Education />} />
+        <Route path="/solutions/worship" element={<Worship />} />
+        <Route path="/solutions/vms" element={<Vms />} />
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />

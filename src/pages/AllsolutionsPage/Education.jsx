@@ -4,9 +4,16 @@ import { Home } from 'lucide-react';
 
 import educationbanner from "../../assets/Images/Allsolutions-Images/Education/educationbanner.jpeg"
 
+import ifpd2 from "../../assets/Images/Allsolutions-Images/Education/IFPD_2.webp"
+
+import ser1 from "../../assets/Images/Allsolutions-Images/Education/ser1.jpeg"
+import ser2 from "../../assets/Images/Allsolutions-Images/Education/ser2.jpeg"
+import ser3 from "../../assets/Images/Allsolutions-Images/Education/ser3.jpeg"
+
 import solu from "../../assets/Images/Allsolutions-Images/Education/solu.webp"
 
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
+import video3 from "../../assets/Images/Allsolutions-Images/Education/video3.mp4"
 
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Education/leftimg1.jpeg"
@@ -21,7 +28,8 @@ const Education = () => {
             <Hero />
             <Sectiontwo />
             <Sectionthree />
-            {/* <SectionFour /> */}
+            <SectionFour />
+            <SectionFive />
         </>
     )
 }
@@ -179,7 +187,41 @@ function Sectionthree() {
                     </p>
                 </div>
 
-                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden">
+                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden" style={{ position: "sticky", top: "100px" }}>
+                    <video
+                        src={video1}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto"
+                    />
+
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h3 className="text-white text-2xl font-semibold">
+                            Smart • Secure • Scalable
+                        </h3>
+                    </div>
+                </div>
+
+                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden mt-7" style={{ position: "sticky", top: "150px" }}>
+                    <video
+                        src={video3}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto"
+                    />
+
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h3 className="text-white text-2xl font-semibold">
+                            Smart • Secure • Scalable
+                        </h3>
+                    </div>
+                </div>
+
+                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden mt-7">
                     <video
                         src={video1}
                         autoPlay
@@ -209,12 +251,209 @@ function SectionFour() {
                 {/* Header */}
                 <div className="text-center py-16">
                     <h2 className="text-[30px] font-bold text-red-600 mb-2">
-                        Features
+                        FEATURES
                     </h2>
                     <p className="text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
+
+                {/* LEFT 6 AND RIGHT 6 */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    {/* Left Side - Image */}
+                    <div className="flex items-center justify-center">
+                        <img
+                            src={ifpd2}
+                            alt="Person watching cinema content"
+                            className="w-full h-[625px] rounded-lg"
+                            style={{ objectFit: "cover" }}
+                        />
+                    </div>
+
+                    {/* Right Side - Features List */}
+                    <div className="flex flex-col justify-center space-y-8">
+                        {/* Feature 1 */}
+                        <div>
+                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                                01. Adaptable Platform
+                            </h3>
+                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
+                                <p className="text-gray-700 text-[15px]">
+                                    NYSTAI's IFPD allows users to install their own devices and displays, offering a customizable solution for various needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Feature 2 */}
+                        <div>
+                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                                02. Seamless Integration
+                            </h3>
+                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
+                                <p className="text-gray-700 text-[15px]">
+                                    Provides a flexible foundation for both education and industry, supporting dynamic learning and efficient meetings.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Feature 3 */}
+                        <div>
+                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                                03. Ultra-Clear Display
+                            </h3>
+                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
+                                <p className="text-gray-700 text-[15px]">
+                                    Enhances engagement and collaboration with a visually stunning display
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Feature 4 */}
+                        <div>
+                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                                04. Real-Time Content Sharing
+                            </h3>
+                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
+                                <p className="text-gray-700 text-[15px]">
+                                    Enables interactive communication with multi-touch capabilities and device integration.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Feature 5 */}
+                        <div>
+                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                                05. Versatile Use
+                            </h3>
+                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
+                                <p className="text-gray-700 text-[15px]">
+                                    Suitable for classrooms, boardrooms, and beyond, transforming spaces into dynamic, collaborative environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </>
+    )
+}
+
+function SectionFive() {
+    return (
+        <>
+            <section className="max-w-[1540px] mx-auto px-4 mb-10">
+                {/* Header */}
+                <div className="text-center py-16">
+                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                        WHERE WE USE
+                    </h2>
+                    <p className="text-[15px] text-gray-600 tracking-wider">
+                        NYSTAI's IFPD enhances learning in schools, fosters collaboration in colleges and facilitates efficient meetings in industries.
+                    </p>
+                </div>
+
+                {/* Cards Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                    {/* LEFT — TWO SMALL CARDS */}
+                    <div className="flex flex-col gap-6 order-2 lg:order-1">
+
+                        {/* TOP CARD */}
+                        <div className="relative rounded-xl overflow-hidden 
+            h-[220px] sm:h-[260px] md:h-[300px] lg:h-[288px] 
+            group cursor-pointer">
+
+                            <img
+                                src={ser1}
+                                alt="service"
+                                className="absolute inset-0 w-full h-full object-cover 
+                transition-transform duration-1000 ease-out group-hover:scale-110"
+                            />
+
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                            <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
+                                <div className="transform transition-all duration-700 group-hover:-translate-y-3">
+                                    <h4 className="text-xl sm:text-2xl font-bold mb-2">
+                                        College Classroom
+                                    </h4>
+
+                                    <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
+                  transition-all duration-700 ease-out 
+                  max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100">
+                                        Foster teamwork and communication across departments, building stronger
+                                        connections that drive productivity and innovation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* BOTTOM CARD */}
+                        <div className="relative rounded-xl overflow-hidden 
+            h-[220px] sm:h-[260px] md:h-[300px] lg:h-[288px] 
+            group cursor-pointer">
+
+                            <img
+                                src={ser2}
+                                alt="service"
+                                className="absolute inset-0 w-full h-full object-cover 
+                transition-transform duration-700 ease-out group-hover:scale-110"
+                            />
+
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                            <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
+                                <div className="transform transition-all duration-700 group-hover:-translate-y-3">
+                                    <h4 className="text-xl sm:text-2xl font-bold mb-2">
+                                        Industry board room
+                                    </h4>
+
+                                    <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
+                  transition-all duration-700 ease-out 
+                  max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100">
+                                        Transform raw data into actionable insights that empower your
+                                        decision-making and reveal hidden opportunities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {/* RIGHT — BIG CARD */}
+                    <div className="relative rounded-xl overflow-hidden 
+          h-[260px] sm:h-[350px] md:h-[450px] lg:h-[600px] 
+          group cursor-pointer order-1 lg:order-2">
+
+                        {/* Image */}
+                        <img
+                            src={ser3}
+                            alt="service"
+                            className="absolute inset-0 w-full h-full object-cover 
+              transition-transform duration-1000 ease-out group-hover:scale-110"
+                        />
+
+                        {/* Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                        {/* Content */}
+                        <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
+                            <div className="transform transition-all duration-1000 group-hover:-translate-y-4">
+                                <h3 className="text-2xl sm:text-3xl font-bold mb-3">School Classroom</h3>
+
+                                <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
+                transition-all duration-1000 ease-out 
+                max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100">
+                                    We develop comprehensive strategies tailored to your business needs,
+                                    ensuring sustainable growth and competitive advantage.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </section>
         </>
