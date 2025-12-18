@@ -108,8 +108,6 @@ const Productpage = () => {
         />
       )}
 
-
-
     </div>
   );
 };

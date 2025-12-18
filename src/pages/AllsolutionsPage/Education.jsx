@@ -6,6 +6,8 @@ import educationbanner from "../../assets/Images/Allsolutions-Images/Education/e
 
 import solu from "../../assets/Images/Allsolutions-Images/Education/solu.webp"
 
+import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
+
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Education/leftimg1.jpeg"
 import icon1 from "../../assets/Images/Allsolutions-Images/Industry/icon1.png"
@@ -165,7 +167,7 @@ function Sectionthree() {
 
     return (
         <>
-            <section className="max-w-[1540px] mx-auto ">
+            <section className="max-w-[1540px] mx-auto  px-4">
 
                 {/* Header */}
                 <div className="text-center py-16">
@@ -176,6 +178,24 @@ function Sectionthree() {
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
+
+                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden">
+                    <video
+                        src={video1}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto"
+                    />
+
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h3 className="text-white text-2xl font-semibold">
+                            Smart • Secure • Scalable
+                        </h3>
+                    </div>
+                </div>
+
 
             </section>
         </>

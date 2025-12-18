@@ -212,7 +212,8 @@ function Sectionthree() {
 
     return (
         <>
-            <section className="max-w-[1540px] mx-auto bg-[#f9f9f9] rounded-lg mt-10">
+        
+            <section className="max-w-[1520px] mx-auto bg-[#f9f9f9] rounded-lg mt-10">
 
                 <div className='p-10 pt-5'>
 
