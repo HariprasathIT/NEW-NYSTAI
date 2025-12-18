@@ -187,7 +187,7 @@ function Sectionthree() {
                     </p>
                 </div>
 
-                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden" style={{ position: "sticky", top: "100px" }}>
+                <div className="relative max-w-[1340px] mx-auto rounded-xl overflow-hidden" style={{ position: "sticky", top: "100px" }}>
                     <video
                         src={video1}
                         autoPlay
@@ -204,7 +204,7 @@ function Sectionthree() {
                     </div>
                 </div>
 
-                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden mt-7" style={{ position: "sticky", top: "150px" }}>
+                <div className="relative max-w-[1440px] mx-auto rounded-xl overflow-hidden mt-7" style={{ position: "sticky", top: "150px" }}>
                     <video
                         src={video3}
                         autoPlay
