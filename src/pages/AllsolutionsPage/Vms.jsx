@@ -5,7 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import vmsbanner from "../../assets/Images/Allsolutions-Images/Vms/vmsbanner.jpeg"
 
-import leftimg1 from "../../assets/Images/Allsolutions-Images/vms/leftimg1.jpeg"
+import leftimg1 from "../../assets/Images/Allsolutions-Images/Vms/leftimg1.jpeg"
+
 import icon1 from "../../assets/Images/Allsolutions-Images/Industry/icon1.png"
 import icon2 from "../../assets/Images/Allsolutions-Images/Industry/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Industry/icon3.png"
