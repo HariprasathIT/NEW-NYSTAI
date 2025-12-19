@@ -42,6 +42,7 @@ import Hospital from "./pages/AllsolutionsPage/Hospital";
 import Banking from "./pages/AllsolutionsPage/Banking";
 import Retail from "./pages/AllsolutionsPage/Retail";
 import Parking from "./pages/AllsolutionsPage/Parking";
+import Warehouse from "./pages/AllsolutionsPage/Warehouse";
 
 // IMPORT CATEGORY PAGE
 
@@ -92,6 +93,7 @@ function App() {
         <Route path="/solutions/banking" element={<Banking />} />
         <Route path="/solutions/retail" element={<Retail />} />
         <Route path="/solutions/parking" element={<Parking />} />
+        <Route path="/solutions/warehouse" element={<Warehouse />} />
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />

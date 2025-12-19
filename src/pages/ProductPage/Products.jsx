@@ -50,7 +50,7 @@ const Productpage = () => {
           alt={category.name}
           className="
       w-full 
-      h-[70dvh] sm:h-[60dvh] md:h-[70dvh] lg:h-[85dvh]
+      h-[70dvh] sm:h-[60dvh] md:h-[70dvh] lg:h-[98vh]
       object-cover 
       rounded-b-[20px]
     "

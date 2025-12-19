@@ -28,7 +28,7 @@ function Hero() {
     return (
         <>
             {/* CATEGORY BANNER */}
-            <div className="w-full">
+            <section className="w-full">
                 <img
                     src={industrialbanner}
                     alt="Category Banner"
@@ -38,12 +38,13 @@ function Hero() {
                       sm:h-[50vh]    
                       md:h-[60vh]    
                       lg:h-[75vh]    
-                      xl:h-[85vh]    
+                      xl:h-[98vh]   
                       object-cover 
                       rounded-b-[20px]
                     "
                 />
-            </div>
+                
+            </section>
 
         </>
     )

@@ -121,9 +121,9 @@ function HeroSection() {
                                 src={item.img}
                                 alt="Banner-Nystai"
                                 className="
-        w-full rounded-b-3xl object-cover
-        h-[70dvh] sm:h-[60dvh] md:h-[70dvh] lg:h-[85dvh]
-    "
+                                    w-full rounded-b-3xl object-cover
+                                    h-[70dvh] sm:h-[60dvh] md:h-[70dvh] lg:h-[98vh]
+                                "
                             />
 
                             <div className="absolute top-0 left-0 h-full flex items-center px-6 sm:px-10 md:px-[80px] overflow-hidden">

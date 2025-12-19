@@ -32,7 +32,7 @@ function Hero() {
           alt="Category Banner"
           className="
             w-full
-            h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[85vh]
+            h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[98vh]
             object-cover
             rounded-b-[20px]
           "

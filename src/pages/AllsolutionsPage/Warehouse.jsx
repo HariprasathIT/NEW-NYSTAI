@@ -1,38 +1,38 @@
 import { useState } from 'react'
 
-import vmsbanner from "../../assets/Images/Allsolutions-Images/Parking/parkingbanner.jpeg"
+import vmsbanner from "../../assets/Images/Allsolutions-Images/Warehouse/warehousebanner.jpeg"
 
-import leftimg1 from "../../assets/Images/Allsolutions-Images/Parking/leftimg1.jpeg"
+import leftimg1 from "../../assets/Images/Allsolutions-Images/Warehouse/leftimg1.jpeg"
 
-import { ArrowRight } from 'lucide-react';
+import overlayimg from "../../assets/Images/Allsolutions-Images/Warehouse/overlaybigimg.jpeg"
 
-import threecardimg1 from "../../assets/Images/Allsolutions-Images/Parking/cardimg1.jpeg"
-import threecardimg2 from "../../assets/Images/Allsolutions-Images/Parking/cardimg2.jpeg"
-import threecardimg3 from "../../assets/Images/Allsolutions-Images/Parking/cardimg3.jpg"
-
+import tiltimg from "../../assets/Images/Allsolutions-Images/Warehouse/tiltimg.png"
 
 import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
 import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
 import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Vms/featureicon.png"
+import gridimg1 from "../../assets/Images/Allsolutions-Images/Banking/gridimg1.jpeg"
+import gridimg2 from "../../assets/Images/Allsolutions-Images/Banking/gridimg2.jpeg"
+import gridimg3 from "../../assets/Images/Allsolutions-Images/Banking/gridimg3.jpeg"
+import gridimg4 from "../../assets/Images/Allsolutions-Images/Banking/gridimg4.jpeg"
 
-import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
+import featureicon from "../../assets/Images/Allsolutions-Images/Banking/icon.png"
 
-const Parking = () => {
+const Warehouse = () => {
     return (
         <>
             <Hero />
             <Sectiontwo />
             <Sectionthree />
             <SectionFour />
-            {/* <SectionFive /> */}
+            <SectionFive />
         </>
     )
 }
 
-export default Parking
+export default Warehouse
 
 
 function Hero() {
@@ -94,7 +94,7 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
+                        <h2 className="text-[30px] font-bold text-[#dc3545] mb-2">NYSTAI'S WAREHOUSE SOLUTIONS</h2>
                         <p className="text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
@@ -167,120 +167,55 @@ function Sectiontwo() {
 }
 
 function Sectionthree() {
-
     return (
-        <section className="max-w-[1540px] mx-auto px-4">
+        <section className="py-16 bg-[#2c2c2c] rounded-xl mt-10">
 
             {/* Header */}
-            <div className="text-center py-16">
-                <h2 className="text-3xl md:text-[35px] font-bold text-red-600 mb-2">
-                    Our Services
+            <div className="text-center mb-5">
+                <h2 className="text-[30px] font-bold text-[#ffc107] mb-2">
+                    WHAT WE OFFER
                 </h2>
-                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                <p className="text-[15px] text-gray-400 tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
 
-            {/* First Section */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
+            {/* Card Wrapper */}
+            <div className="relative p-20 overflow-hidden max-w-[1540px] mx-auto">
 
-                {/* Left Image (Fixed Width 650px) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
-                    <img
-                        src={threecardimg1}
-                        alt="Fire extinguisher"
-                        className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </div>
+                {/* LEFT SIDE SLANTED BACKGROUND */}
+                <div className="slanted-panel absolute top-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-[#ded6c0] z-0"></div>
 
-                {/* Right Content (Takes remaining space) */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                    <div className="max-w-[730px] p-5 md:px-0">
-                        <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Specialized Safeguarding
-                        </h2>
-                        <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                            <li>
-                                NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                            </li>
-                            <li>
-                                Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                            </li>
-                            <li>
-                                With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                            </li>
-                        </ul>
+                {/* Content Grid */}
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-0">
+
+                    {/* Image */}
+                    <div className="flex justify-center lg:justify-start">
+                        <img
+                            src={tiltimg}
+                            alt="Warehouse Safety"
+                            className="h-[570px] rounded-2xl shadow-lg"
+                        />
                     </div>
-                </div>
 
-            </div>
+                    {/* Text Content */}
+                    <div className="text-[#1e1e1e] max-w-[520px]">
+                        <h3 className="text-[28px] font-bold mb-4 leading-snug">
+                            How NYSTAI Products <br />
+                            Resolve These Issues <br />
+                            for Warehouse
+                        </h3>
 
-            {/* Second Section */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                {/* Right Content (Takes remaining space) */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                    <div className="max-w-[730px] p-5 md:px-0">
-                        <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Specialized Safeguarding
-                        </h2>
-                        <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                            <li>
-                                NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                            </li>
-                            <li>
-                                Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                            </li>
-                            <li>
-                                With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                            </li>
-                        </ul>
+                        <p className="text-[15px] leading-7 text-gray-700">
+                            NYSTAI’s warehouse safety solutions feature alert systems,
+                            emergency lighting, & advanced devices that protect workers
+                            & equipment in real time. By improving visibility &
+                            communication, NYSTAI reduces accidents & ensures safe,
+                            efficient warehouse operations.
+                        </p>
                     </div>
+
                 </div>
-
-                {/* Left Image (Fixed Width 650px) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
-                    <img
-                        src={threecardimg2}
-                        alt="Fire extinguisher"
-                        className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </div>
-
-            </div>
-
-            {/* Third Section */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                {/* Left Image (Fixed Width 650px) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
-                    <img
-                        src={threecardimg3}
-                        alt="Fire extinguisher"
-                        className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </div>
-
-                {/* Right Content (Takes remaining space) */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                    <div className="max-w-[730px] p-5 md:px-0">
-                        <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Specialized Safeguarding
-                        </h2>
-                        <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                            <li>
-                                NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                            </li>
-                            <li>
-                                Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                            </li>
-                            <li>
-                                With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
 
         </section>
@@ -320,7 +255,7 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-[30px] font-bold text-[#dc3545] mb-2">
                         FEATURES
                     </h2>
                     <p className="text-[15px] text-gray-600 tracking-wider">
@@ -352,17 +287,49 @@ function SectionFour() {
 function SectionFive() {
     return (
         <>
-            <section className="px-4 mb-7">
-                {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
-                        FEATURES OF AI-VMS
-                    </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
-                    </p>
-                </div>
+            <section className="max-w-[1540px] mx-auto px-4 mb-7">
+                <div className="relative h-[600px] lg:h-[600px] rounded-xl overflow-hidden">
+                    {/* Background Image */}
+                    <img
+                        src={overlayimg}
+                        alt="Warehouse worker with tablet in safety gear"
+                        className="w-full h-full object-cover"
+                    />
 
+                    {/* Dark Overlay */}
+                    <div className="absolute inset-0 bg-black/40"></div>
+
+                    {/* Content Card - Bottom Left */}
+                    <div className="absolute bottom-8 left-8 bg-white rounded-xl p-8 lg:p-10 max-w-xl">
+                        <h2 className="text-2xl lg:text-[30px] font-bold text-[#dc3545] mb-6">
+                            How NYSTAI Products Resolve These Issues
+                        </h2>
+
+                        <p className="text-gray-600 text-sm lg:text-[14px] mb-8 leading-relaxed">
+                            NYSTAI's warehouse safety solutions feature alert systems, emergency lighting, & advanced devices that protect workers
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-4 lg:gap-6">
+                            <div className="bg-[#f9f9f9] rounded-2xl p-4 lg:p-6">
+                                <div className="text-2xl lg:text-[22px] font-bold text-[#dc3545] mb-2">
+                                    120%
+                                </div>
+                                <p className="text-gray-700 text-xs lg:text-[14px]">
+                                    Certified folding performance is assured by this hinge
+                                </p>
+                            </div>
+
+                            <div className="bg-[#f9f9f9] rounded-2xl p-4 lg:p-6">
+                                <div className="text-xl lg:text-[22px] font-bold text-[#dc3545] mb-2">
+                                    16mbph
+                                </div>
+                                <p className="text-gray-700 text-xs lg:text-[14px]">
+                                    Certified folding performance is assured by this hinge
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     )

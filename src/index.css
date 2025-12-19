@@ -44,3 +44,15 @@
 html {
   scrollbar-width: none;
 }
+
+
+
+.slanted-panel {
+  clip-path: polygon(
+    0 6vw,                  /* 🔺 top-left slant */
+    100% 0,                 /* top-right */
+    100% 100%,              /* bottom-right */
+    0 calc(100% - 6vw)      /* 🔺 bottom-left slant */
+  );
+  border-radius: 32px;
+}

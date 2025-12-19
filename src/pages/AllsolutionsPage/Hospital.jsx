@@ -52,7 +52,7 @@ function Hero() {
                       sm:h-[50vh]    
                       md:h-[60vh]    
                       lg:h-[75vh]    
-                      xl:h-[85vh]    
+                      xl:h-[98vh]    
                       object-cover 
                       rounded-b-[20px]
                     "
