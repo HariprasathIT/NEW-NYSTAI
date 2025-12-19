@@ -40,6 +40,8 @@ import Worship from "./pages/AllsolutionsPage/Worship";
 import Vms from "./pages/AllsolutionsPage/Vms";
 import Hospital from "./pages/AllsolutionsPage/Hospital";
 import Banking from "./pages/AllsolutionsPage/Banking";
+import Retail from "./pages/AllsolutionsPage/Retail";
+import Parking from "./pages/AllsolutionsPage/Parking";
 
 // IMPORT CATEGORY PAGE
 
@@ -88,6 +90,8 @@ function App() {
         <Route path="/solutions/vms" element={<Vms />} />
         <Route path="/solutions/hospital" element={<Hospital />} />
         <Route path="/solutions/banking" element={<Banking />} />
+        <Route path="/solutions/retail" element={<Retail />} />
+        <Route path="/solutions/parking" element={<Parking />} />
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />

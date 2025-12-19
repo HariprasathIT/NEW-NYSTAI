@@ -50,7 +50,7 @@ function Hero() {
             rounded-b-[20px]
         "
                 />
-                
+
 
                 {/* LEFT Overlay Content */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center px-6 sm:px-10 md:px-[80px]">
@@ -323,7 +323,7 @@ function SectionFiveFAQ() {
         <section className="py-12 md:py-20">
             <div className="max-w-[1540px] mx-auto px-4">
 
-                <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center rounded-[15px]">
+                <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 gap-4 items-center rounded-[15px]">
 
                     {/* LEFT IMAGE */}
                     <div className="w-full">
@@ -340,7 +340,7 @@ function SectionFiveFAQ() {
                     </div>
 
                     {/* RIGHT CONTENT */}
-                    <div className="w-full">
+                    <div className="max-w-[690px] mx-auto p-6 sm:p-8 lg:p-0">
 
                         {/* Heading */}
                         <div className="text-center lg:text-left mb-8">
@@ -357,8 +357,10 @@ function SectionFiveFAQ() {
                             {faqs.map((faq, index) => (
                                 <div key={index} className="
                                     bg-[#D9D9D9] 
-                                    rounded-[15px] shadow-sm overflow-hidden
-                                ">
+                                    overflow-hidden
+                                "
+                                    style={{ borderRadius: "10px 10px 0px 0px" }}
+                                >
                                     <button
                                         onClick={() => toggleAccordion(index)}
                                         className="w-full px-4 sm:px-6 py-4 flex items-center justify-between text-left"
