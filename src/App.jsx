@@ -38,6 +38,7 @@ import Industrial from "./pages/AllsolutionsPage/Industry";
 import Education from "./pages/AllsolutionsPage/Education";
 import Worship from "./pages/AllsolutionsPage/Worship";
 import Vms from "./pages/AllsolutionsPage/Vms";
+import Hospital from "./pages/AllsolutionsPage/Hospital";
 
 // IMPORT CATEGORY PAGE
 
@@ -84,6 +85,7 @@ function App() {
         <Route path="/solutions/education" element={<Education />} />
         <Route path="/solutions/worship" element={<Worship />} />
         <Route path="/solutions/vms" element={<Vms />} />
+        <Route path="/solutions/hospital" element={<Hospital />} />
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />
