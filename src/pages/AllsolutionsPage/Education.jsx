@@ -213,7 +213,6 @@ function Sectiontwo() {
 
 function Sectionthree() {
 
-
     return (
         <>
             <section className="max-w-[1540px] mx-auto  px-4">

@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import vmsbanner from "../../assets/Images/Allsolutions-Images/Vms/vmsbanner.jpeg"
 
+import { Home, ShieldCheck, Cpu } from 'lucide-react';
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Vms/leftimg1.jpeg"
 
@@ -394,11 +395,68 @@ function SectionFive() {
                         className="w-full lg:h-[65vh] h-[350px] object-cover "
                     />
 
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                        <h3 className="text-white text-2xl font-semibold">
-                            {/* Smart • Secure • Scalable */}
-                        </h3>
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
+
+                        {/* Glassmorphism Container */}
+                        <div className="
+                            max-w-[600px] p-10 rounded-xl
+                            bg-white/10
+                            backdrop-blur-lg
+                            border border-white/20
+                            shadow-xl
+                        ">
+
+                            {/* Heading */}
+                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                                Smart • Secure • Scalable
+                            </h2>
+
+                            {/* Paragraph */}
+                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                                Empowering intelligent infrastructure with advanced security,
+                                seamless automation, and scalable IoT solutions.
+                            </p>
+
+                            {/* Glassmorphism Icons */}
+                            <div className="flex gap-6">
+
+                                {/* Item 1 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Data Security
+                                    </span>
+                                </div>
+
+                                {/* Item 2 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Smart Control
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
 
