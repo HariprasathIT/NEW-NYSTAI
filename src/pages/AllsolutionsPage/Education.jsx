@@ -28,7 +28,7 @@ const Education = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    
+
     return (
         <>
             <Hero />
@@ -242,55 +242,64 @@ function Sectionthree() {
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
 
-                        {/* Heading */}
-                        <h2 className="text-white text-2xl md:text-[30px] font-bold mb-5">
-                            Smart • Secure • Scalable
-                        </h2>
+                        {/* Glassmorphism Container */}
+                        <div className="
+                            max-w-[450px] p-8 rounded-xl
+                            bg-white/10
+                            backdrop-blur-lg
+                            border border-white/20
+                            shadow-xl
+                        ">
 
-                        {/* Paragraph */}
-                        <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-5 leading-relaxed">
-                            Empowering intelligent infrastructure with advanced security,
-                            seamless automation, and scalable IoT solutions built for the future.
-                        </p>
+                            {/* Heading */}
+                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                                Smart • Secure • Scalable
+                            </h2>
 
-                        {/* Glassmorphism Icons */}
-                        <div className="flex gap-6 md:gap-5">
+                            {/* Paragraph */}
+                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                                Empowering intelligent infrastructure with advanced security,
+                                seamless automation, and scalable IoT solutions.
+                            </p>
 
-                            {/* Card 1 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
+                            {/* Glassmorphism Icons */}
+                            <div className="flex gap-6">
+
+                                {/* Item 1 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Data Security
+                                    </span>
                                 </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
-                            </div>
 
-                            {/* Card 2 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
+                                {/* Item 2 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Smart Control
+                                    </span>
                                 </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
-                            </div>
 
-                            {/* Card 3 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
-                                </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -306,55 +315,64 @@ function Sectionthree() {
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
 
-                        {/* Heading */}
-                        <h2 className="text-white text-2xl md:text-[30px] font-bold mb-5">
-                            Smart • Secure • Scalable
-                        </h2>
+                        {/* Glassmorphism Container */}
+                        <div className="
+                            max-w-[500px] p-8 rounded-xl
+                            bg-white/10
+                            backdrop-blur-lg
+                            border border-white/20
+                            shadow-xl
+                        ">
 
-                        {/* Paragraph */}
-                        <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-5 leading-relaxed">
-                            Empowering intelligent infrastructure with advanced security,
-                            seamless automation, and scalable IoT solutions built for the future.
-                        </p>
+                            {/* Heading */}
+                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                                Smart • Secure • Scalable
+                            </h2>
 
-                        {/* Glassmorphism Icons */}
-                        <div className="flex gap-6 md:gap-5">
+                            {/* Paragraph */}
+                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                                Empowering intelligent infrastructure with advanced security,
+                                seamless automation, and scalable IoT solutions.
+                            </p>
 
-                            {/* Card 1 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
+                            {/* Glassmorphism Icons */}
+                            <div className="flex gap-6">
+
+                                {/* Item 1 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Data Security
+                                    </span>
                                 </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
-                            </div>
 
-                            {/* Card 2 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
+                                {/* Item 2 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Smart Control
+                                    </span>
                                 </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
-                            </div>
 
-                            {/* Card 3 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
-                                </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -370,55 +388,64 @@ function Sectionthree() {
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
 
-                        {/* Heading */}
-                        <h2 className="text-white text-2xl md:text-[30px] font-bold mb-5">
-                            Smart • Secure • Scalable
-                        </h2>
+                        {/* Glassmorphism Container */}
+                        <div className="
+                            max-w-[550px] p-8 rounded-xl
+                            bg-white/10
+                            backdrop-blur-lg
+                            border border-white/20
+                            shadow-xl
+                        ">
 
-                        {/* Paragraph */}
-                        <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-5 leading-relaxed">
-                            Empowering intelligent infrastructure with advanced security,
-                            seamless automation, and scalable IoT solutions built for the future.
-                        </p>
+                            {/* Heading */}
+                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                                Smart • Secure • Scalable
+                            </h2>
 
-                        {/* Glassmorphism Icons */}
-                        <div className="flex gap-6 md:gap-5">
+                            {/* Paragraph */}
+                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                                Empowering intelligent infrastructure with advanced security,
+                                seamless automation, and scalable IoT solutions.
+                            </p>
 
-                            {/* Card 1 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
+                            {/* Glassmorphism Icons */}
+                            <div className="flex gap-6">
+
+                                {/* Item 1 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Data Security
+                                    </span>
                                 </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
-                            </div>
 
-                            {/* Card 2 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
+                                {/* Item 2 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Smart Control
+                                    </span>
                                 </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
-                            </div>
 
-                            {/* Card 3 */}
-                            <div className='flex items-center gap-6 md:gap-5'>
-                                <div className="flex flex-col items-center justify-center w-28 h-28 md:w-[45px] md:h-[45px] rounded-full 
-        bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-                                    <ShieldCheck size={20} className="text-white" />
-                                </div>
-                                <span className="text-white text-sm font-medium">
-                                    Data Security
-                                </span>
                             </div>
-
                         </div>
                     </div>
                 </div>

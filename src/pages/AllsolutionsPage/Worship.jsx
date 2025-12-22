@@ -15,6 +15,7 @@ import threecardimg3 from "../../assets/Images/Allsolutions-Images/Worship/cardi
 import featureicon from "../../assets/Images/Allsolutions-Images/Worship/icon.png"
 
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
+import { ShieldCheck } from 'lucide-react'
 
 const Worship = () => {
 
@@ -351,10 +352,66 @@ function SectionFive() {
                         className="w-full h-auto"
                     />
 
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                        <h3 className="text-white text-2xl font-semibold">
-                            {/* Smart • Secure • Scalable */}
-                        </h3>
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
+
+                        {/* Glassmorphism Container */}
+                        <div className="
+                            max-w-[600px] p-8 rounded-xl
+                            bg-white/10
+                            backdrop-blur-lg
+                            border border-white/20
+                            shadow-xl
+                        ">
+
+                            {/* Heading */}
+                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                                Smart • Secure • Scalable
+                            </h2>
+
+                            {/* Paragraph */}
+                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                                Empowering intelligent infrastructure with advanced security,
+                                seamless automation, and scalable IoT solutions.
+                            </p>
+
+                            {/* Glassmorphism Icons */}
+                            <div className="flex gap-6">
+
+                                {/* Item 1 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Data Security
+                                    </span>
+                                </div>
+
+                                {/* Item 2 */}
+                                <div className="flex items-center gap-4">
+                                    <div className="
+                                        flex items-center justify-center
+                                        w-[45px] h-[45px] rounded-full
+                                        bg-white/15 backdrop-blur-md
+                                        border border-white/30
+                                        shadow-lg
+                                    ">
+                                        <ShieldCheck size={20} className="text-white" />
+                                    </div>
+                                    <span className="text-white text-sm font-medium">
+                                        Smart Control
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 

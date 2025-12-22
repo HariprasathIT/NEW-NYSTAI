@@ -108,7 +108,7 @@ function Formdesign() {
                 <img src={call} alt="" />
                 <h4 className="font-semibold text-lg">Phone</h4>
                 <p className="text-gray-600 text-[15px]">Mon-Fri from 8am to 5pm</p>
-                <p className="text-[#ffc107] text-[20px] font-bold">+91 81899 97770</p>
+                <p className="text-[#ffc107] text-[20px] font-bold">+91 81899 77700</p>
               </div>
 
               {/* Office Section */}

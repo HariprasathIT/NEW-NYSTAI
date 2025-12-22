@@ -132,7 +132,7 @@ function SectionTwo() {
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                         <div className="transform transition-all duration-1000 group-hover:-translate-y-4">
-                            <h3 className="text-2xl sm:text-3xl font-bold mb-3">Strategic Planning</h3>
+                            <h3 className="text-2xl sm:text-[25px] font-bold mb-3">Strategic Planning</h3>
 
                             <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
                                 transition-all duration-1000 ease-out 
@@ -163,7 +163,7 @@ function SectionTwo() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-xl sm:text-2xl font-bold mb-2">
+                                <h4 className="text-xl sm:text-[25px] font-bold mb-2">
                                     Team Collaboration
                                 </h4>
 
@@ -193,7 +193,7 @@ function SectionTwo() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-xl sm:text-2xl font-bold mb-2">
+                                <h4 className="text-xl sm:text-[25px] font-bold mb-2">
                                     Data Analytics
                                 </h4>
 
@@ -307,8 +307,8 @@ function SectionThree() {
 function SectionFour() {
     return (
         <>
-            <div className="mt-10">
-                <img src={ser6} className='w-full h-[540px]' alt="" style={{ objectFit: "cover" }} />
+            <div className="mt-10 px-4 ">
+                <img src={ser6} className='w-full h-[540px] rounded-xl' alt="" style={{ objectFit: "cover" }} />
             </div>
         </>
     )
