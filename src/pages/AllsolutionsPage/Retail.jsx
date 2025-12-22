@@ -206,7 +206,8 @@ function Sectionthree() {
         { question: "Real-Time Alerts", answer: "The Maiden Unified Platform is an all-in-one solution that integrates video surveillance, alarm systems.", image: Faqimg4 },
         { question: "Easy Live View", answer: "Our access control system allows you to manage and monitor entry points remotely, set permissions for different users, and track all access events in real-time.", image: Faqimg2 },
         { question: "Smart Playback", answer: "Yes, our platform supports integration with most major security camera brands and protocols, making it easy to incorporate your existing equipment.", image: Faqimg3 },
-        { question: "Customizable Motion Zone", answer: "Absolutely! The Maiden Unified Platform is designed to scale seamlessly from small offices to large enterprises with multiple locations.", image: Faqimg1 }
+        { question: "Customizable Motion Zone", answer: "Absolutely! The Maiden Unified Platform is designed to scale seamlessly from small offices to large enterprises with multiple locations.", image: Faqimg1 },
+        { question: "Motion Zone", answer: "Absolutely! The Maiden Unified Platform is designed to scale seamlessly from small offices to large enterprises with multiple locations.", image: Faqimg1 }
     ];
 
     const toggleAccordion = (index) => {
@@ -217,7 +218,7 @@ function Sectionthree() {
         <section className="py-12 md:py-20">
             <div className="max-w-[1540px] mx-auto px-4">
 
-                <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 gap-0 items-center rounded-[15px]">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center rounded-[15px]">
 
                     {/* LEFT CONTENT */}
                     <div className="max-w-[650px] mx-auto p-6 sm:p-8 lg:p-0">
@@ -236,7 +237,7 @@ function Sectionthree() {
                         <div className="space-y-3">
                             {faqs.map((faq, index) => (
                                 <div key={index} className="
-                                    bg-[#D9D9D9] 
+                                    bg-[#f5f5f5] 
                                     overflow-hidden
                                 "
                                     style={{ borderRadius: "10px 10px 0px 0px" }}
@@ -249,9 +250,9 @@ function Sectionthree() {
                                             {faq.question}
                                         </span>
 
-                                        <div className="rounded-full p-2 border border-white">
+                                        <div className="rounded-full p-2 border border-gray-400 flex items-center justify-center">
                                             <ChevronDown
-                                                className={`w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                                                className={`w-4 h-4 sm:w-5 sm:h-5 text-gray-400 transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
                                                     }`}
                                             />
                                         </div>
