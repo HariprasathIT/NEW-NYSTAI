@@ -348,7 +348,7 @@ function SectionFive() {
 
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                         <h3 className="text-white text-2xl font-semibold">
-                            Smart • Secure • Scalable
+                            {/* Smart • Secure • Scalable */}
                         </h3>
                     </div>
                 </div>

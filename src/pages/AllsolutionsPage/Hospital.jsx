@@ -30,7 +30,7 @@ const Hospital = () => {
             <Sectiontwo />
             <Sectionthree />
             <SectionFour />
-            <SectionFive />
+            {/* <SectionFive /> */}
         </>
     )
 }
@@ -341,7 +341,7 @@ function SectionFour() {
     ];
     return (
         <>
-            <section className="max-w-[1540px] mx-auto px-4">
+            <section className="max-w-[1540px] mx-auto px-4 mb-10">
                 {/* Header */}
                 <div className="text-center py-16">
                     <h2 className="text-[30px] font-bold text-red-600 mb-2">
