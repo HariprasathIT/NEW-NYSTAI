@@ -95,7 +95,6 @@ const NystaiFooter = () => {
                     </div>
                 </div>
             </footer>
-
         </>
     )
 }
