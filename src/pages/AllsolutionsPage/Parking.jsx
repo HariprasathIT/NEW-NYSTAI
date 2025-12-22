@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import parkingiotbanner from "../../assets/Images/Allsolutions-Images/Parking/parkingbanner.jpeg"
 
@@ -21,6 +21,11 @@ import featureicon from "../../assets/Images/Allsolutions-Images/Vms/featureicon
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
 
 const Parking = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />
@@ -368,7 +373,7 @@ function SectionFour() {
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center bg-[#f5f5f5] p-7 rounded-xl">
                             <div className="w-15 h-15 flex items-center justify-center mb-6">
-                                <img src={feature.icon} alt="feature icon" className="w-full h-full object-contain" />
+                                <img src={feature.icon} alt="feature icon" className="w-full h-[72px] object-contain" />
                             </div>
                             <h3 className="text-[20px] font-semibold mb-3">
                                 {feature.title}

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import hospitalbanner from "../../assets/Images/Allsolutions-Images/Hospital/hospitalbanner.jpeg"
 
@@ -24,6 +24,11 @@ import featureicon from "../../assets/Images/Allsolutions-Images/Vms/featureicon
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
 
 const Hospital = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />

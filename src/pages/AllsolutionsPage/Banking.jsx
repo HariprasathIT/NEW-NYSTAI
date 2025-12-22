@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import bankingbanner from "../../assets/Images/Allsolutions-Images/Banking/bankingbanner.png"
 
@@ -17,6 +17,11 @@ import gridimg4 from "../../assets/Images/Allsolutions-Images/Banking/gridimg4.j
 import featureicon from "../../assets/Images/Allsolutions-Images/Banking/icon.png"
 
 const Banking = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />
@@ -302,7 +307,7 @@ function SectionFour() {
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center bg-[#f5f5f5] p-7 rounded-xl">
                             <div className="w-15 h-15 flex items-center justify-center mb-6">
-                                <img src={feature.icon} alt="feature icon" className="w-full h-full object-contain" />
+                                <img src={feature.icon} alt="feature icon" className="w-full h-[72px] object-contain" />
                             </div>
                             <h3 className="text-[20px] font-semibold mb-3">
                                 {feature.title}

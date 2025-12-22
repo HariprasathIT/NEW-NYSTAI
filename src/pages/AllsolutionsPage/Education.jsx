@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { Home, ShieldCheck, Cpu } from 'lucide-react';
 
@@ -24,6 +24,11 @@ import icon4 from "../../assets/Images/Allsolutions-Images/Industry/icon4.png"
 
 
 const Education = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <>
             <Hero />

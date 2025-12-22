@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import nyslogo from "../../assets/nyslogo.png";
 
 const Navbar = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [productsMegaMenuOpen, setProductsMegaMenuOpen] = useState(false);

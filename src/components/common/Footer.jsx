@@ -10,10 +10,8 @@ const NystaiFooter = () => {
                         <div class="lg:mx-auto text-left">
                             <img src={nyslogo} alt="" className="h-[50px]" />
                             <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
-                            <Link to="/support">
-                                <a href="#" class="py-2.5 px-5 h-9 block w-fit bg-[#dc3545] rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 lg:mx-0">
-                                    Contact us
-                                </a>
+                            <Link to="/support" class="py-2.5 px-5 h-9 block w-fit bg-[#dc3545] rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 lg:mx-0">
+                                Contact us
                             </Link>
                         </div>
                         <div class="lg:mx-auto text-left ">
@@ -54,10 +52,10 @@ const NystaiFooter = () => {
                         <div class="lg:mx-auto text-left ">
                             <h4 class="text-lg text-gray-900 font-medium mb-7">Subscribe</h4>
                             <p class="text-sm text-gray-500 leading-6 mb-7">Subscribe to get the latest news from us</p>
-                            <a href="#" class="flex items-center justify-center gap-2 border border-[#dc3545] rounded-full py-3 px-6 w-fit lg:mx-0  text-sm text-[#dc3545] font-semibold transition-all duration-500">Subscribe<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <Link to="/support" class="flex items-center justify-center gap-2 border border-[#dc3545] rounded-full py-3 px-6 w-fit lg:mx-0  text-sm text-[#dc3545] font-semibold transition-all duration-500">Subscribe<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5" stroke="#dc3545" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div class="py-7 border-t border-gray-200">

@@ -1,6 +1,11 @@
-import React from "react";
+import { useEffect } from "react";
 
 const Warranty = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <section className="w-full bg-white py-10 lg:mt-14 mt-7 md:px-10">
             <div className="max-w-[1540px] mx-auto space-y-7 px-4 text-gray-700 leading-relaxed">

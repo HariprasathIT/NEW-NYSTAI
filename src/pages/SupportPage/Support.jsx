@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import supportbanner from "../../assets/Images/Support-Images/supportban.jpeg"
 
 import message from "../../assets/Images/Support-Images/messageicon.png"
@@ -10,6 +10,11 @@ import support from "../../assets/Images/Support-Images/support.jpeg"
 import partner from "../../assets/Images/Support-Images/partner.jpeg"
 
 const Support = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Hero />
@@ -75,7 +80,6 @@ function Hero() {
     </>
   )
 }
-
 
 function Formdesign() {
   return (

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import retailbanner from "../../assets/Images/Allsolutions-Images/Retail/retailbanner.jpeg"
 
@@ -19,6 +19,11 @@ import Faqimg4 from "../../assets/Images/Services-Images/faqimg4.jpeg"
 import { ChevronDown, Shield, Camera, Bell, Video, Home, Clock } from 'lucide-react'
 
 const Retail = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />
@@ -370,7 +375,7 @@ function SectionFour() {
                         {/* CTA Button */}
                         <button className="bg-[#dc3545] hover:bg-[#dc3545] text-[14px] rounded-3xl text-white font-semibold px-8 py-3 transition-colors">
                             VIEW PRODUCTS
-                        </button>   
+                        </button>
                     </div>
                 </div>
             </section>

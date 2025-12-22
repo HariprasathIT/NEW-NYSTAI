@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { Home } from 'lucide-react';
 
@@ -13,6 +13,11 @@ import icon3 from "../../assets/Images/Allsolutions-Images/Industry/icon3.png"
 import icon4 from "../../assets/Images/Allsolutions-Images/Industry/icon4.png"
 
 const Industrial = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />
@@ -250,7 +255,7 @@ function Sectionthree() {
 
     return (
         <>
-        
+
             <section className="max-w-[1520px] mx-auto bg-[#f9f9f9] rounded-lg mt-10">
 
                 <div className='p-10 pt-5'>

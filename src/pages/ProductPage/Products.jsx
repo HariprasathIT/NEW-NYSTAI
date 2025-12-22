@@ -9,6 +9,11 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 
 const Productpage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const [category, setCategory] = useState(null);
   const [loading, setLoading] = useState(true);

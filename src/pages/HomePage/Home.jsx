@@ -66,6 +66,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="w-full">
             <HeroSection />
@@ -75,7 +79,8 @@ const Home = () => {
             <Waterlevelontroller />
             <WhyNystai />
             <PartnersLogo />
-            <Testimonial />
+            {/* <Testimonial /> */}
+            <Card2 />
         </div>
     );
 };
@@ -684,10 +689,19 @@ function Waterlevelontroller() {
                                                 Mobile and Desktop connectivity for remote access.
                                             </span>
                                         </div>
+
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Smartphone className="w-5 h-5 text-white" />
+                                            </div>
+                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                                Mobile and Desktop connectivity for remote access.
+                                            </span>
+                                        </div>
                                     </div>
 
                                     {/* Button */}
-                                    <button className="
+                                    {/* <button className="
                         flex items-center gap-2
                         px-6 py-2 bg-[#dc3545] text-white
                         font-medium rounded-full shadow
@@ -695,7 +709,7 @@ function Waterlevelontroller() {
                     ">
                                         View More
                                         <span className="text-lg">→</span>
-                                    </button>
+                                    </button> */}
 
                                 </div>
 
@@ -849,7 +863,7 @@ function PartnersLogo() {
     const row2 = partners.slice(10, 20);
 
     return (
-        <section className="max-w-[1540px] mx-auto py-16 px-4 bg-white">
+        <section className="max-w-[1540px] mx-auto py-5 px-4 bg-white">
 
             <div className="pb-8 sm:pb-10">
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
@@ -907,7 +921,7 @@ function PartnersLogo() {
                 {row2.map((logo, i) => (
                     <SwiperSlide key={`row2-${i}`}>
                         <div className="h-24 bg-[#f5f5f5] rounded-xl flex items-center justify-center shadow-sm">
-                            <img src={logo} className="w-[100px] object-contain" />
+                            <img src={logo} className="w-[75px] object-contain" />
                         </div>
                     </SwiperSlide>
                 ))}
@@ -975,3 +989,220 @@ function Testimonial() {
         </>
     );
 }
+
+const Card2 = () => {
+    const testimonials = [
+        {
+            name: "vasudevan p.k",
+            role: "Electrical contractor",
+            text: "The most recommended water saver.The device has been installed in my house a year back and it's doing a great job.",
+            rating: 5
+        },
+        {
+            name: "KAVERY GROUP OF COMPANIES",
+            role: "Ginnings Mills",
+            text: "Best Wireless Tank Water Level manager. Recommend this rather than go for long wires to the sump and overhead tanks. No manual intervention required.",
+            rating: 5
+        },
+        {
+            name: "Ishwarya RajendraKumar k",
+            role: "Home Maker",
+            text: "The most recommended water saver.The device has been installed in my house a year back and it's doing a great job.",
+            rating: 5
+        },
+        {
+            name: "Hari Prasath.S",
+            role: "Software Developer",
+            text: "I've a excellent experience with Adhiba Technologies and their innovative smart class sensors. The quality and functionality of their sensors have greatly enhanced !!!",
+            rating: 5
+        },
+        {
+            name: "Selva Kumar.P",
+            role: "Civil Engineer",
+            text: "Wireless Tank Manager - Adhiba Labs Private Limited I have been using it for the last 6 months and it's very nice, no worries about water wastage..",
+            rating: 5
+        },
+        {
+            name: "Logaraj Logu",
+            role: "Auditor",
+            text: "Working perfect! We installed in our lodge We have been using SS Sensors type for past 5 years Recommend for commercial purposes!!!!",
+            rating: 5
+        },
+        {
+            name: "Boopathi.S",
+            role: "Farmer",
+            text: "Really a good product & must recommended one.i had Installed this device 6months back & working with perfect conditions.",
+            rating: 5
+        },
+        {
+            name: "Karthikeyan R",
+            role: "Electrician",
+            text: "Excellent product! I installed it recently and the performance is outstanding. Highly recommended for everyone.",
+            rating: 5
+        }
+    ];
+
+    const testimonials2 = [
+        {
+            name: "vasudevan p.k",
+            role: "Electrical contractor",
+            text: "The most recommended water saver.The device has been installed in my house a year back and it's doing a great job.",
+            rating: 5
+        },
+        {
+            name: "KAVERY GROUP OF COMPANIES",
+            role: "Ginnings Mills",
+            text: "Best Wireless Tank Water Level manager. Recommend this rather than go for long wires to the sump and overhead tanks. No manual intervention required.",
+            rating: 5
+        },
+        {
+            name: "Ishwarya RajendraKumar k",
+            role: "Home Maker",
+            text: "The most recommended water saver.The device has been installed in my house a year back and it's doing a great job.",
+            rating: 5
+        },
+        {
+            name: "Hari Prasath.S",
+            role: "Software Developer",
+            text: "I've a excellent experience with Adhiba Technologies and their innovative smart class sensors. The quality and functionality of their sensors have greatly enhanced !!!",
+            rating: 5
+        },
+        {
+            name: "Selva Kumar.P",
+            role: "Civil Engineer",
+            text: "Wireless Tank Manager - Adhiba Labs Private Limited I have been using it for the last 6 months and it's very nice, no worries about water wastage..",
+            rating: 5
+        },
+        {
+            name: "Logaraj Logu",
+            role: "Auditor",
+            text: "Working perfect! We installed in our lodge We have been using SS Sensors type for past 5 years Recommend for commercial purposes!!!!",
+            rating: 5
+        },
+        {
+            name: "Boopathi.S",
+            role: "Farmer",
+            text: "Really a good product & must recommended one.i had Installed this device 6months back & working with perfect conditions.",
+            rating: 5
+        },
+        {
+            name: "Karthikeyan R",
+            role: "Electrician",
+            text: "Excellent product! I installed it recently and the performance is outstanding. Highly recommended for everyone.",
+            rating: 5
+        }
+    ];
+
+    const duplicatedTestimonials = [...testimonials, ...testimonials2];
+    const reversedTestimonials = [...duplicatedTestimonials].reverse();
+
+    const renderStars = (rating) => {
+        return Array.from({ length: rating }, (_, i) => (
+            <span key={i} className="text-[#ffB000] text-base">★</span>
+        ));
+    };
+
+    return (
+        <>
+            <style>{`
+        @keyframes scrollUp {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+        .animate-scroll-60 {
+          animation: scrollUp 60s linear infinite;
+        }
+        .animate-scroll-70 {
+          animation: scrollUp 70s linear infinite;
+        }
+        .testimonial-column:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+
+            <div className="flex justify-center items-center gap-10 px-5 py-15 w-full h-[325px] my-[70px] overflow-hidden max-lg:gap-[30px] max-md:flex-col max-md:gap-10 max-md:py-10">
+                {/* Left Column */}
+                <div className="testimonial-column flex flex-col gap-5 w-[500px] animate-scroll-60 max-lg:w-[330px] max-md:w-full max-md:max-w-[400px] max-md:hidden">
+                    {duplicatedTestimonials.map((testimonial, index) => (
+                        <div key={`left-${index}`} className="bg-white rounded-[10px] p-5 shadow-[5px_5px_20px_5px_rgba(0,0,0,0.09)] transition-all duration-300 min-h-[180px] flex flex-col gap-[15px] hover:translate-y-[-5px] hover:shadow-[5px_5px_25px_5px_rgba(0,0,0,0.15)] max-sm:min-h-[160px]">
+                            <div className="flex items-center gap-[15px]">
+                                <div className="h-[50px] w-[50px] min-w-[50px] rounded-full bg-[#f5f5f5] flex justify-center items-center">
+                                    {/* <img
+                                        src="/IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/homepage-testimonal-logo.webp"
+                                        alt="logo"
+                                        className="h-5 w-auto"
+                                    /> */}
+                                </div>
+                                <div>
+                                    <h4 className="text-black text-sm font-bold m-0 capitalize">{testimonial.name}</h4>
+                                    <h6 className="text-[#666] text-xs font-medium mt-[5px] mb-0">{testimonial.role}</h6>
+                                </div>
+                            </div>
+                            <p className="text-[#3c3c3c] text-[15px] font-normal leading-[1.5] m-0 flex-grow">"{testimonial.text}"</p>
+                            <div className="flex gap-[2px]">{renderStars(testimonial.rating)}</div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Center Text */}
+                <div className="text-center px-10 min-w-[300px] max-md:order-[-1] max-md:px-5">
+                    <h4 className="uppercase text-[33px] text-[#E31E24] m-0 font-semibold max-lg:text-lg max-sm:text-base">DON'T JUST TAKE</h4>
+                    <h2 className="text-[#3c3c3c] text-[33px] font-normal leading-[1.2] m-0 max-lg:text-4xl max-md:text-[32px] max-sm:text-[28px]">
+                        OUR WORD<br />
+                        <b className="text-[#E31E24] text-[33px] max-lg:text-4xl max-md:text-[32px] max-sm:text-[28px]">FOR IT</b>
+                    </h2>
+                </div>
+
+                {/* Right Column */}
+                <div className="testimonial-column flex flex-col gap-5 w-[500px] animate-scroll-70 max-lg:w-[330px] max-md:w-full max-md:max-w-[400px] max-md:hidden">
+                    {reversedTestimonials.map((testimonial, index) => (
+                        <div key={`right-${index}`} className="bg-white rounded-[10px] p-5 shadow-[5px_5px_20px_5px_rgba(0,0,0,0.09)] transition-all duration-300 min-h-[180px] flex flex-col gap-[15px] hover:translate-y-[-5px] hover:shadow-[5px_5px_25px_5px_rgba(0,0,0,0.15)] max-sm:min-h-[160px]">
+                            <div className="flex items-center gap-[15px]">
+                                <div className="h-[50px] w-[50px] min-w-[50px] rounded-full bg-[#f5f5f5] flex justify-center items-center">
+                                    {/* <img
+                                        src="/IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/homepage-testimonal-logo.webp"
+                                        alt="logo"
+                                        className="h-5 w-auto"
+                                    /> */}
+                                </div>
+                                <div>
+                                    <h4 className="text-black text-sm font-bold m-0 capitalize">{testimonial.name}</h4>
+                                    <h6 className="text-[#666] text-xs font-medium mt-[5px] mb-0">{testimonial.role}</h6>
+                                </div>
+                            </div>
+                            <p className="text-[#3c3c3c] text-[15px] font-normal leading-[1.5] m-0 flex-grow">"{testimonial.text}"</p>
+                            <div className="flex gap-[2px]">{renderStars(testimonial.rating)}</div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Left Column - Mobile Only */}
+                <div className="testimonial-column hidden max-md:flex flex-col gap-5 w-full max-w-[400px] animate-scroll-60">
+                    {duplicatedTestimonials.map((testimonial, index) => (
+                        <div key={`mobile-${index}`} className="bg-white rounded-[10px] p-5 shadow-[5px_5px_20px_5px_rgba(0,0,0,0.09)] transition-all duration-300 min-h-[180px] flex flex-col gap-[15px] hover:translate-y-[-5px] hover:shadow-[5px_5px_25px_5px_rgba(0,0,0,0.15)] max-sm:min-h-[160px]">
+                            <div className="flex items-center gap-[15px]">
+                                <div className="h-[50px] w-[50px] min-w-[50px] rounded-full bg-[#f5f5f5] flex justify-center items-center">
+                                    <img
+                                        src="/IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/homepage-testimonal-logo.webp"
+                                        alt="logo"
+                                        className="h-5 w-auto"
+                                    />
+                                </div>
+                                <div>
+                                    <h4 className="text-black text-sm font-bold m-0 capitalize">{testimonial.name}</h4>
+                                    <h6 className="text-[#666] text-xs font-medium mt-[5px] mb-0">{testimonial.role}</h6>
+                                </div>
+                            </div>
+                            <p className="text-[#3c3c3c] text-[15px] font-normal leading-[1.5] m-0 flex-grow">"{testimonial.text}"</p>
+                            <div className="flex gap-[2px]">{renderStars(testimonial.rating)}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </>
+    );
+};

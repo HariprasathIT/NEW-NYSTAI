@@ -11,6 +11,11 @@ import camerapost from "../../assets/Images/Protectplan-Images/post.png"
 import { BadgeCheck } from 'lucide-react'
 
 const Protectplan = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />

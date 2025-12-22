@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import planbanner from "../../assets/Images/Services-Images/Servicebanner.jpeg"
 
 import ser1 from "../../assets/Images/Services-Images/ser1.jpeg"
@@ -18,6 +18,11 @@ import Faqimg4 from "../../assets/Images/Services-Images/faqimg4.jpeg"
 import { ChevronDown } from 'lucide-react'
 
 const Service = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />
