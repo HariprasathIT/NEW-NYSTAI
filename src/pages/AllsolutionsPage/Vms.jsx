@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import vmsbanner from "../../assets/Images/Allsolutions-Images/Vms/vmsbanner.jpeg"
 
+
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Vms/leftimg1.jpeg"
 
 import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
@@ -18,7 +19,7 @@ import threecardimg3 from "../../assets/Images/Allsolutions-Images/Worship/cardi
 
 import featureicon from "../../assets/Images/Allsolutions-Images/Vms/featureicon.png"
 
-import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
+import vmsvideo1 from "../../assets/Images/Allsolutions-Images/Vms/vms-video-1.mp4"
 
 const Vms = () => {
     return (
@@ -39,23 +40,58 @@ function Hero() {
     return (
         <>
             {/* CATEGORY BANNER */}
-            <div className="w-full">
+            <section className="relative w-full">
+                {/* Banner Image */}
                 <img
                     src={vmsbanner}
                     alt="Category Banner"
                     className="
-                      w-full 
-                      h-[50vh]       
-                      sm:h-[50vh]    
-                      md:h-[60vh]    
-                      lg:h-[75vh]    
-                      xl:h-[98vh]    
-                      object-cover 
-                      rounded-b-[20px]
+                        w-full
+                        h-[50vh]
+                        sm:h-[50vh]
+                        md:h-[60vh]
+                        lg:h-[75vh]
+                        xl:h-[98vh]
+                        object-cover
+                        rounded-b-[20px]
                     "
                 />
-            </div>
 
+                {/* RIGHT Overlay Content */}
+                <div className="absolute inset-0 flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
+                    <div className="max-w-xl text-right">
+
+                        {/* Title */}
+                        <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-[#474747] leading-snug">
+                            Smart VMS Solutions
+                        </h1>
+
+                        {/* Divider */}
+                        <div className="ml-auto w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#474747]" />
+
+                        {/* Description */}
+                        <p className="mt-3 sm:mt-4 text-[#474747] text-xs sm:text-sm md:text-base leading-relaxed">
+                            Advanced video management systems delivering real-time monitoring,
+                            AI-powered analytics, and centralized security control.
+                        </p>
+
+                        {/* Button */}
+                        <button
+                            className="
+                                mt-5 sm:mt-6
+                                bg-red-600 text-white
+                                px-5 sm:px-6 py-2.5 sm:py-3
+                                rounded-full font-semibold
+                                hover:bg-red-700 transition-colors
+                                text-xs sm:text-sm md:text-[14px]
+                            "
+                        >
+                            Explore VMS Solutions
+                        </button>
+
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
@@ -345,17 +381,17 @@ function SectionFive() {
 
                 <div className="relative w-full mx-auto rounded-xl overflow-hidden">
                     <video
-                        src={video1}
+                        src={vmsvideo1}
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="w-full h-auto"
+                        className="w-full lg:h-[65vh] h-[350px] object-cover "
                     />
 
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                         <h3 className="text-white text-2xl font-semibold">
-                            Smart • Secure • Scalable
+                            {/* Smart • Secure • Scalable */}
                         </h3>
                     </div>
                 </div>

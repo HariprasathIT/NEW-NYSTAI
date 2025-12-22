@@ -5,7 +5,7 @@ import ser1 from "../../assets/Images/Services-Images/ser1.jpeg"
 import ser2 from "../../assets/Images/Services-Images/ser2.jpeg"
 import ser3 from "../../assets/Images/Services-Images/ser3.jpeg"
 
-import ser4 from "../../assets/Images/Services-Images/ser4.jpeg"
+import ser4Video from "../../assets/Images/Services-Images/service-video-1.mp4"
 import ser5 from "../../assets/Images/Services-Images/ser5.jpeg"
 
 import ser6 from "../../assets/Images/Services-Images/ser6.jpeg"
@@ -226,19 +226,23 @@ function SectionThree() {
             {/* FIRST SECTION */}
             <div className="flex flex-col md:flex-row items-center gap-6 mb-10">
 
-                {/* Image FIRST on mobile */}
+                {/* VIDEO (Service) */}
                 <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group order-1 md:order-1">
-                    <img
-                        src={ser4}
-                        alt="Specialized Safeguarding"
+                    <video
+                        src={ser4Video}   // import your service video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                         className="
-                w-full 
-                h-[260px] sm:h-[320px] md:h-[400px] lg:h-[420px] 
-                object-cover 
-                transition-transform duration-500 group-hover:scale-110
-            "
+            w-full
+            h-[260px] sm:h-[320px] md:h-[400px] lg:h-[420px]
+            object-cover
+            transition-transform duration-500 group-hover:scale-110
+        "
                     />
                 </div>
+
 
                 {/* Text SECOND on mobile */}
                 <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto md:h-[400px] order-2 md:order-2">

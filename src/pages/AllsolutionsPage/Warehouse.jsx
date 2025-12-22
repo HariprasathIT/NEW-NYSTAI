@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import vmsbanner from "../../assets/Images/Allsolutions-Images/Warehouse/warehousebanner.jpeg"
+import warehousebanner from "../../assets/Images/Allsolutions-Images/Warehouse/warehousebanner.jpeg"
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Warehouse/leftimg1.jpeg"
 
@@ -39,23 +39,59 @@ function Hero() {
     return (
         <>
             {/* CATEGORY BANNER */}
-            <div className="w-full">
+            <section className="relative w-full">
+                {/* Banner Image */}
                 <img
-                    src={vmsbanner}
-                    alt="Category Banner"
+                    src={warehousebanner}
+                    alt="Warehouse Banner"
                     className="
-                      w-full 
-                      h-[50vh]       
-                      sm:h-[50vh]    
-                      md:h-[60vh]    
-                      lg:h-[75vh]    
-                      xl:h-[98vh]    
-                      object-cover 
-                      rounded-b-[20px]
+                        w-full
+                        h-[50vh]
+                        sm:h-[50vh]
+                        md:h-[60vh]
+                        lg:h-[75vh]
+                        xl:h-[98vh]
+                        object-cover
+                        rounded-b-[20px]
                     "
                 />
-            </div>
 
+                {/* LEFT Overlay Content */}
+                <div className="absolute inset-0 flex px-6 sm:px-10 md:px-[80px] top-[100px] lg:top-[150px] xl:top-[200px]">
+                    <div className="max-w-xl text-left">
+
+                        {/* Title */}
+                        <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-[#474747] leading-snug">
+                            Smart Warehouse Solutions
+                        </h1>
+
+                        {/* Divider */}
+                        <div className="w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#474747]" />
+
+                        {/* Description */}
+                        <p className="mt-3 sm:mt-4 text-[#474747] text-xs sm:text-sm md:text-base leading-relaxed">
+                            Intelligent warehouse management systems designed to improve safety,
+                            optimize operations, and provide real-time visibility across storage
+                            and logistics workflows.
+                        </p>
+
+                        {/* Button */}
+                        <button
+                            className="
+                                mt-5 sm:mt-6
+                                bg-red-600 text-white
+                                px-5 sm:px-6 py-2.5 sm:py-3
+                                rounded-full font-semibold
+                                hover:bg-red-700 transition-colors
+                                text-xs sm:text-sm md:text-[14px]
+                            "
+                        >
+                            Explore Warehouse Solutions
+                        </button>
+
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

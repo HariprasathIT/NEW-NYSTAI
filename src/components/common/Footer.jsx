@@ -1,40 +1,54 @@
 import nyslogo from "../../assets/nyslogo.png"
+import { Link } from "react-router-dom";
 
 const NystaiFooter = () => {
     return (
         <>
             <footer class="w-full bg-[#f5f5f5]" style={{ borderRadius: "30px 30px 0px 0px" }}>
-                <div class="mx-auto max-w-[1540px] px-4 sm:px-6 lg:px-0">
+                <div class="mx-auto max-w-[1540px] px-4 sm:px-6 lg:px-4">
                     <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
-                        <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
+                        <div class="lg:mx-auto text-left">
                             <img src={nyslogo} alt="" className="h-[50px]" />
                             <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
-                            <a href="#" class="py-2.5 px-5 h-9 block w-fit bg-[#dc3545] rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 lg:mx-0">
-                                Contact us
-                            </a>
+                            <Link to="/support">
+                                <a href="#" class="py-2.5 px-5 h-9 block w-fit bg-[#dc3545] rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 lg:mx-0">
+                                    Contact us
+                                </a>
+                            </Link>
                         </div>
                         <div class="lg:mx-auto text-left ">
-                            <h4 class="text-lg text-gray-900 font-medium mb-7">Pagedone</h4>
+                            <h4 class="text-lg text-gray-900 font-medium mb-7">Company</h4>
                             <ul class="text-sm  transition-all duration-500">
-                                <li class="mb-6"><a href="#" class="text-gray-600 hover:text-gray-900">Home</a></li>
-                                <li class="mb-6"><a href="#" class=" text-gray-600 hover:text-gray-900">About</a></li>
-                                <li><a href="#" class=" text-gray-600 hover:text-gray-900">Pricing</a></li>
-                            </ul>
-                        </div>
-                        <div class="lg:mx-auto text-left ">
-                            <h4 class="text-lg text-gray-900 font-medium mb-7">Products</h4>
-                            <ul class="text-sm  transition-all duration-500">
-                                <li class="mb-6"><a href="#" class="text-gray-600 hover:text-gray-900">Figma UI System</a></li>
-                                <li class="mb-6"><a href="#" class=" text-gray-600 hover:text-gray-900">Icons Assets</a></li>
-                                <li><a href="#" class=" text-gray-600 hover:text-gray-900">Responsive Blocks</a></li>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">About Us</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Career</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Compliance</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900">Quality Policy</li></Link>
                             </ul>
                         </div>
                         <div class="lg:mx-auto text-left ">
                             <h4 class="text-lg text-gray-900 font-medium mb-7">Support</h4>
                             <ul class="text-sm  transition-all duration-500">
-                                <li class="mb-6"><a href="#" class="text-gray-600 hover:text-gray-900">Customer Support</a></li>
-                                <li class="mb-6"><a href="#" class=" text-gray-600 hover:text-gray-900">Terms & Conditions</a></li>
-                                <li ><a href="#" class=" text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Contact Us</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Submit a Ticket</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Consultations</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900">Where to Buy</li></Link>
+                            </ul>
+                        </div>
+                        <div class="lg:mx-auto text-left ">
+                            <h4 class="text-lg text-gray-900 font-medium mb-7">Solutions</h4>
+                            <ul class="text-sm  transition-all duration-500">
+                                <Link to="/solutions/smarthome"><li class="text-gray-600 hover:text-gray-900 mb-6">Smart Home</li></Link>
+                                <Link to="/solutions/industrial"><li class="text-gray-600 hover:text-gray-900 mb-6">Industrial</li></Link>
+                                <Link to="/solutions/education"><li class="text-gray-600 hover:text-gray-900 mb-6">Education</li></Link>
+                                <Link to="/solutions/vms"><li class="text-gray-600 hover:text-gray-900">AI-VMS</li></Link>
+                            </ul>
+                        </div>
+                        <div class="lg:mx-auto text-left ">
+                            <h4 class="text-lg text-gray-900 font-medium mb-7">Support</h4>
+                            <ul class="text-sm  transition-all duration-500">
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Privacy Policy</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Warranty</li></Link>
+                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900">Terms & Service</li></Link>
                             </ul>
                         </div>
                         <div class="lg:mx-auto text-left ">

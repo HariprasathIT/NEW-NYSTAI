@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import vmsbanner from "../../assets/Images/Allsolutions-Images/Hospital/hospitalbanner.jpeg"
+import hospitalbanner from "../../assets/Images/Allsolutions-Images/Hospital/hospitalbanner.jpeg"
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Hospital/leftimg1.jpeg"
 
@@ -42,23 +42,58 @@ function Hero() {
     return (
         <>
             {/* CATEGORY BANNER */}
-            <div className="w-full">
+            <section className="relative w-full">
+                {/* Banner Image */}
                 <img
-                    src={vmsbanner}
+                    src={hospitalbanner}
                     alt="Category Banner"
                     className="
-                      w-full 
-                      h-[50vh]       
-                      sm:h-[50vh]    
-                      md:h-[60vh]    
-                      lg:h-[75vh]    
-                      xl:h-[98vh]    
-                      object-cover 
-                      rounded-b-[20px]
+                        w-full
+                        h-[50vh]
+                        sm:h-[50vh]
+                        md:h-[60vh]
+                        lg:h-[75vh]
+                        xl:h-[98vh]
+                        object-cover
+                        rounded-b-[20px]
                     "
                 />
-            </div>
 
+                {/* RIGHT Overlay Content */}
+                <div className="absolute inset-0 flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
+                    <div className="max-w-xl text-right">
+
+                        {/* Title */}
+                        <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-[#474747] leading-snug">
+                            Smart Hospital Solutions
+                        </h1>
+
+                        {/* Divider */}
+                        <div className="ml-auto w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#474747]" />
+
+                        {/* Description */}
+                        <p className="mt-3 sm:mt-4 text-[#474747] text-xs sm:text-sm md:text-base leading-relaxed">
+                            Intelligent healthcare infrastructure that enhances patient safety,
+                            streamlines operations, and enables real-time monitoring.
+                        </p>
+
+                        {/* Button */}
+                        <button
+                            className="
+                                mt-5 sm:mt-6
+                                bg-red-600 text-white
+                                px-5 sm:px-6 py-2.5 sm:py-3
+                                rounded-full font-semibold
+                                hover:bg-red-700 transition-colors
+                                text-xs sm:text-sm md:text-[14px]
+                            "
+                        >
+                            Explore Hospital Solutions
+                        </button>
+
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

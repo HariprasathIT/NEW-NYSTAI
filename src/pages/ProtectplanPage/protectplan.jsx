@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import planbanner from "../../assets/Images/Protectplan-Images/protectplanbanne.jpeg"
 
-import plan1 from "../../assets/Images/Protectplan-Images/plan1.jpeg"
-import plan2 from "../../assets/Images/Protectplan-Images/plan2.jpeg"
-import plan3 from "../../assets/Images/Protectplan-Images/plan3.jpeg"
+import plan1Video from "../../assets/Images/Protectplan-Images/plan-video-1.mp4"
+import plan2Video from "../../assets/Images/Protectplan-Images/plan-video-2.mp4"
+import plan3Video from "../../assets/Images/Protectplan-Images/plan-video-3.mp4"
 
 import camerapost from "../../assets/Images/Protectplan-Images/post.png"
 import { BadgeCheck } from 'lucide-react'
@@ -53,7 +53,7 @@ function Hero() {
                         <div className="ml-auto w-32 sm:w-60 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-white" />
 
                         {/* Description */}
-                        <p className="mt-3 sm:mt-4 text-white text-xs sm:text-sm md:text-[17px] leading-relaxed" style={{lineHeight:"25px"}}>
+                        <p className="mt-3 sm:mt-4 text-white text-xs sm:text-sm md:text-[17px] leading-relaxed" style={{ lineHeight: "25px" }}>
                             Add monitoring and emergency support to<br /> your Nystai Protect Plan.
                         </p>
 
@@ -99,19 +99,23 @@ function SectionTwo() {
                 <section className="mb-6">
                     <div className="flex flex-col md:flex-row items-center gap-6">
 
-                        {/* Image FIRST on mobile */}
+                        {/* VIDEO FIRST on mobile */}
                         <div className="w-full md:w-[650px] rounded-2xl overflow-hidden group order-1 md:order-1">
-                            <img
-                                src={plan1}
-                                alt="service-plan"
+                            <video
+                                src={plan2Video}   // import your video file
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
                                 className="
-                                    w-full 
-                                    h-[260px] sm:h-[330px] md:h-[400px] lg:h-[420px]
-                                    object-cover 
-                                    transition-transform duration-700 ease-out group-hover:scale-110
-                                "
+            w-full
+            h-[260px] sm:h-[330px] md:h-[400px] lg:h-[420px]
+            object-cover
+            transition-transform duration-700 ease-out group-hover:scale-110
+        "
                             />
                         </div>
+
 
                         {/* Text SECOND on mobile */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl order-2 md:order-2 
@@ -137,19 +141,23 @@ function SectionTwo() {
                 <section className="mb-6">
                     <div className="flex flex-col md:flex-row items-center gap-6">
 
-                        {/* Image FIRST on mobile */}
+                        {/* VIDEO (Plan 2) */}
                         <div className="w-full md:w-[650px] rounded-2xl overflow-hidden group order-1 md:order-2">
-                            <img
-                                src={plan2}
-                                alt="service-plan"
+                            <video
+                                src={plan1Video}   // import your plan-2 video
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
                                 className="
-                                    w-full 
-                                    h-[260px] sm:h-[330px] md:h-[400px] lg:h-[420px]
-                                    object-cover 
-                                    transition-transform duration-700 ease-out group-hover:scale-110
-                                "
+            w-full
+            h-[260px] sm:h-[330px] md:h-[400px] lg:h-[420px]
+            object-cover
+            transition-transform duration-700 ease-out group-hover:scale-110
+        "
                             />
                         </div>
+
 
                         {/* Text SECOND on mobile */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl order-2 md:order-1 
@@ -174,19 +182,23 @@ function SectionTwo() {
                 <section className="mb-10">
                     <div className="flex flex-col md:flex-row items-center gap-6">
 
-                        {/* Image FIRST on mobile */}
+                        {/* VIDEO (Plan 3) */}
                         <div className="w-full md:w-[650px] rounded-2xl overflow-hidden group order-1 md:order-1">
-                            <img
-                                src={plan3}
-                                alt="service-plan"
+                            <video
+                                src={plan3Video}   // import your plan-3 video
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
                                 className="
-                                    w-full 
-                                    h-[260px] sm:h-[330px] md:h-[400px] lg:h-[420px]
-                                    object-cover 
-                                    transition-transform duration-700 ease-out group-hover:scale-110
-                                "
+            w-full
+            h-[260px] sm:h-[330px] md:h-[400px] lg:h-[420px]
+            object-cover
+            transition-transform duration-700 ease-out group-hover:scale-110
+        "
                             />
                         </div>
+
 
                         {/* Text SECOND on mobile */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl order-2 md:order-2 

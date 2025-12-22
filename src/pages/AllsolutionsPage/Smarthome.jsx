@@ -8,6 +8,10 @@ import icon2 from "../../assets/Images/Allsolutions-Images/Smarthome/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Smarthome/icon3.png"
 import icon4 from "../../assets/Images/Allsolutions-Images/Smarthome/icon4.png"
 
+import featureicon from "../../assets/Images/Allsolutions-Images/Worship/icon.png"
+
+import smar from "../../assets/Images/Allsolutions-Images/Smarthome/smar.jpeg"
+
 const Smarthome = () => {
     return (
         <>
@@ -15,6 +19,7 @@ const Smarthome = () => {
             <Sectiontwo />
             <Sectionthree />
             <SectionFour />
+            <SectionFive />
         </>
     )
 }
@@ -291,19 +296,73 @@ function Sectionthree() {
 }
 
 function SectionFour() {
+    const features = [
+        {
+            icon: featureicon,
+            title: "Advanced Surveillance",
+            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+        },
+        {
+            icon: featureicon,
+            title: "Advanced Surveillance",
+            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+        },
+        {
+            icon: featureicon,
+            title: "Advanced Surveillance",
+            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+        },
+        {
+            icon: featureicon,
+            title: "Advanced Surveillance",
+            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+        },
+        {
+            icon: featureicon,
+            title: "Advanced Surveillance",
+            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+        }
+    ];
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
                     <h2 className="text-[30px] font-bold text-red-600 mb-2">
-                        WHO IS NYSTAI?
+                        FEATURES
                     </h2>
                     <p className="text-[15px] text-gray-600 tracking-wider">
-                        Maiden Unified All-in-One Video, Alarm & Access Control Platform
+                        The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
 
+                {/* Features Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 pb-16">
+                    {features.map((feature, index) => (
+                        <div key={index} className="flex flex-col items-center text-center bg-[#f5f5f5] p-7 rounded-xl">
+                            <div className="w-15 h-15 flex items-center justify-center mb-6">
+                                <img src={feature.icon} alt="feature icon" className="w-full h-full object-contain" />
+                            </div>
+                            <h3 className="text-[20px] font-semibold mb-3">
+                                {feature.title}
+                            </h3>
+                            <p className="text-[15px] text-gray-600">
+                                {feature.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </>
+    )
+}
+
+function SectionFive() {
+
+    return (
+        <>
+            <section className="px-4">
+                <img src={smar} alt="smar" className="w-full h-auto rounded-2xl lg:mb-16 mb-5" />
             </section>
         </>
     )
