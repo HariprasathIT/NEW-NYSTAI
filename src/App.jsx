@@ -43,6 +43,9 @@ import Banking from "./pages/AllsolutionsPage/Banking";
 import Retail from "./pages/AllsolutionsPage/Retail";
 import Parking from "./pages/AllsolutionsPage/Parking";
 import Warehouse from "./pages/AllsolutionsPage/Warehouse";
+import PrivacyPolicy from "./pages/policies/policy/privacypolicy";
+import Warranty from "./pages/policies/warranty/warranty";
+import Termsandconditions from "./pages/policies/Terms/termsconditions";
 
 // IMPORT CATEGORY PAGE
 
@@ -77,6 +80,7 @@ function App() {
       <Navbar />
 
       <Routes>
+
         {/* HOME PAGE */}
         <Route path="/" element={<Home />} />
         <Route path="/protect" element={<Protectplan />} />
@@ -97,6 +101,11 @@ function App() {
 
         {/* CATEGORY PAGE */}
         <Route path="/category/:id" element={<Productpage />} />
+
+        {/* Privacy Policy */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/warranty" element={<Warranty />} />
+        <Route path="/termsandservices" element={<Termsandconditions />} />
       </Routes>
 
       <NystaiFooter />

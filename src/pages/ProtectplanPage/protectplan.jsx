@@ -119,18 +119,18 @@ function SectionTwo() {
 
                         {/* Text SECOND on mobile */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl order-2 md:order-2 
-                            flex justify-center items-center h-auto md:h-[420px]">
+    flex justify-center items-center h-auto md:h-[420px]">
                             <div className="max-w-[720px] p-6 lg:p-8">
-                                <h2 className="text-xl sm:text-2xl md:text-[35px] font-bold text-[#ffc107] mb-4 md:mb-6">
+                                <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Comprehensive protection across domains
                                 </h2>
-                                <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                                    NYSTAI's Protect Plan offers robust, customizable solutions for diverse domains
-                                    like industries, hospitals, VMS, and smart cities. With a focus on reliability,
-                                    innovation, and efficiency, the plan ensures uninterrupted operations and
-                                    enhanced security—empowering organizations to safeguard assets and optimize
-                                    performance effortlessly.
-                                </p>
+
+                                <ul className="list-disc pl-6 text-gray-700 text-sm md:text-[15px] leading-relaxed space-y-4 md:space-y-5 tracking-wide">
+                                    <li>Robust and customizable protection solutions tailored for multiple domains.</li>
+                                    <li>Designed to support industries, hospitals, VMS, smart cities, and enterprise environments.</li>
+                                    <li>Focus on reliability, innovation, and operational efficiency.</li>
+                                    <li>Ensures uninterrupted operations with enhanced security coverage.</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -158,20 +158,20 @@ function SectionTwo() {
                             />
                         </div>
 
-
                         {/* Text SECOND on mobile */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl order-2 md:order-1 
-                            flex justify-center items-center h-auto md:h-[420px]">
+    flex justify-center items-center h-auto md:h-[420px]">
                             <div className="max-w-[720px] p-6 lg:p-8">
-                                <h2 className="text-xl sm:text-2xl md:text-[35px] font-bold text-[#ffc107] mb-4 md:mb-6">
+                                <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Advanced Features for Seamless Operations
                                 </h2>
-                                <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                                    From AI-powered monitoring to real-time alerts, the Protect Plan ensures
-                                    smart diagnostics, predictive maintenance, and energy optimization. With
-                                    intelligent access control and professional-grade emergency response, NYSTAI
-                                    delivers uninterrupted security for smoother, smarter operations.
-                                </p>
+
+                                <ul className="list-disc pl-6 text-gray-700 text-sm md:text-[15px] leading-relaxed space-y-4 md:space-y-5 tracking-wide">
+                                    <li>AI-powered monitoring for intelligent and proactive system oversight.</li>
+                                    <li>Real-time alerts enabling faster response and issue resolution.</li>
+                                    <li>Smart diagnostics and predictive maintenance to prevent downtime.</li>
+                                    <li>Intelligent access control combined with professional-grade emergency response.</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -199,20 +199,20 @@ function SectionTwo() {
                             />
                         </div>
 
-
                         {/* Text SECOND on mobile */}
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl order-2 md:order-2 
-                            flex justify-center items-center h-auto md:h-[420px]">
+    flex justify-center items-center h-auto md:h-[420px]">
                             <div className="max-w-[720px] p-6 lg:p-8">
-                                <h2 className="text-xl sm:text-2xl md:text-[35px] font-bold text-[#ffc107] mb-4 md:mb-6">
+                                <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Commitment to Excellence and Support
                                 </h2>
-                                <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                                    NYSTAI offers unmatched customer support with expert assistance available
-                                    anytime. Combining innovation with customer-centric customization, the
-                                    Protect Plan enhances reliability and long-term operational excellence, making
-                                    it ideal for both small businesses and large enterprises.
-                                </p>
+
+                                <ul className="list-disc pl-6 text-gray-700 text-sm md:text-[15px] leading-relaxed space-y-4 md:space-y-5 tracking-wide">
+                                    <li>Unmatched customer support with expert assistance available anytime.</li>
+                                    <li>Customer-centric solutions designed for flexibility and customization.</li>
+                                    <li>Innovation-driven approach to enhance system reliability.</li>
+                                    <li>Focused on long-term operational excellence and performance.</li>
+                                </ul>
                             </div>
                         </div>
 

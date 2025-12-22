@@ -46,9 +46,9 @@ const NystaiFooter = () => {
                         <div class="lg:mx-auto text-left ">
                             <h4 class="text-lg text-gray-900 font-medium mb-7">Support</h4>
                             <ul class="text-sm  transition-all duration-500">
-                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Privacy Policy</li></Link>
-                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900 mb-6">Warranty</li></Link>
-                                <Link to="/support"><li class="text-gray-600 hover:text-gray-900">Terms & Service</li></Link>
+                                <Link to="/privacy-policy"><li class="text-gray-600 hover:text-gray-900 mb-6">Privacy Policy</li></Link>
+                                <Link to="/warranty"><li class="text-gray-600 hover:text-gray-900 mb-6">Warranty</li></Link>
+                                <Link to="/termsandservices"><li class="text-gray-600 hover:text-gray-900">Terms & Service</li></Link>
                             </ul>
                         </div>
                         <div class="lg:mx-auto text-left ">
