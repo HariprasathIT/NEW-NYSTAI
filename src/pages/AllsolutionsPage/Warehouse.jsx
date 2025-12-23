@@ -22,6 +22,7 @@ import featureicon from "../../assets/Images/Allsolutions-Images/Banking/icon.pn
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Home, ShieldCheck, Cpu } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 const Warehouse = () => {
@@ -351,22 +352,22 @@ function SectionFour() {
 }
 
 function SectionFive() {
-  return (
-    <section className="max-w-[1540px] mx-auto px-4 mb-7">
-      <div className="relative h-[600px] lg:h-[600px] rounded-xl overflow-hidden">
+    return (
+        <section className="max-w-[1540px] mx-auto px-4 mb-7">
+            <div className="relative h-[600px] lg:h-[600px] rounded-xl overflow-hidden">
 
-        {/* Background Image */}
-        <img
-          src={overlayimg}
-          alt="Warehouse worker with tablet in safety gear"
-          className="w-full h-full object-cover"
-        />
+                {/* Background Image */}
+                <img
+                    src={overlayimg}
+                    alt="Warehouse worker with tablet in safety gear"
+                    className="w-full h-full object-cover"
+                />
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* GLASS CONTENT CARD */}
-        <div className="
+                {/* GLASS CONTENT CARD */}
+                <div className="
           absolute bottom-8 left-8
           max-w-xl
           rounded-xl
@@ -377,53 +378,63 @@ function SectionFive() {
           shadow-2xl
         ">
 
-          {/* Heading */}
-          <h2 className="text-2xl lg:text-[25px] font-bold text-[#ffc107] mb-6">
-            How NYSTAI Products Resolve These Issues
-          </h2>
+                    {/* Heading */}
+                    <h2 className="text-2xl lg:text-[25px] font-bold text-[#ffc107] mb-6">
+                        How NYSTAI Products Resolve These Issues
+                    </h2>
 
-          {/* Description */}
-          <p className="text-gray-200 text-sm lg:text-[14px] mb-8 leading-relaxed">
-            NYSTAI's warehouse safety solutions feature alert systems,
-            emergency lighting, & advanced devices that protect workers.
-          </p>
+                    {/* Description */}
+                    <p className="text-gray-200 text-sm lg:text-[14px] mb-8 leading-relaxed">
+                        NYSTAI's warehouse safety solutions feature alert systems,
+                        emergency lighting, & advanced devices that protect workers.
+                    </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 gap-4 lg:gap-6">
+                    {/* Stats */}
+                    <div className="grid grid-cols-2 gap-4 lg:gap-6">
 
-            {/* Stat Card */}
-            <div className="
-              rounded-xl p-4 lg:p-6
-              bg-white/5
-              backdrop-blur-md
-              border border-white/20
-            ">
-              <div className="text-2xl lg:text-[20px] font-bold text-[#ffc107] mb-2">
-                120%
-              </div>
-              <p className="text-gray-200 text-xs lg:text-[13px]">
-                Certified folding performance is assured by this hinge
-              </p>
+                        {/* Stat Card */}
+                        <div className="
+                            rounded-xl p-4 lg:p-6
+                            bg-white/5
+                            backdrop-blur-md
+                            border border-white/20
+                        ">
+                            <div className="
+                                        flex items-center justify-center
+                                        w-[40px] h-[40px] rounded-full
+                                        border border-white/30
+                                        mb-4
+                                    ">
+                                <ShieldCheck size={20} className="text-white" />
+                            </div>
+                            <p className="text-gray-200 text-xs lg:text-[13px]">
+                                Certified folding performance is assured by this hinge
+                            </p>
+                        </div>
+
+                        {/* Stat Card */}
+                        <div className="
+                            rounded-xl p-4 lg:p-6
+                            bg-white/5
+                            backdrop-blur-md
+                            border border-white/20
+                        ">
+                            <div className="
+                                        flex items-center justify-center
+                                        w-[40px] h-[40px] rounded-full
+                                        border border-white/30
+                                        mb-4
+                                    ">
+                                <ShieldCheck size={20} className="text-white" />
+                            </div>
+                            <p className="text-gray-200 text-xs lg:text-[13px]">
+                                Certified folding performance is assured by this hinge
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
-            {/* Stat Card */}
-            <div className="
-              rounded-xl p-4 lg:p-6
-              bg-white/5
-              backdrop-blur-md
-              border border-white/20
-            ">
-              <div className="text-xl lg:text-[20px] font-bold text-[#ffc107] mb-2">
-                16mbph
-              </div>
-              <p className="text-gray-200 text-xs lg:text-[13px]">
-                Certified folding performance is assured by this hinge
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
