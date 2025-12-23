@@ -206,7 +206,7 @@ function Sectionthree() {
 
     const [activeTab, setActiveTab] = useState(0);
 
-    const tabs = ['challenges', 'solution', 'our solution'];
+    const tabs = ['Challenges', 'Solution', 'Our solution'];
 
     const challenges = [
         {
