@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import warehousebanner from "../../assets/Images/Allsolutions-Images/Warehouse/warehousebanner.jpeg"
 
@@ -20,6 +20,10 @@ import gridimg4 from "../../assets/Images/Allsolutions-Images/Banking/gridimg4.j
 
 import featureicon from "../../assets/Images/Allsolutions-Images/Banking/icon.png"
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 const Warehouse = () => {
 
     useEffect(() => {
@@ -208,9 +212,38 @@ function Sectiontwo() {
 }
 
 function Sectionthree() {
-    return (
-        <section className="py-16 bg-[#2c2c2c] rounded-xl mt-10">
+    const sectionRef = useRef(null);
+    const imageRef = useRef(null);
 
+    useEffect(() => {
+        gsap.set(imageRef.current, {
+            transformPerspective: 1000,
+            transformOrigin: "center",
+        });
+
+        gsap.fromTo(
+            imageRef.current,
+            {
+                rotateY: 0,
+            },
+            {
+                rotateY: 360,          // 🔥 full rotation
+                duration: 1.4,
+                ease: "power2.inOut",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 70%",
+                    once: true,
+                },
+            }
+        );
+    }, []);
+
+    return (
+        <section
+            ref={sectionRef}
+            className="py-16 bg-[#2c2c2c] rounded-xl mt-10"
+        >
             {/* Header */}
             <div className="text-center mb-5">
                 <h2 className="text-[30px] font-bold text-[#ffc107] mb-2">
@@ -223,42 +256,34 @@ function Sectionthree() {
 
             {/* Card Wrapper */}
             <div className="relative p-20 overflow-hidden max-w-[1540px] mx-auto">
-
-                {/* LEFT SIDE SLANTED BACKGROUND */}
                 <div className="slanted-panel absolute top-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-[#ded6c0] z-0"></div>
 
-                {/* Content Grid */}
-                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-0">
-
-                    {/* Image */}
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
+                    {/* IMAGE SPINS 360 */}
                     <div className="flex justify-center lg:justify-start">
                         <img
+                            ref={imageRef}
                             src={tiltimg}
                             alt="Warehouse Safety"
-                            className="h-[570px] rounded-2xl shadow-lg"
+                            className="h-[570px] rounded-2xl shadow-lg will-change-transform"
                         />
                     </div>
 
-                    {/* Text Content */}
+                    {/* Text */}
                     <div className="text-[#1e1e1e] max-w-[520px]">
                         <h3 className="text-[28px] font-bold mb-4 leading-snug">
                             How NYSTAI Products <br />
                             Resolve These Issues <br />
                             for Warehouse
                         </h3>
-
                         <p className="text-[15px] leading-7 text-gray-700">
                             NYSTAI’s warehouse safety solutions feature alert systems,
                             emergency lighting, & advanced devices that protect workers
-                            & equipment in real time. By improving visibility &
-                            communication, NYSTAI reduces accidents & ensures safe,
-                            efficient warehouse operations.
+                            & equipment in real time.
                         </p>
                     </div>
-
                 </div>
             </div>
-
         </section>
     );
 }
@@ -326,52 +351,79 @@ function SectionFour() {
 }
 
 function SectionFive() {
-    return (
-        <>
-            <section className="max-w-[1540px] mx-auto px-4 mb-7">
-                <div className="relative h-[600px] lg:h-[600px] rounded-xl overflow-hidden">
-                    {/* Background Image */}
-                    <img
-                        src={overlayimg}
-                        alt="Warehouse worker with tablet in safety gear"
-                        className="w-full h-full object-cover"
-                    />
+  return (
+    <section className="max-w-[1540px] mx-auto px-4 mb-7">
+      <div className="relative h-[600px] lg:h-[600px] rounded-xl overflow-hidden">
 
-                    {/* Dark Overlay */}
-                    <div className="absolute inset-0 bg-black/40"></div>
+        {/* Background Image */}
+        <img
+          src={overlayimg}
+          alt="Warehouse worker with tablet in safety gear"
+          className="w-full h-full object-cover"
+        />
 
-                    {/* Content Card - Bottom Left */}
-                    <div className="absolute bottom-8 left-8 bg-white rounded-xl p-8 lg:p-10 max-w-xl">
-                        <h2 className="text-2xl lg:text-[30px] font-bold text-[#dc3545] mb-6">
-                            How NYSTAI Products Resolve These Issues
-                        </h2>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-                        <p className="text-gray-600 text-sm lg:text-[14px] mb-8 leading-relaxed">
-                            NYSTAI's warehouse safety solutions feature alert systems, emergency lighting, & advanced devices that protect workers
-                        </p>
+        {/* GLASS CONTENT CARD */}
+        <div className="
+          absolute bottom-8 left-8
+          max-w-xl
+          rounded-xl
+          p-8 lg:p-10
+          bg-white/10
+          backdrop-blur-xl
+          border border-white/20
+          shadow-2xl
+        ">
 
-                        <div className="grid grid-cols-2 gap-4 lg:gap-6">
-                            <div className="bg-[#f9f9f9] rounded-2xl p-4 lg:p-6">
-                                <div className="text-2xl lg:text-[22px] font-bold text-[#dc3545] mb-2">
-                                    120%
-                                </div>
-                                <p className="text-gray-700 text-xs lg:text-[14px]">
-                                    Certified folding performance is assured by this hinge
-                                </p>
-                            </div>
+          {/* Heading */}
+          <h2 className="text-2xl lg:text-[25px] font-bold text-[#ffc107] mb-6">
+            How NYSTAI Products Resolve These Issues
+          </h2>
 
-                            <div className="bg-[#f9f9f9] rounded-2xl p-4 lg:p-6">
-                                <div className="text-xl lg:text-[22px] font-bold text-[#dc3545] mb-2">
-                                    16mbph
-                                </div>
-                                <p className="text-gray-700 text-xs lg:text-[14px]">
-                                    Certified folding performance is assured by this hinge
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+          {/* Description */}
+          <p className="text-gray-200 text-sm lg:text-[14px] mb-8 leading-relaxed">
+            NYSTAI's warehouse safety solutions feature alert systems,
+            emergency lighting, & advanced devices that protect workers.
+          </p>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 gap-4 lg:gap-6">
+
+            {/* Stat Card */}
+            <div className="
+              rounded-xl p-4 lg:p-6
+              bg-white/5
+              backdrop-blur-md
+              border border-white/20
+            ">
+              <div className="text-2xl lg:text-[20px] font-bold text-[#ffc107] mb-2">
+                120%
+              </div>
+              <p className="text-gray-200 text-xs lg:text-[13px]">
+                Certified folding performance is assured by this hinge
+              </p>
+            </div>
+
+            {/* Stat Card */}
+            <div className="
+              rounded-xl p-4 lg:p-6
+              bg-white/5
+              backdrop-blur-md
+              border border-white/20
+            ">
+              <div className="text-xl lg:text-[20px] font-bold text-[#ffc107] mb-2">
+                16mbph
+              </div>
+              <p className="text-gray-200 text-xs lg:text-[13px]">
+                Certified folding performance is assured by this hinge
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
