@@ -47,15 +47,16 @@ function Hero() {
         <>
             {/* CATEGORY BANNER */}
             <section className="relative w-full">
+
                 {/* Banner Image */}
                 <img
                     src={vmsbanner}
                     alt="Category Banner"
                     className="
                         w-full
-                        h-[50vh]
-                        sm:h-[50vh]
-                        md:h-[60vh]
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
                         lg:h-[75vh]
                         xl:h-[98vh]
                         object-cover
@@ -63,9 +64,14 @@ function Hero() {
                     "
                 />
 
-                {/* RIGHT Overlay Content */}
-                <div className="absolute inset-0 flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
-                    <div className="max-w-xl text-right">
+                {/* Overlay Content */}
+                <div className="
+                    absolute inset-0
+                    flex items-center
+                    justify-start md:justify-end
+                    px-6 sm:px-10 md:px-[80px]
+                ">
+                    <div className="max-w-xl text-left md:text-right">
 
                         {/* Title */}
                         <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-[#474747] leading-snug">
@@ -73,7 +79,13 @@ function Hero() {
                         </h1>
 
                         {/* Divider */}
-                        <div className="ml-auto w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#474747]" />
+                        <div className="
+                            w-32 sm:w-40 h-[3px]
+                            border-b border-dotted
+                            mt-3 sm:mt-4
+                            border-[#474747]
+                            ml-0 md:ml-auto
+                        " />
 
                         {/* Description */}
                         <p className="mt-3 sm:mt-4 text-[#474747] text-xs sm:text-sm md:text-base leading-relaxed">
@@ -99,7 +111,7 @@ function Hero() {
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 function Sectiontwo() {
@@ -137,50 +149,50 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S AI VMS</h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
+                        <h2 className="text-2xl md:text-[28px] lg:text-[30px]  font-bold text-red-600 mb-2">NYSTAI'S AI VMS</h2>
+                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
-                </div>
 
-                {/* First Section */}
-                <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
 
-                    {/* Left Image (Fixed Width 650px) */}
-                    <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
-                        <img
-                            src={leftimg1}
-                            alt="Fire extinguisher"
-                            className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
-                    </div>
+                    {/* First Section */}
+                    <div className="flex flex-col lg:flex-row items-center gap-6">
+                        {/* Left Image */}
+                        <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
+                            <img
+                                src={leftimg1}
+                                alt="Fire extinguisher"
+                                className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
 
-                    {/* Right Content (Takes remaining space) */}
-                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                        <div className="max-w-[730px] p-5 md:px-0">
-                            <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                                Specialized Safeguarding
-                            </h2>
-                            <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                                <li>
-                                    NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                                </li>
-                                <li>
-                                    Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                                </li>
-                                <li>
-                                    With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                                </li>
-                            </ul>
+                        {/* Right Content */}
+                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                            <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                                <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
+                                    Specialized Safeguarding
+                                </h2>
+                                <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
+                                    <li>
+                                        NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                    </li>
+                                    <li>
+                                        Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                    </li>
+                                    <li>
+                                        With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7 mt-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -250,35 +262,48 @@ function Sectionthree() {
         <section className="max-w-[1540px] mx-auto px-4 ">
             {/* Header */}
             <div className="text-center py-16">
-                <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                     WHAT WE OFFER
                 </h2>
-                <p className="text-[15px] text-gray-600 tracking-wider">
+                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
 
             {/* Slider */}
-            <div className="relative pb-16">
+            <div className="relative pb-12 sm:pb-14 md:pb-16">
                 <style>{`
-                    .custom-dots li {
-                        margin: 0;
-                        width: auto;
-                        height: auto;
-                    }
-                    .custom-dots li button {
-                        padding: 0;
-                    }
-                    .custom-dots li.slick-active div {
-                        width: 60px;
-                        height: 5px;
-                        background-color: #dc2626;
-                    }
-                `}</style>
+        .custom-dots li {
+            margin: 0;
+            width: auto;
+            height: auto;
+        }
+        .custom-dots li button {
+            padding: 0;
+        }
+        .custom-dots li.slick-active div {
+            width: 40px;
+            height: 4px;
+            background-color: #dc2626;
+            transition: width 0.3s ease;
+        }
+        @media (min-width: 640px) {
+            .custom-dots li.slick-active div {
+                width: 50px;
+                height: 4px;
+            }
+        }
+        @media (min-width: 768px) {
+            .custom-dots li.slick-active div {
+                width: 60px;
+                height: 5px;
+            }
+        }
+    `}</style>
                 <Slider {...settings}>
                     {slides.map((slide, index) => (
                         <div key={index} className="outline-none">
-                            <div className="relative rounded-xl overflow-hidden h-[500px] md:h-[600px]">
+                            <div className="relative rounded-lg sm:rounded-xl overflow-hidden h-[400px] sm:h-[450px] md:h-[550px] lg:h-[600px]">
                                 {/* Background Image */}
                                 <div
                                     className="absolute inset-0 bg-cover bg-center"
@@ -287,16 +312,16 @@ function Sectionthree() {
                                     }}
                                 >
                                     {/* Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent sm:from-black/80 sm:via-black/40" />
                                 </div>
 
                                 {/* Content */}
-                                <div className="relative h-full flex flex-col justify-end p-8 md:p-10 lg:p-10">
+                                <div className="relative h-full flex flex-col justify-end p-5 sm:p-6 md:p-8 lg:p-10">
                                     <div className="max-w-4xl">
-                                        <h3 className="text-3xl md:text-4xl lg:text-[35px] font-bold text-white mb-4 md:mb-5">
+                                        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight">
                                             {slide.title}
                                         </h3>
-                                        <p className="text-base md:text-[17px] text-white/90 leading-relaxed max-w-3xl">
+                                        <p className="text-sm sm:text-base md:text-[17px] text-white/90 leading-relaxed max-w-3xl line-clamp-3 sm:line-clamp-4 md:line-clamp-none">
                                             {slide.description}
                                         </p>
                                     </div>
@@ -344,10 +369,10 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -379,10 +404,10 @@ function SectionFive() {
             <section className="px-4 mb-7">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES OF AI-VMS
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -394,15 +419,17 @@ function SectionFive() {
                         loop
                         muted
                         playsInline
-                        className="w-full lg:h-[65vh] h-[350px] object-cover "
+                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-auto object-cover"
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-10">
 
                         {/* Glassmorphism Container */}
                         <div className="
-                            max-w-[600px] p-10 rounded-xl
+                            w-full sm:max-w-[460px] md:max-w-[550px]
+                            p-4 sm:p-6 md:p-8
+                            rounded-lg sm:rounded-xl
                             bg-white/10
                             backdrop-blur-lg
                             border border-white/20
@@ -410,47 +437,51 @@ function SectionFive() {
                         ">
 
                             {/* Heading */}
-                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                            <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
                                 Smart • Secure • Scalable
                             </h2>
 
                             {/* Paragraph */}
-                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                            <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                                 Empowering intelligent infrastructure with advanced security,
                                 seamless automation, and scalable IoT solutions.
                             </p>
 
                             {/* Glassmorphism Icons */}
-                            <div className="flex gap-6">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
 
                                 {/* Item 1 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Data Security
                                     </span>
                                 </div>
 
                                 {/* Item 2 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Smart Control
                                     </span>
                                 </div>

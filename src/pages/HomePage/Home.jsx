@@ -154,13 +154,13 @@ function HeroSection() {
                                     {/* Button */}
                                     <button
                                         className="
-                mt-5 sm:mt-6 
-                bg-red-600 text-white 
-                px-5 sm:px-6 py-2.5 sm:py-3 
-                rounded-full font-semibold 
-                hover:bg-red-700 transition-colors 
-                text-xs sm:text-sm md:text-[14px]
-            "
+                                            mt-5 sm:mt-6 
+                                            bg-red-600 text-white 
+                                            px-5 sm:px-6 py-2.5 sm:py-3 
+                                            rounded-full font-semibold 
+                                            hover:bg-red-700 transition-colors 
+                                            text-xs sm:text-sm md:text-[14px]
+                                        "
                                     >
                                         Explore Nystai Products
                                     </button>
@@ -254,13 +254,13 @@ function ProductCategories() {
                     {/* Right Button */}
                     <button
                         className="
-            w-[160px] md:w-auto lg:w-auto
-            flex items-center justify-center md:justify-start
-            gap-2 px-6 py-2
-            bg-[#dc3545] text-white 
-            font-medium rounded-full shadow
-            hover:bg-red-700 transition-all duration-300
-        "
+                            w-[160px] md:w-auto lg:w-auto
+                            flex items-center justify-center md:justify-start
+                            gap-2 px-6 py-2
+                            bg-[#dc3545] text-white 
+                            font-medium rounded-full shadow
+                            hover:bg-red-700 transition-all duration-300
+                    "
                     >
                         View More <span className="text-lg">→</span>
                     </button>
@@ -268,7 +268,7 @@ function ProductCategories() {
                 </div>
 
                 {/* Cards */}
-                <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
+                <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {cardData.map((card, i) => (
                         <div
                             key={i}
@@ -286,21 +286,21 @@ function ProductCategories() {
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-500" />
 
                             {/* Number Label (BOTTOM-LEFT) */}
-                            <div className="absolute bottom-0 left-0 text-[#000] text-6xl font-black drop-shadow-2xl opacity-70 leading-none">
+                            {/* <div className="absolute bottom-0 left-0 text-[#000] text-6xl font-black drop-shadow-2xl opacity-70 leading-none">
                                 {card.number}
-                            </div>
+                            </div> */}
 
                             {/* Title + Line + Description */}
                             <div className="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-all duration-500 p-8">
-                                <div className="text-white font-semibold text-3xl drop-shadow-lg md:text-left">
+                                <div className="text-white font-semibold text-2xl drop-shadow-lg md:text-left">
                                     {card.title}
                                 </div>
-                                <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] mt-5 mb-2"></div>
-                                <p className="text-white text-sm mt-2 md:text-left ">{card.description}</p>
+                                <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] md:mt-5 mt-3 mb-2"></div>
+                                <p className="text-white text-[14px] mt-2 md:text-left ">{card.description}</p>
                             </div>
 
                             {/* Arrow button */}
-                            <div className="absolute bottom-3 right-10 opacity-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer">
+                            <div className="absolute bottom-5 right-7 opacity-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer">
                                 <div className="w-8 h-8 bg-white text-black rounded-full flex items-center justify-center text-2xl font-bold
         group-hover:scale-125 group-hover:translate-x-2 transition-all duration-500 shadow-lg">
                                     <ArrowRight className="h-[15px]" />
@@ -423,12 +423,12 @@ function TopSellCard({ item, active, setActive }) {
             {/* OVERLAY */}
             {isOpen && (
                 <div className="absolute inset-0 bg-[#1a1a1a]/90 flex flex-col text-white md:p-6 p-6">
-                    <h2 className="text-2xl font-bold my-2">{item.title}</h2>
+                    <h2 className="text-xl font-bold my-2">{item.title}</h2>
 
                     {/*  Dotted Line under H2 */}
                     <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] mb-3"></div>
 
-                    <p className="text-sm opacity-80">{item.desc}</p>
+                    <p className="text-[12px] opacity-80">{item.desc}</p>
                 </div>
             )}
 
@@ -649,11 +649,11 @@ function Waterlevelontroller() {
 
                                 <div className="">
 
-                                    <h2 className="text-3xl sm:text-4xl md:text-[36px] font-bold text-gray-900 mb-4 leading-tight">
+                                    <h2 className="text-2xl sm:text-2xl md:text-[36px] font-bold text-gray-900 mb-4 leading-tight">
                                         Automated <span className="text-red-500">Water Level Controller</span>
                                     </h2>
 
-                                    <p className="text-gray-600 text-base sm:text-[17px] leading-relaxed mb-6">
+                                    <p className="text-gray-600 text-[14px] sm:text-[17px] leading-relaxed mb-6">
                                         Introducing our Automated Water Level Controller with a built-in level monitor and
                                         1000-meter range, ensuring efficient water management for your home or business.
                                         With a 1-year warranty, this system guarantees reliability, automates water usage,
@@ -667,7 +667,7 @@ function Waterlevelontroller() {
                                             <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                                 <Shield className="w-5 h-5 text-white" />
                                             </div>
-                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                            <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Automated water level control with real-time monitoring.
                                             </span>
                                         </div>
@@ -676,7 +676,7 @@ function Waterlevelontroller() {
                                             <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                                 <Wifi className="w-5 h-5 text-white" />
                                             </div>
-                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                            <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 10 Kilometer range for flexible installation with Access.
                                             </span>
                                         </div>
@@ -685,7 +685,7 @@ function Waterlevelontroller() {
                                             <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                                 <Smartphone className="w-5 h-5 text-white" />
                                             </div>
-                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                            <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Mobile and Desktop connectivity for remote access.
                                             </span>
                                         </div>
@@ -694,7 +694,7 @@ function Waterlevelontroller() {
                                             <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
                                                 <Smartphone className="w-5 h-5 text-white" />
                                             </div>
-                                            <span className="text-gray-700 tracking-wide text-sm sm:text-base">
+                                            <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Mobile and Desktop connectivity for remote access.
                                             </span>
                                         </div>
@@ -728,6 +728,7 @@ function WhyNystai() {
     const containerRef = useRef(null);
     const scrollRef = useRef(null);
     const [scrollProgress, setScrollProgress] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
 
     const sections = [
         {
@@ -757,8 +758,18 @@ function WhyNystai() {
     ];
 
     useEffect(() => {
-        const container = containerRef.current;
-        const scrollContent = scrollRef.current;
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    useEffect(() => {
+        if (isMobile) return;
 
         const handleScroll = () => {
             const container = containerRef.current;
@@ -777,22 +788,47 @@ function WhyNystai() {
             setScrollProgress(progress);
         };
 
-        window.addEventListener("lenis-scroll", handleScroll);
-        return () => window.removeEventListener("lenis-scroll", handleScroll);
-    }, []);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [isMobile]);
+
+    // Mobile/Tablet Card Layout
+    if (isMobile) {
+        return (
+            <div className="bg-[#f5f5f5] py-10 px-4" style={{ borderRadius: "30px" }}>
+                <div className="max-w-4xl mx-auto space-y-6">
+                    {sections.map((section, index) => (
+                        <div
+                            key={index}
+                            className="bg-white rounded-xl overflow-hidden"
+                        >
+                            {section.image && (
+                                <img
+                                    src={section.image}
+                                    alt={section.title}
+                                    className="w-full h-48 object-cover"
+                                />
+                            )}
+                            <div className="p-6 space-y-3">
+                                <h3 className="text-xl font-bold text-[#dc3545]">
+                                    {section.title}
+                                </h3>
+                                <p className="text-[14px] text-gray-600 leading-relaxed">
+                                    {section.description}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+
+    // Desktop Horizontal Scroll Layout
     return (
         <div className="bg-[#f5f5f5] pt-10" style={{ borderRadius: "30px" }}>
             <div className="max-w-[1500px] mx-auto">
-
-                {/* Horizontal Scroll Container */}
                 <div ref={containerRef} className="h-[400vh] relative">
-                    {/* Scroll Progress Indicator */}
-                    {/* <div className="h-2 bg-gray-200 z-50" style={{ position: "sticky", top: "100px", borderRadius: "10px" }}>
-                        <div
-                            className="h-full bg-[#dc3545] transition-all duration-100"
-                            style={{ width: `${scrollProgress}%`, borderRadius: "10px" }}
-                        />
-                    </div> */}
                     <div className="sticky top-0 h-screen overflow-hidden">
                         <div ref={scrollRef} className="flex h-full transition-transform duration-100 ease-out">
                             {sections.map((section, index) => (
@@ -806,7 +842,7 @@ function WhyNystai() {
                                                 <h2 className="text-4xl md:text-2xl font-bold text-[#dc3545]">
                                                     {section.title}
                                                 </h2>
-                                                <p className="text-  text-gray-600 max-w-md leading-relaxed">
+                                                <p className="text-gray-600 max-w-md leading-relaxed">
                                                     {section.description}
                                                 </p>
                                             </div>
@@ -837,16 +873,7 @@ function WhyNystai() {
                         </div>
                     </div>
                 </div>
-
-                {/* Additional content section */}
-                {/* <div className="h-screen flex items-center justify-center bg-gray-50">
-                <h2 className="text-4xl font-bold text-gray-900">
-                    Continue scrolling for more content...
-                </h2>
-            </div> */}
             </div>
-
-
         </div>
     );
 }

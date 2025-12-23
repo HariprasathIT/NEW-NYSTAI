@@ -56,9 +56,9 @@ function Hero() {
                     alt="Warehouse Banner"
                     className="
                         w-full
-                        h-[50vh]
-                        sm:h-[50vh]
-                        md:h-[60vh]
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
                         lg:h-[75vh]
                         xl:h-[98vh]
                         object-cover
@@ -140,32 +140,31 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-[#dc3545] mb-2">NYSTAI'S WAREHOUSE SOLUTIONS</h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
+                        <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-[#dc3545] mb-2">NYSTAI'S WAREHOUSE SOLUTIONS</h2>
+                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
                 </div>
 
                 {/* First Section */}
-                <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                    {/* Left Image (Fixed Width 650px) */}
-                    <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                <div className="flex flex-col lg:flex-row items-center gap-6">
+                    {/* Left Image */}
+                    <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                         <img
                             src={leftimg1}
                             alt="Fire extinguisher"
-                            className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                         />
                     </div>
 
-                    {/* Right Content (Takes remaining space) */}
-                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                        <div className="max-w-[730px] p-5 md:px-0">
-                            <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                    {/* Right Content */}
+                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                        <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                            <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                                 Specialized Safeguarding
                             </h2>
-                            <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
+                            <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
                                     NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
                                 </li>
@@ -178,12 +177,11 @@ function Sectiontwo() {
                             </ul>
                         </div>
                     </div>
-
                 </div>
 
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7 mt-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -228,7 +226,7 @@ function Sectionthree() {
                 rotateY: 0,
             },
             {
-                rotateY: 360,          // 🔥 full rotation
+                rotateY: 360,
                 duration: 1.4,
                 ease: "power2.inOut",
                 scrollTrigger: {
@@ -247,38 +245,39 @@ function Sectionthree() {
         >
             {/* Header */}
             <div className="text-center mb-5">
-                <h2 className="text-[30px] font-bold text-[#ffc107] mb-2">
+                <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-[#ffc107] mb-2">
                     WHAT WE OFFER
                 </h2>
-                <p className="text-[15px] text-gray-400 tracking-wider">
+                <p className="text-sm md:text-[15px] text-gray-400 tracking-wider px-4">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
 
             {/* Card Wrapper */}
-            <div className="relative p-20 overflow-hidden max-w-[1540px] mx-auto">
-                <div className="slanted-panel absolute top-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-[#ded6c0] z-0"></div>
+            <div className="relative p-6 lg:p-20 overflow-hidden max-w-[1540px] mx-auto">
+                {/* Desktop slanted panel - hidden on mobile */}
+                <div className="slanted-panel absolute top-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-[#ded6c0] z-0 hidden lg:block"></div>
 
-                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-14">
                     {/* IMAGE SPINS 360 */}
                     <div className="flex justify-center lg:justify-start">
                         <img
                             ref={imageRef}
                             src={tiltimg}
                             alt="Warehouse Safety"
-                            className="h-[570px] rounded-2xl shadow-lg will-change-transform"
+                            className="h-[300px] sm:h-[400px] lg:h-[570px] rounded-2xl shadow-lg will-change-transform"
                         />
                     </div>
 
-                    {/* Text */}
-                    <div className="text-[#1e1e1e] max-w-[520px]">
-                        <h3 className="text-[28px] font-bold mb-4 leading-snug">
+                    {/* Text - Yellow background on mobile */}
+                    <div className="text-[#1e1e1e] max-w-[520px] bg-[#ded6c0] lg:bg-transparent p-6 lg:p-0 rounded-2xl">
+                        <h3 className="text-[24px] lg:text-[28px] font-bold mb-4 leading-snug">
                             How NYSTAI Products <br />
                             Resolve These Issues <br />
                             for Warehouse
                         </h3>
                         <p className="text-[15px] leading-7 text-gray-700">
-                            NYSTAI’s warehouse safety solutions feature alert systems,
+                            NYSTAI's warehouse safety solutions feature alert systems,
                             emergency lighting, & advanced devices that protect workers
                             & equipment in real time.
                         </p>
@@ -323,16 +322,16 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-[#dc3545] mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-[#dc3545] mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 pb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center bg-[#f5f5f5] p-7 rounded-xl">
                             <div className="w-15 h-15 flex items-center justify-center mb-6">
@@ -354,8 +353,13 @@ function SectionFour() {
 
 function SectionFive() {
     return (
-        <section className="max-w-[1540px] mx-auto px-4 mb-7">
-            <div className="relative h-[600px] lg:h-[600px] rounded-xl overflow-hidden">
+        <section className="max-w-[1540px] mx-auto px-4 my-4">
+            <div className="
+                relative
+                h-[500px] sm:h-[480px] md:h-[550px] lg:h-[600px]
+                rounded-xl
+                overflow-hidden
+            ">
 
                 {/* Background Image */}
                 <img
@@ -368,71 +372,102 @@ function SectionFive() {
                 <div className="absolute inset-0 bg-black/40"></div>
 
                 {/* GLASS CONTENT CARD */}
-                <div className="
-                    absolute bottom-8 left-8
-                    max-w-xl
-                    rounded-xl
-                    p-8 lg:p-10
-                    bg-white/10
-                    backdrop-blur-xl
-                    border border-white/20
-                    shadow-2xl
-                ">
-
+                <div
+                    className="
+                        absolute
+                        bottom-4 left-4 right-4
+                        sm:bottom-6 sm:left-6 sm:right-auto
+                        lg:bottom-8 lg:left-8
+                        w-auto sm:max-w-lg lg:max-w-xl
+                        rounded-xl
+                        p-5 sm:p-6 lg:p-10
+                        bg-white/10
+                        backdrop-blur-xl
+                        border border-white/20
+                        shadow-2xl
+                    "
+                >
                     {/* Heading */}
-                    <h2 className="text-2xl lg:text-[25px] font-bold text-[#ffc107] mb-6">
+                    <h2 className="
+                        text-xl sm:text-2xl lg:text-[25px]
+                        font-bold text-[#ffc107]
+                        mb-4 sm:mb-6
+                    ">
                         How NYSTAI Products Resolve These Issues
                     </h2>
 
                     {/* Description */}
-                    <p className="text-gray-200 text-sm lg:text-[14px] mb-8 leading-relaxed">
+                    <p className="
+                        text-gray-200
+                        text-xs sm:text-sm lg:text-[14px]
+                        mb-6 sm:mb-8
+                        leading-relaxed
+                    ">
                         NYSTAI's warehouse safety solutions feature alert systems,
                         emergency lighting, & advanced devices that protect workers.
                     </p>
 
                     {/* Stats */}
-                    <div className="grid grid-cols-2 gap-4 lg:gap-6">
-
+                    <div className="
+                        grid grid-cols-2
+                        sm:grid-cols-2
+                        gap-4 sm:gap-6
+                    ">
                         {/* Stat Card */}
                         <div className="
-                            rounded-xl p-4 lg:p-6
+                            rounded-xl
+                            p-4 sm:p-5 lg:p-6
                             bg-white/5
                             backdrop-blur-md
                             border border-white/20
                         ">
                             <div className="
-                                        flex items-center justify-center
-                                        w-[40px] h-[40px] rounded-full
-                                        border border-white/30
-                                        mb-4
-                                    ">
-                                <ShieldCheck size={20} className="text-white" />
+                                flex items-center justify-center
+                                w-[36px] h-[36px]
+                                sm:w-[40px] sm:h-[40px]
+                                rounded-full
+                                border border-white/30
+                                mb-3 sm:mb-4
+                            ">
+                                <ShieldCheck size={18} className="text-white" />
                             </div>
-                            <p className="text-gray-200 text-xs lg:text-[13px]">
+
+                            <p className="
+                                text-gray-200
+                                text-xs sm:text-[13px]
+                                leading-relaxed
+                            ">
                                 Certified folding performance is assured by this hinge
                             </p>
                         </div>
 
                         {/* Stat Card */}
                         <div className="
-                            rounded-xl p-4 lg:p-6
+                            rounded-xl
+                            p-4 sm:p-5 lg:p-6
                             bg-white/5
                             backdrop-blur-md
                             border border-white/20
                         ">
                             <div className="
-                                        flex items-center justify-center
-                                        w-[40px] h-[40px] rounded-full
-                                        border border-white/30
-                                        mb-4
-                                    ">
-                                <ShieldCheck size={20} className="text-white" />
+                                flex items-center justify-center
+                                w-[36px] h-[36px]
+                                sm:w-[40px] sm:h-[40px]
+                                rounded-full
+                                border border-white/30
+                                mb-3 sm:mb-4
+                            ">
+                                <ShieldCheck size={18} className="text-white" />
                             </div>
-                            <p className="text-gray-200 text-xs lg:text-[13px]">
+
+                            <p className="
+                                text-gray-200
+                                text-xs sm:text-[13px]
+                                leading-relaxed
+                            ">
                                 Certified folding performance is assured by this hinge
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>

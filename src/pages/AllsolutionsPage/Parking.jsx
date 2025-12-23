@@ -45,15 +45,16 @@ function Hero() {
         <>
             {/* CATEGORY BANNER */}
             <section className="relative w-full">
+
                 {/* Banner Image */}
                 <img
                     src={parkingiotbanner}
                     alt="Category Banner"
                     className="
                         w-full
-                        h-[50vh]
-                        sm:h-[50vh]
-                        md:h-[60vh]
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
                         lg:h-[75vh]
                         xl:h-[98vh]
                         object-cover
@@ -61,9 +62,16 @@ function Hero() {
                     "
                 />
 
-                {/* RIGHT Overlay Content */}
-                <div className="absolute inset-0 flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
-                    <div className="max-w-xl text-right">
+                {/* Overlay Content */}
+                <div
+                    className="
+                        absolute inset-0
+                        flex items-center
+                        justify-start md:justify-end
+                        px-6 sm:px-10 md:px-[80px]
+                    "
+                >
+                    <div className="max-w-xl text-left md:text-right">
 
                         {/* Title */}
                         <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-[#474747] leading-snug">
@@ -71,7 +79,15 @@ function Hero() {
                         </h1>
 
                         {/* Divider */}
-                        <div className="ml-auto w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#474747]" />
+                        <div
+                            className="
+                                w-32 sm:w-40 h-[3px]
+                                border-b border-dotted
+                                mt-3 sm:mt-4
+                                border-[#474747]
+                                ml-0 md:ml-auto
+                            "
+                        />
 
                         {/* Description */}
                         <p className="mt-3 sm:mt-4 text-[#474747] text-xs sm:text-sm md:text-base leading-relaxed">
@@ -97,7 +113,7 @@ function Hero() {
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 function Sectiontwo() {
@@ -135,32 +151,31 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
+                        <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
+                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
                 </div>
 
                 {/* First Section */}
-                <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                    {/* Left Image (Fixed Width 650px) */}
-                    <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                <div className="flex flex-col lg:flex-row items-center gap-6">
+                    {/* Left Image */}
+                    <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                         <img
                             src={leftimg1}
                             alt="Fire extinguisher"
-                            className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                         />
                     </div>
 
-                    {/* Right Content (Takes remaining space) */}
-                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                        <div className="max-w-[730px] p-5 md:px-0">
-                            <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                    {/* Right Content */}
+                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                        <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                            <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                                 Specialized Safeguarding
                             </h2>
-                            <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
+                            <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
                                     NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
                                 </li>
@@ -173,12 +188,11 @@ function Sectiontwo() {
                             </ul>
                         </div>
                     </div>
-
                 </div>
 
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7 mt-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -223,105 +237,93 @@ function Sectionthree() {
             </div>
 
             {/* First Section */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                {/* Left Image (Fixed Width 650px) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
-                    <img
-                        src={threecardimg1}
-                        alt="Fire extinguisher"
-                        className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </div>
-
-                {/* Right Content (Takes remaining space) */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                    <div className="max-w-[730px] p-5 md:px-0">
-                        <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Specialized Safeguarding
+            <div className="flex flex-col lg:flex-row items-center gap-6 mb-4">
+                {/* Text - Order 2 on mobile, Order 1 on desktop */}
+                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full order-2 lg:order-1">
+                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                        <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
+                            Deployment Services
                         </h2>
-                        <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                            <li>
-                                NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                            </li>
-                            <li>
-                                Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                            </li>
-                            <li>
-                                With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                            </li>
+
+                        <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
+                            <li>We focus on the seamless deployment of systems, technologies, and solutions tailored to your needs.</li>
+                            <li>Our team manages everything from initial setup to full operational integration.</li>
+                            <li>We minimize downtime and ensure optimal performance during deployment.</li>
                         </ul>
                     </div>
                 </div>
 
+                {/* Image - Order 1 on mobile, Order 2 on desktop */}
+                <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
+                    <img
+                        src={threecardimg1}
+                        alt="Deployment Services"
+                        className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                </div>
             </div>
 
             {/* Second Section */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
+            <div className="flex flex-col lg:flex-row items-center gap-6 mb-4">
 
-                {/* Right Content (Takes remaining space) */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                    <div className="max-w-[730px] p-5 md:px-0">
-                        <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Specialized Safeguarding
-                        </h2>
-                        <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                            <li>
-                                NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                            </li>
-                            <li>
-                                Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                            </li>
-                            <li>
-                                With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                {/* Left Image (Fixed Width 650px) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                {/* Image FIRST */}
+                <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                     <img
                         src={threecardimg2}
-                        alt="Fire extinguisher"
-                        className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                        alt="Deployment Services"
+                        className="
+                            w-full
+                            h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px]
+                            object-cover
+                            transition-transform duration-500
+                            group-hover:scale-110
+                        "
                     />
+                </div>
+
+                {/* Text SECOND */}
+                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                        <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
+                            Deployment Services
+                        </h2>
+
+                        <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
+                            <li>We focus on seamless deployment of systems and technologies.</li>
+                            <li>Our team handles setup through full operational integration.</li>
+                            <li>We minimize downtime and ensure optimal performance.</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
 
+
             {/* Third Section */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                {/* Left Image (Fixed Width 650px) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
-                    <img
-                        src={threecardimg3}
-                        alt="Fire extinguisher"
-                        className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </div>
-
-                {/* Right Content (Takes remaining space) */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                    <div className="max-w-[730px] p-5 md:px-0">
-                        <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Specialized Safeguarding
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+                {/* Text - Order 2 on mobile, Order 1 on desktop */}
+                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full order-2 lg:order-1">
+                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                        <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
+                            Deployment Services
                         </h2>
-                        <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
-                            <li>
-                                NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                            </li>
-                            <li>
-                                Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                            </li>
-                            <li>
-                                With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                            </li>
+
+                        <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
+                            <li>We focus on the seamless deployment of systems, technologies, and solutions tailored to your needs.</li>
+                            <li>Our team manages everything from initial setup to full operational integration.</li>
+                            <li>We minimize downtime and ensure optimal performance during deployment.</li>
                         </ul>
                     </div>
                 </div>
 
+                {/* Image - Order 1 on mobile, Order 2 on desktop */}
+                <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
+                    <img
+                        src={threecardimg3}
+                        alt="Deployment Services"
+                        className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                </div>
             </div>
 
         </section>
@@ -362,16 +364,16 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 pb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center bg-[#f5f5f5] p-7 rounded-xl">
                             <div className="w-15 h-15 flex items-center justify-center mb-6">
@@ -404,7 +406,6 @@ function SectionFive() {
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
-
             </section>
         </>
     )

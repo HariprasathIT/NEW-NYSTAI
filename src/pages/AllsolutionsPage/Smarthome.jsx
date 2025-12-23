@@ -48,20 +48,25 @@ function Hero() {
                     src={smarthomebanner}
                     alt="Category Banner"
                     className="
-            w-full
-            h-[50vh]
-            sm:h-[50vh]
-            md:h-[60vh]
-            lg:h-[75vh]
-            xl:h-[98vh]
-            object-cover
-            rounded-b-[20px]
-          "
+                        w-full
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
+                        lg:h-[75vh]
+                        xl:h-[98vh]
+                        object-cover
+                        rounded-b-[20px]
+                    "
                 />
 
                 {/* Overlay Content */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
-                    <div className="text-right max-w-lg">
+                <div className="
+                    absolute top-0 left-0 w-full h-full
+                    flex items-center
+                    justify-start md:justify-end
+                    px-6 sm:px-10 md:px-[80px]
+                ">
+                    <div className="text-left md:text-right max-w-lg">
 
                         {/* Title */}
                         <h1 className="text-2xl sm:text-3xl md:text-[35px] font-bold text-[#000] leading-snug md:leading-tight">
@@ -69,27 +74,34 @@ function Hero() {
                         </h1>
 
                         {/* Divider */}
-                        <div className="ml-auto w-32 sm:w-60 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-gray-800" />
+                        <div className="
+                            w-32 sm:w-60 h-[3px]
+                            border-b border-dotted
+                            mt-3 sm:mt-4
+                            border-gray-800
+                            ml-0 md:ml-auto
+                        " />
 
                         {/* Description */}
                         <p
                             className="mt-3 sm:mt-4 text-gray-800 text-xs sm:text-sm md:text-[17px] leading-relaxed"
                             style={{ lineHeight: "25px" }}
                         >
-                            Protect your family with Nystai smart sensors, AI cameras, hybrid NVRs, and automated alerts designed to secure every corner of your home.
+                            Protect your family with Nystai smart sensors, AI cameras,
+                            hybrid NVRs, and automated alerts designed to secure every
+                            corner of your home.
                         </p>
 
                         {/* Button */}
                         <button
                             className="
-                mt-5 sm:mt-6
-                bg-[#dc3545] text-white
-                px-5 sm:px-6 py-2.5 sm:py-3
-                rounded-full font-semibold
-                hover:bg-red-700 hover:text-white
-                transition-colors
-                text-xs sm:text-sm md:text-[14px]
-              "
+                                mt-5 sm:mt-6
+                                bg-[#dc3545] text-white
+                                px-5 sm:px-6 py-2.5 sm:py-3
+                                rounded-full font-semibold
+                                hover:bg-red-700 transition-colors
+                                text-xs sm:text-sm md:text-[14px]
+                            "
                         >
                             Explore Nystai Products
                         </button>
@@ -128,38 +140,39 @@ function Sectiontwo() {
             color: "orange"
         }
     ];
+    
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
                 <div>
                     {/* Header */}
                     <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOME AUTOMATION</h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
+                        <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                            NYSTAI'S HOME AUTOMATION
+                        </h2>
+                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
 
-
                     {/* First Section */}
-                    <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                        {/* Left Image (Fixed Width 650px) */}
-                        <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                    <div className="flex flex-col lg:flex-row items-center gap-6">
+                        {/* Left Image */}
+                        <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                             <img
                                 src={leftimg1}
                                 alt="Fire extinguisher"
-                                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
 
-                        {/* Right Content (Takes remaining space) */}
-                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                            <div className="max-w-[730px] p-5 md:px-0">
-                                <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                        {/* Right Content */}
+                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                            <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                                <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Specialized Safeguarding
                                 </h2>
-                                <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
+                                <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                     <li>
                                         NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
                                     </li>
@@ -172,13 +185,12 @@ function Sectiontwo() {
                                 </ul>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -203,104 +215,108 @@ function Sectiontwo() {
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 function Sectionthree() {
     const [activeCard, setActiveCard] = useState(1);
+    
+    const cards = [
+        {
+            id: 1,
+            title: "Home Safety Challenges",
+            description: "Traditional homes lack monitoring and early detection systems, making them vulnerable to accidents and unwanted entry.",
+            image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80",
+            alt: "CCTV Security"
+        },
+        {
+            id: 2,
+            title: "Smart Home Needs",
+            description: "Modern homes require advanced sensors, automated alerts, and remote control for full protection and ease of living.",
+            image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&q=80",
+            alt: "Security Monitoring"
+        },
+        {
+            id: 3,
+            title: "How Nystai Helps",
+            description: "Nystai connects all your smart sensors, cameras, and alarms into a single ecosystem that protects, monitors, and automates your home in real time.",
+            image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+            alt: "Access Control"
+        }
+    ];
+
     return (
-        <>
-            <section className="max-w-[1540px] mx-auto px-4">
-                {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
-                        WHAT WE OFFER
-                    </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
-                    </p>
-                </div>
+        <section className="max-w-[1540px] mx-auto px-4">
+            {/* Header */}
+            <div className="text-center py-8 md:py-12 lg:py-16">
+                <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                    WHAT WE OFFER
+                </h2>
+                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider px-4">
+                    The subtext helps customers quickly understand the value or specific
+                </p>
+            </div>
 
-                {/* Cards */}
-                <div className="flex gap-4 h-[500px]">
-                    {/* Card 1 */}
+            {/* Desktop/Tablet Landscape - Horizontal Cards */}
+            <div className="hidden md:flex gap-3 lg:gap-4 h-[400px] lg:h-[500px]">
+                {cards.map((card) => (
                     <div
-                        onMouseEnter={() => setActiveCard(1)}
+                        key={card.id}
+                        onMouseEnter={() => setActiveCard(card.id)}
                         className={`
                             group relative 
-                            ${activeCard === 1 ? 'flex-[5]' : 'flex-1'}
+                            ${activeCard === card.id ? 'flex-[5]' : 'flex-1'}
                             transition-all duration-500 ease-in-out
-                            rounded-2xl overflow-hidden bg-black cursor-pointer
+                            rounded-xl lg:rounded-2xl overflow-hidden bg-black cursor-pointer
                         `}
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80"
-                            alt="CCTV Security"
+                            src={card.image}
+                            alt={card.alt}
                             className="absolute inset-0 w-full h-full object-cover opacity-80"
                         />
-                        <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
-                            <h3 className={`text-[30px] font-bold mb-2 transition duration-300 ${activeCard === 1 ? 'opacity-100' : 'opacity-0'}`}>
-                                Home Safety Challenges
+                        <div className="relative z-10 p-6 lg:p-8 h-full flex flex-col justify-end text-white">
+                            <h3 className={`text-2xl lg:text-[30px] font-bold mb-2 transition duration-300 ${activeCard === card.id ? 'opacity-100' : 'opacity-0'}`}>
+                                {card.title}
                             </h3>
-                            <p className={`text-[17px] transition duration-300 ${activeCard === 1 ? 'opacity-100' : 'opacity-0'}`}>
-                                Traditional homes lack monitoring and early detection systems, making them vulnerable to accidents and unwanted entry.
+                            <p className={`text-sm lg:text-[17px] transition duration-300 ${activeCard === card.id ? 'opacity-100' : 'opacity-0'}`}>
+                                {card.description}
                             </p>
                         </div>
                     </div>
+                ))}
+            </div>
 
-                    {/* Card 2 */}
+            {/* Mobile - Vertical Stack */}
+            <div className="md:hidden space-y-4">
+                {cards.map((card) => (
                     <div
-                        onMouseEnter={() => setActiveCard(2)}
-                        className={`
-                            group relative 
-                            ${activeCard === 2 ? 'flex-[5]' : 'flex-1'}
-                            transition-all duration-500 ease-in-out
-                            rounded-2xl overflow-hidden bg-gray-900 cursor-pointer
-                        `}
+                        key={card.id}
+                        onClick={() => setActiveCard(activeCard === card.id ? null : card.id)}
+                        className="relative rounded-xl overflow-hidden bg-black cursor-pointer"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&q=80"
-                            alt="Security Monitoring"
-                            className="absolute inset-0 w-full h-full object-cover opacity-80"
+                            src={card.image}
+                            alt={card.alt}
+                            className={`w-full object-cover opacity-80 transition-all duration-300 ${
+                                activeCard === card.id ? 'h-[350px]' : 'h-[200px]'
+                            }`}
                         />
-                        <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
-                            <h3 className={`text-[30px] font-bold mb-2 transition duration-300 ${activeCard === 2 ? 'opacity-100' : 'opacity-0'}`}>
-                                Smart Home Needs
+                        <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
+                            <h3 className="text-xl font-bold mb-2">
+                                {card.title}
                             </h3>
-                            <p className={`text-[17px] transition duration-300 ${activeCard === 2 ? 'opacity-100' : 'opacity-0'}`}>
-                                Modern homes require advanced sensors, automated alerts, and remote control for full protection and ease of living.
+                            <p className={`text-sm transition-all duration-300 ${
+                                activeCard === card.id ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'
+                            }`}>
+                                {card.description}
                             </p>
                         </div>
                     </div>
-
-                    {/* Card 3 */}
-                    <div
-                        onMouseEnter={() => setActiveCard(3)}
-                        className={`
-                            group relative 
-                            ${activeCard === 3 ? 'flex-[5]' : 'flex-1'}
-                            transition-all duration-1000 ease-in-out
-                            rounded-2xl overflow-hidden bg-gray-900 cursor-pointer
-                        `}
-                    >
-                        <img
-                            src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80"
-                            alt="Access Control"
-                            className="absolute inset-0 w-full h-full object-cover opacity-80"
-                        />
-                        <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
-                            <h3 className={`text-[30px] font-bold mb-2 transition duration-500 ${activeCard === 3 ? 'opacity-100' : 'opacity-0'}`}>
-                                How Nystai Helps
-                            </h3>
-                            <p className={`text-[17px] transition duration-500 ${activeCard === 3 ? 'opacity-100' : 'opacity-0'}`}>
-                                Nystai connects all your smart sensors, cameras, and alarms into a single ecosystem that protects, monitors, and automates your home in real time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+                ))}
+            </div>
+        </section>
+    );
 }
 
 function SectionFour() {
@@ -336,16 +352,16 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         How the Nystai Smart Home System Works
                     </p>
                 </div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 pb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center bg-[#f5f5f5] p-7 rounded-xl">
                             <div className="w-15 h-15 flex items-center justify-center mb-6">
@@ -396,7 +412,7 @@ function SectionFive() {
                 ref={imageRef}
                 src={smar}
                 alt="smar"
-                className="w-full h-auto rounded-2xl lg:mb-16 mb-5 will-change-transform"
+                className="w-full h-auto rounded-2xl md:my-12 my-4 will-change-transform"
             />
         </section>
     );

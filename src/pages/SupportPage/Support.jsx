@@ -37,7 +37,7 @@ function Hero() {
           alt="Category Banner"
           className="
             w-full
-            h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[98vh]
+            h-[70vh] sm:h-[70vh] md:h-[70vh] lg:h-[75vh] xl:h-[98vh]
             object-cover
             rounded-b-[20px]
           "
@@ -47,7 +47,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/30 to-transparent rounded-b-[20px]" />
 
         {/* LEFT Overlay Content */}
-        <div className="absolute top-0 left-0 w-full h-full flex items-center px-6 sm:px-10 md:px-[80px]">
+        <div className="absolute top-0 left-0 w-full h-full flex items-center px-4 sm:px-10 md:px-[80px]">
           <div className="max-w-xl text-left">
 
             <h1 className="text-2xl sm:text-3xl md:text-[37px] font-bold text-white leading-snug">
@@ -84,7 +84,7 @@ function Hero() {
 function Formdesign() {
   return (
     <>
-      <div className="max-w-[1540px] mx-auto px-4">
+ <div className="max-w-[1540px] mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-12">
 
           {/* Left contents */}
@@ -123,35 +123,32 @@ function Formdesign() {
           </div>
 
           {/* Right contents */}
-          <div className="lg:col-span-8 z-30" style={{ marginTop: "-100px" }}>
+          <div className="lg:col-span-8 z-30 mt-0 lg:-mt-[100px]">
             <div className="bg-white rounded-[20px] shadow-lg py-10">
 
               <div className="max-w-[870px] mx-auto px-4">
 
-
-
                 <h2 className="text-[25px] font-bold mt-7 mb-3">PROSPEROUS FUTURE!</h2>
                 <p className="text-gray-600 text-[15px] mb-10">We'd love to hear from you. Please fill out this form.</p>
 
-
-                <div className="grid grid-cols-3 gap-6 mb-6 h-[110px]">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 h-auto sm:h-[110px]">
 
                   <button
-                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition"
+                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition h-[110px]"
                     style={{ backgroundImage: `url(${sales})` }}
                   >
                     {/* SALES */}
                   </button>
 
                   <button
-                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition"
+                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition h-[110px]"
                     style={{ backgroundImage: `url(${support})` }}
                   >
                     {/* SUPPORT */}
                   </button>
 
                   <button
-                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition"
+                    className="rounded-lg font-semibold text-white flex items-center justify-center bg-cover bg-center hover:opacity-90 transition h-[110px]"
                     style={{ backgroundImage: `url(${partner})` }}
                   >
                     {/* PARTNER */}
@@ -159,11 +156,9 @@ function Formdesign() {
 
                 </div>
 
-
                 <p className="text-[15px] text-gray-600 mt-10 mb-5">Fill out the form below for Support inquiries.</p>
 
-
-                <form className="space-y-5">
+                <div className="space-y-5">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="text"
@@ -238,28 +233,28 @@ function Formdesign() {
                   </div>
 
                   <div className="flex gap-4 justify-center">
-                    <div className="w-[300px] flex items-center gap-2 p-4 border border-gray-300 rounded-lg bg-gray-50">
+                    <div className="w-full sm:w-[300px] flex items-center gap-2 p-4 border border-gray-300 rounded-lg bg-gray-50">
                       <input type="checkbox" className="w-5 h-5" />
                       <span className="text-[14px] text-gray-600">I'm not a robot</span>
                     </div>
                   </div>
 
-                  <div className="flex gap-4 justify-center">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
                     <button
-                      type="reset"
-                      className="px-8 py-3 border-2 text-[14px] border-gray-300 rounded-lg hover:bg-gray-50 transition"
+                      type="button"
+                      className="w-full sm:w-auto px-8 py-3 border-2 text-[14px] border-gray-300 rounded-lg hover:bg-gray-50 transition"
                     >
                       Reset
                     </button>
                     <button
-                      type="submit"
-                      className="px-8 py-3 bg-[#dc3545] text-[14px] text-white rounded-lg hover:bg-red-700 transition"
+                      type="button"
+                      className="w-full sm:w-auto px-8 py-3 bg-[#dc3545] text-[14px] text-white rounded-lg hover:bg-red-700 transition"
                     >
                       Submit
                     </button>
                   </div>
-                </form>
+                </div>
 
               </div>
 
@@ -268,7 +263,6 @@ function Formdesign() {
 
         </div>
       </div>
-
     </>
   )
 }

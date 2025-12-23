@@ -50,7 +50,7 @@ function Hero() {
                     alt="Category Banner"
                     className="
             w-full
-            h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[98vh]
+            h-[70vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[98vh]
             object-cover
             rounded-b-[20px]
         "
@@ -58,7 +58,7 @@ function Hero() {
 
 
                 {/* LEFT Overlay Content */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center px-6 sm:px-10 md:px-[80px]">
+                <div className="absolute top-0 left-0 w-full h-full flex items-center px-4 sm:px-10 md:px-[80px]">
                     <div className="max-w-xl text-left">
 
                         {/* Title */}
@@ -217,7 +217,6 @@ function SectionTwo() {
 function SectionThree() {
     return (
         <section className="max-w-[1540px] mx-auto px-4">
-
             {/* Header */}
             <div className="text-center py-16">
                 <h2 className="text-3xl md:text-[35px] font-bold text-red-600 mb-2">
@@ -229,68 +228,45 @@ function SectionThree() {
             </div>
 
             {/* FIRST SECTION */}
-            <div className="flex flex-col md:flex-row items-center gap-6 mb-10">
-
-                {/* VIDEO (Service) */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group order-1 md:order-1">
+            <div className="flex flex-col lg:flex-row items-center gap-6 mb-10">
+                {/* VIDEO */}
+                <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                     <video
-                        src={ser4Video}   // import your service video
+                        src={ser4Video}
                         autoPlay
                         muted
                         loop
                         playsInline
-                        className="
-            w-full
-            h-[260px] sm:h-[320px] md:h-[400px] lg:h-[420px]
-            object-cover
-            transition-transform duration-500 group-hover:scale-110
-        "
+                        className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                 </div>
 
-
-                {/* Text SECOND on mobile */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto md:h-[400px] order-2 md:order-2">
-                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8">
-                        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                {/* Text */}
+                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                        <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                             Specialized Safeguarding
                         </h2>
 
-                        <ul className="list-disc pl-6 text-gray-700 text-sm md:text-[15px] leading-relaxed space-y-4 md:space-y-5 tracking-wide">
+                        <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                             <li>We provide specialized safeguarding services with tailored security solutions for your organization.</li>
                             <li>Our experts conduct detailed risk assessments to address unique challenges and vulnerabilities.</li>
                             <li>We ensure strong protection for your assets, personnel, and sensitive information through customized strategies.</li>
                         </ul>
                     </div>
                 </div>
-
             </div>
 
             {/* SECOND SECTION */}
-            <div className="flex flex-col md:flex-row items-center gap-6">
-
-                {/* Image FIRST on mobile */}
-                <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group order-1 md:order-2">
-                    <img
-                        src={ser5}
-                        alt="Deployment Services"
-                        className="
-                w-full 
-                h-[260px] sm:h-[320px] md:h-[400px] lg:h-[420px] 
-                object-cover 
-                transition-transform duration-500 group-hover:scale-110
-            "
-                    />
-                </div>
-
-                {/* Text SECOND on mobile */}
-                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto md:h-[400px] order-2 md:order-1">
-                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8">
-                        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+                {/* Text - Order 2 on mobile, Order 1 on desktop */}
+                <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full order-2 lg:order-1">
+                    <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                        <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                             Deployment Services
                         </h2>
 
-                        <ul className="list-disc pl-6 text-gray-700 text-sm md:text-[15px] leading-relaxed space-y-4 md:space-y-5 tracking-wide">
+                        <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                             <li>We focus on the seamless deployment of systems, technologies, and solutions tailored to your needs.</li>
                             <li>Our team manages everything from initial setup to full operational integration.</li>
                             <li>We minimize downtime and ensure optimal performance during deployment.</li>
@@ -298,8 +274,15 @@ function SectionThree() {
                     </div>
                 </div>
 
+                {/* Image - Order 1 on mobile, Order 2 on desktop */}
+                <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
+                    <img
+                        src={ser5}
+                        alt="Deployment Services"
+                        className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                </div>
             </div>
-
         </section>
     );
 }
@@ -307,8 +290,8 @@ function SectionThree() {
 function SectionFour() {
     return (
         <>
-            <div className="mt-10 px-4 ">
-                <img src={ser6} className='w-full h-[540px] rounded-xl' alt="" style={{ objectFit: "cover" }} />
+            <div className="md:mt-10 mt-5 px-4">
+                <img src={ser6} className='w-full md:h-[540px] h-[250px] rounded-xl' alt="" style={{ objectFit: "cover" }} />
             </div>
         </>
     )
@@ -329,7 +312,7 @@ function SectionFiveFAQ() {
     };
 
     return (
-        <section className="py-12 md:py-20">
+        <section className="py-5 md:py-20">
             <div className="max-w-[1540px] mx-auto px-4">
 
                 <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 gap-4 items-center rounded-[15px]">
@@ -349,7 +332,7 @@ function SectionFiveFAQ() {
                     </div>
 
                     {/* RIGHT CONTENT */}
-                    <div className="max-w-[690px] mx-auto p-6 sm:p-8 lg:p-0">
+                    <div className="max-w-[690px] mx-auto p-5 sm:p-8 lg:p-0">
 
                         {/* Heading */}
                         <div className="text-center lg:text-left mb-8">

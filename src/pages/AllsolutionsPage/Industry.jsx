@@ -42,9 +42,9 @@ function Hero() {
                     alt="Industrial Banner"
                     className="
                         w-full
-                        h-[50vh]
-                        sm:h-[50vh]
-                        md:h-[60vh]
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
                         lg:h-[75vh]
                         xl:h-[98vh]
                         object-cover
@@ -128,32 +128,31 @@ function Sectiontwo() {
                     <div>
                         {/* Header */}
                         <div className="text-center py-16">
-                            <h2 className="text-[30px] font-bold text-red-600 mb-2"> INDUSTRY SOLUTIONS</h2>
-                            <p className="text-[15px] text-gray-600 tracking-wider">
+                            <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">INDUSTRY SOLUTIONS</h2>
+                            <p className="ttext-sm md:text-[15px] text-gray-600 tracking-wider">
                                 The subtext helps customers quickly understand the value or specific
                             </p>
                         </div>
                     </div>
 
                     {/* First Section */}
-                    <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                        {/* Left Image (Fixed Width 650px) */}
-                        <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                    <div className="flex flex-col lg:flex-row items-center gap-6">
+                        {/* Left Image */}
+                        <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                             <img
                                 src={leftimg1}
                                 alt="Fire extinguisher"
-                                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
 
-                        {/* Right Content (Takes remaining space) */}
-                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                            <div className="max-w-[730px] p-5 md:px-0">
-                                <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                        {/* Right Content */}
+                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                            <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                                <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Specialized Safeguarding
                                 </h2>
-                                <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
+                                <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                     <li>
                                         NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
                                     </li>
@@ -166,14 +165,13 @@ function Sectiontwo() {
                                 </ul>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
 
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7 mt-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -203,253 +201,246 @@ function Sectiontwo() {
 }
 
 function Sectionthree() {
-
     const [activeTab, setActiveTab] = useState(0);
 
     const tabs = ['Challenges', 'Solution', 'Our solution'];
 
     const challenges = [
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Industries without advanced CCTV, alarms, and automation face security and operational inefficiencies."
         },
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Outdated systems lead to monitoring gaps, delayed responses, and vulnerabilities in safeguarding equipment."
         },
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Without real-time alerts and centralized control, businesses react to problems instead of preventing them, resulting in downtime, safety hazards, and reduced productivity."
         }
     ];
 
     const solutions = [
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Advanced surveillance systems with AI-powered analytics provide 24/7 monitoring and instant threat detection across all facility zones."
         },
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Integrated alarm systems trigger immediate alerts for unauthorized access, fire, or environmental hazards, enabling rapid response."
         },
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Industrial automation streamlines operations, reduces human error, and optimizes energy consumption while maintaining complete oversight through centralized dashboards."
         }
     ];
 
     const ourSolutions = [
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Custom-designed CCTV networks with HD recording, night vision, and remote access capabilities tailored to your facility's unique layout."
         },
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "Smart alarm integration with mobile notifications, automated emergency protocols, and seamless connectivity with local authorities."
         },
         {
-            icon: <Home className="w-5 h-5 text-gray-700" />,
+            icon: <Home className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />,
             text: "End-to-end automation solutions including access control, environmental monitoring, and predictive maintenance systems with 24/7 technical support."
         }
     ];
 
     return (
-        <>
-
-            <section className="max-w-[1520px] mx-auto bg-[#f9f9f9] rounded-lg mt-10">
-
-                <div className='p-10 pt-5'>
-
-                    {/* Header */}
-                    <div className="text-center py-10">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">
-                            WHAT WE OFFER
-                        </h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
-                        </p>
-                    </div>
-
-                    {/* Custom Tabs */}
-                    <div className="mb-12 flex justify-center">
-                        <div className="border-b border-gray-200 max-w-[500px]">
-                            {tabs.map((tab, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setActiveTab(index)}
-                                    className={`px-8 py-3 text-xl font-medium transition-all duration-300 relative ${activeTab === index
-                                        ? 'text-[#ffc107]'
-                                        : 'text-gray-400 hover:text-gray-500'
-                                        }`}
-                                >
-                                    {tab}
-                                    {activeTab === index && (
-                                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#ffc107]"></span>
-                                    )}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Content */}
-                    {activeTab === 0 && (
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            {/* Image Section */}
-                            <div className="relative">
-                                <div className="rounded-xl overflow-hidden  bg-gray-800">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=600&fit=crop"
-                                        alt="Security surveillance"
-                                        className="w-full h-[450px] object-cover"
-                                    />
-                                    {/* Detection Box Overlay */}
-                                    <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2">
-                                        <div className="border-4 border-blue-500 w-32 h-48 relative">
-                                            <div className="absolute -top-10 -right-10 bg-blue-500 rounded-full p-2">
-                                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Text Section */}
-                            <div>
-                                <h3 className="text-[25px] font-bold text-gray-900 mb-8">
-                                    Challenges Without CCTV, Alarms, and Automation in Industries
-                                </h3>
-
-                                <div className="space-y-8">
-                                    {challenges.map((challenge, index) => (
-                                        <div key={index} className="flex gap-6 items-start">
-                                            <div className="flex-shrink-0 mt-1">
-                                                {challenge.icon}
-                                            </div>
-                                            <p className="text-gray-600 text-[16px] leading-relaxed">
-                                                {challenge.text}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {activeTab === 1 && (
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            {/* Image Section */}
-                            <div className="relative">
-                                <div className="rounded-xl overflow-hidden  bg-gray-800">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop"
-                                        alt="Technology solutions"
-                                        className="w-full h-[450px] object-cover"
-                                    />
-                                    {/* Tech Grid Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent">
-                                        <div className="absolute top-1/4 left-1/4">
-                                            <div className="bg-blue-500/80 backdrop-blur-sm rounded-lg p-3">
-                                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div className="absolute bottom-1/3 right-1/4">
-                                            <div className="bg-green-500/80 backdrop-blur-sm rounded-lg p-3">
-                                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Text Section */}
-                            <div>
-                                <h3 className="text-[25px] font-bold text-gray-900 mb-8">
-                                    Modern Solutions for Industrial Security and Automation
-                                </h3>
-
-                                <div className="space-y-8">
-                                    {solutions.map((solution, index) => (
-                                        <div key={index} className="flex gap-6 items-start">
-                                            <div className="flex-shrink-0 mt-1">
-                                                {solution.icon}
-                                            </div>
-                                            <p className="text-gray-600 text-[16px] leading-relaxed">
-                                                {solution.text}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {activeTab === 2 && (
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            {/* Image Section */}
-                            <div className="relative">
-                                <div className="rounded-xl overflow-hidden  bg-gray-800">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop"
-                                        alt="Our custom solutions"
-                                        className="w-full h-[450px] object-cover"
-                                    />
-                                    {/* Service Badges Overlay */}
-                                    <div className="absolute top-8 right-8">
-                                        <div className="bg-amber-500 text-white rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
-                                            24/7 Support
-                                        </div>
-                                    </div>
-                                    <div className="absolute bottom-8 left-8">
-                                        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl">
-                                            <div className="flex items-center gap-3">
-                                                <div className="bg-green-500 rounded-full p-2">
-                                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                    </svg>
-                                                </div>
-                                                <div>
-                                                    <p className="text-xs text-gray-500">System Status</p>
-                                                    <p className="text-sm font-semibold text-gray-900">All Active</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Text Section */}
-                            <div>
-                                <h3 className="text-[25px] font-bold text-gray-900 mb-8">
-                                    Our Comprehensive Security and Automation Solutions
-                                </h3>
-
-                                <div className="space-y-8">
-                                    {ourSolutions.map((solution, index) => (
-                                        <div key={index} className="flex gap-6 items-start">
-                                            <div className="flex-shrink-0 mt-1">
-                                                {solution.icon}
-                                            </div>
-                                            <p className="text-gray-600 text-[16px] leading-relaxed">
-                                                {solution.text}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
+        <section className="w-full max-w-[1520px] mx-auto bg-[#f9f9f9] rounded-lg mt-6 sm:mt-10 px-4 sm:px-6 lg:px-8">
+            <div className='py-5 sm:py-8 lg:py-10'>
+                {/* Header */}
+                <div className="text-center py-6 sm:py-8 lg:py-10">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                        WHAT WE OFFER
+                    </h2>
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider px-4">
+                        The subtext helps customers quickly understand the value or specific
+                    </p>
                 </div>
 
-            </section>
-        </>
-    )
+                {/* Custom Tabs */}
+                <div className="mb-8 sm:mb-10 lg:mb-12 flex justify-center overflow-x-auto">
+                    <div className="border-b border-gray-200 inline-flex min-w-fit">
+                        {tabs.map((tab, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setActiveTab(index)}
+                                className={`px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base lg:text-xl font-medium transition-all duration-300 relative whitespace-nowrap ${
+                                    activeTab === index
+                                        ? 'text-[#ffc107]'
+                                        : 'text-gray-400 hover:text-gray-500'
+                                }`}
+                            >
+                                {tab}
+                                {activeTab === index && (
+                                    <span className="absolute bottom-0 left-0 right-0 h-0.5 sm:h-1 bg-[#ffc107]"></span>
+                                )}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Content */}
+                {activeTab === 0 && (
+                    <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
+                        {/* Image Section */}
+                        <div className="relative order-2 lg:order-1">
+                            <div className="rounded-lg sm:rounded-xl overflow-hidden bg-gray-800">
+                                <img
+                                    src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=600&fit=crop"
+                                    alt="Security surveillance"
+                                    className="w-full h-[250px] sm:h-[350px] lg:h-[450px] object-cover"
+                                />
+                                {/* Detection Box Overlay - Hidden on mobile */}
+                                <div className="hidden sm:block absolute top-1/2 left-1/4 transform -translate-y-1/2">
+                                    <div className="border-2 sm:border-4 border-blue-500 w-20 h-32 sm:w-32 sm:h-48 relative">
+                                        <div className="absolute -top-6 sm:-top-10 -right-6 sm:-right-10 bg-blue-500 rounded-full p-1.5 sm:p-2">
+                                            <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Text Section */}
+                        <div className="order-1 lg:order-2">
+                            <h3 className="text-lg sm:text-xl lg:text-[25px] font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">
+                                Challenges Without CCTV, Alarms, and Automation in Industries
+                            </h3>
+
+                            <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+                                {challenges.map((challenge, index) => (
+                                    <div key={index} className="flex gap-3 sm:gap-4 lg:gap-6 items-start">
+                                        <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                                            {challenge.icon}
+                                        </div>
+                                        <p className="text-gray-600 text-sm sm:text-base lg:text-[16px] leading-relaxed">
+                                            {challenge.text}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {activeTab === 1 && (
+                    <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
+                        {/* Image Section */}
+                        <div className="relative order-2 lg:order-1">
+                            <div className="rounded-lg sm:rounded-xl overflow-hidden bg-gray-800">
+                                <img
+                                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop"
+                                    alt="Technology solutions"
+                                    className="w-full h-[250px] sm:h-[350px] lg:h-[450px] object-cover"
+                                />
+                                {/* Tech Grid Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent">
+                                    <div className="absolute top-1/4 left-1/4">
+                                        <div className="bg-blue-500/80 backdrop-blur-sm rounded-md sm:rounded-lg p-2 sm:p-3">
+                                            <svg className="w-5 h-5 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div className="absolute bottom-1/3 right-1/4">
+                                        <div className="bg-green-500/80 backdrop-blur-sm rounded-md sm:rounded-lg p-2 sm:p-3">
+                                            <svg className="w-5 h-5 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Text Section */}
+                        <div className="order-1 lg:order-2">
+                            <h3 className="text-lg sm:text-xl lg:text-[25px] font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">
+                                Modern Solutions for Industrial Security and Automation
+                            </h3>
+
+                            <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+                                {solutions.map((solution, index) => (
+                                    <div key={index} className="flex gap-3 sm:gap-4 lg:gap-6 items-start">
+                                        <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                                            {solution.icon}
+                                        </div>
+                                        <p className="text-gray-600 text-sm sm:text-base lg:text-[16px] leading-relaxed">
+                                            {solution.text}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {activeTab === 2 && (
+                    <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
+                        {/* Image Section */}
+                        <div className="relative order-2 lg:order-1">
+                            <div className="rounded-lg sm:rounded-xl overflow-hidden bg-gray-800">
+                                <img
+                                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop"
+                                    alt="Our custom solutions"
+                                    className="w-full h-[250px] sm:h-[350px] lg:h-[450px] object-cover"
+                                />
+                                {/* Service Badges Overlay */}
+                                <div className="absolute top-4 sm:top-8 right-4 sm:right-8">
+                                    <div className="bg-amber-500 text-white rounded-full px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold shadow-lg">
+                                        24/7 Support
+                                    </div>
+                                </div>
+                                <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8">
+                                    <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-xl">
+                                        <div className="flex items-center gap-2 sm:gap-3">
+                                            <div className="bg-green-500 rounded-full p-1.5 sm:p-2">
+                                                <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p className="text-[10px] sm:text-xs text-gray-500">System Status</p>
+                                                <p className="text-xs sm:text-sm font-semibold text-gray-900">All Active</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Text Section */}
+                        <div className="order-1 lg:order-2">
+                            <h3 className="text-lg sm:text-xl lg:text-[25px] font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">
+                                Our Comprehensive Security and Automation Solutions
+                            </h3>
+
+                            <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+                                {ourSolutions.map((solution, index) => (
+                                    <div key={index} className="flex gap-3 sm:gap-4 lg:gap-6 items-start">
+                                        <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                                            {solution.icon}
+                                        </div>
+                                        <p className="text-gray-600 text-sm sm:text-base lg:text-[16px] leading-relaxed">
+                                            {solution.text}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
 }
 
 function SectionFour() {
@@ -458,10 +449,10 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         Features
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>

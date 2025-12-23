@@ -13,7 +13,7 @@ const Navbar = () => {
   const [loading, setLoading] = useState(false);
   const productsTimeoutRef = useRef(null);
   const solutionsTimeoutRef = useRef(null);
-  
+
   // Mobile drawer states
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
@@ -186,11 +186,20 @@ const Navbar = () => {
               >
                 <Link
                   to={link.path}
-                  className="transition hover:text-[#dc3545]"
+                  className="
+                    text-[12px]        /* mobile */
+                    sm:text-[13px]     /* small devices */
+                    md:text-[12px]     /* tablets */
+                    lg:text-[12px]     /* laptops */
+                    xl:text-[14px]     /* large screens */
+                    transition
+                    hover:text-[#dc3545]
+                  "
                   onClick={closeAllMenus}
                 >
                   {link.name}
                 </Link>
+
                 {link.dropdown && (
                   <ChevronDown size={18} className="text-black" />
                 )}
@@ -211,8 +220,8 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Button */}
-          <button 
-            className="md:hidden col-span-10 flex justify-end" 
+          <button
+            className="md:hidden col-span-10 flex justify-end"
             onClick={() => setOpen(true)}
           >
             <Menu size={15} className="text-black" />
@@ -331,8 +340,8 @@ const Navbar = () => {
           {/* Products Dropdown */}
           <ListItem disablePadding>
             <ListItemButton onClick={toggleMobileProducts}>
-              <ListItemText 
-                primary="PRODUCTS" 
+              <ListItemText
+                primary="PRODUCTS"
                 primaryTypographyProps={{
                   fontSize: '14px',
                   fontWeight: 500,
@@ -341,13 +350,12 @@ const Navbar = () => {
               />
               <ChevronDown
                 size={20}
-                className={`text-orange-500 transition-transform duration-200 ${
-                  mobileProductsOpen ? "rotate-180" : ""
-                }`}
+                className={`text-orange-500 transition-transform duration-200 ${mobileProductsOpen ? "rotate-180" : ""
+                  }`}
               />
             </ListItemButton>
           </ListItem>
-          
+
           <Collapse in={mobileProductsOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding className="bg-gray-50">
               {loading ? (
@@ -355,8 +363,8 @@ const Navbar = () => {
               ) : categories.length > 0 ? (
                 categories.map((category) => (
                   <ListItem key={category.id} disablePadding>
-                    <ListItemButton 
-                      component={Link} 
+                    <ListItemButton
+                      component={Link}
                       to={`/category/${category.id}`}
                       onClick={closeAllMenus}
                       sx={{ pl: 4 }}
@@ -374,7 +382,7 @@ const Navbar = () => {
                           </div>
                         )}
                       </ListItemIcon>
-                      <ListItemText 
+                      <ListItemText
                         primary={category.name}
                         primaryTypographyProps={{
                           fontSize: '13px',
@@ -392,8 +400,8 @@ const Navbar = () => {
           {/* Integrated Solutions Dropdown */}
           <ListItem disablePadding>
             <ListItemButton onClick={toggleMobileSolutions}>
-              <ListItemText 
-                primary="INTEGRATED SOLUTIONS" 
+              <ListItemText
+                primary="INTEGRATED SOLUTIONS"
                 primaryTypographyProps={{
                   fontSize: '14px',
                   fontWeight: 500,
@@ -402,21 +410,20 @@ const Navbar = () => {
               />
               <ChevronDown
                 size={20}
-                className={`text-orange-500 transition-transform duration-200 ${
-                  mobileSolutionsOpen ? "rotate-180" : ""
-                }`}
+                className={`text-orange-500 transition-transform duration-200 ${mobileSolutionsOpen ? "rotate-180" : ""
+                  }`}
               />
             </ListItemButton>
           </ListItem>
-          
+
           <Collapse in={mobileSolutionsOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding className="bg-gray-50">
               {solutions.map((solution) => {
                 const IconComponent = solution.icon;
                 return (
                   <ListItem key={solution.id} disablePadding>
-                    <ListItemButton 
-                      component={Link} 
+                    <ListItemButton
+                      component={Link}
                       to={solution.path}
                       onClick={closeAllMenus}
                       sx={{ pl: 4 }}
@@ -424,7 +431,7 @@ const Navbar = () => {
                       <ListItemIcon sx={{ minWidth: 40 }}>
                         <IconComponent size={20} className="text-[#dc3545]" />
                       </ListItemIcon>
-                      <ListItemText 
+                      <ListItemText
                         primary={solution.name}
                         primaryTypographyProps={{
                           fontSize: '13px',
@@ -441,8 +448,8 @@ const Navbar = () => {
           {/* Other Menu Items */}
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/protect" onClick={closeAllMenus}>
-              <ListItemText 
-                primary="PROTECT PLAN" 
+              <ListItemText
+                primary="PROTECT PLAN"
                 primaryTypographyProps={{
                   fontSize: '14px',
                   fontWeight: 500,
@@ -454,8 +461,8 @@ const Navbar = () => {
 
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/service" onClick={closeAllMenus}>
-              <ListItemText 
-                primary="SERVICE" 
+              <ListItemText
+                primary="SERVICE"
                 primaryTypographyProps={{
                   fontSize: '14px',
                   fontWeight: 500,
@@ -467,8 +474,8 @@ const Navbar = () => {
 
           <ListItem disablePadding>
             <ListItemButton component={Link} to="/support" onClick={closeAllMenus}>
-              <ListItemText 
-                primary="SUPPORT" 
+              <ListItemText
+                primary="SUPPORT"
                 primaryTypographyProps={{
                   fontSize: '14px',
                   fontWeight: 500,

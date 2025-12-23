@@ -4,7 +4,7 @@
 
 
 
-.clip-card {
+/* .clip-card {
   clip-path: path("M20,0H330A20,20 0,0,1 350,20V430A20,20 0,0,1 330,450H85A10,10 0,0,1 75,440V385A10,10 0,0,0 65,375H10A10,10 0,0,1 0,365V20A20,20 0,0,1 20,0Z");
   width: 100%;
   height: 450px;
@@ -13,8 +13,65 @@
   position: relative;
   background: #513D34;
   margin-top: 20px;
+  border-radius: 20px;
+} */
+
+
+.clip-card {
+  width: 100%;
+  height: 450px;
+  max-width: 370px;
+  overflow: hidden;
+  position: relative;
+  background: #513D34;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
+/* Tablet devices (landscape) */
+@media (max-width: 1024px) {
+  .clip-card {
+    height: 400px;
+    max-width: 100%;
+  }
+}
+
+/* Tablet devices (portrait) */
+@media (max-width: 768px) {
+  .clip-card {
+    height: 380px;
+    max-width: 100%;
+  }
+}
+
+/* Mobile devices (landscape) */
+@media (max-width: 640px) {
+  .clip-card {
+    height: 350px;
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 16px;
+  }
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 480px) {
+  .clip-card {
+    height: 350px;
+    max-width: 100%;
+    margin-top: 12px;
+    border-radius: 14px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 375px) {
+  .clip-card {
+    height: 350px;
+    margin-top: 10px;
+    border-radius: 12px;
+  }
+}
 
 
 .newsroom-swiper .swiper-slide {
@@ -48,11 +105,14 @@ html {
 
 
 .slanted-panel {
-  clip-path: polygon(
-    0 6vw,                  /* 🔺 top-left slant */
-    100% 0,                 /* top-right */
-    100% 100%,              /* bottom-right */
-    0 calc(100% - 6vw)      /* 🔺 bottom-left slant */
-  );
+  clip-path: polygon(0 6vw,
+      /* 🔺 top-left slant */
+      100% 0,
+      /* top-right */
+      100% 100%,
+      /* bottom-right */
+      0 calc(100% - 6vw)
+      /* 🔺 bottom-left slant */
+    );
   border-radius: 32px;
 }

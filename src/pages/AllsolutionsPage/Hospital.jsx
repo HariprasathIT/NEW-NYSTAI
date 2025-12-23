@@ -48,15 +48,16 @@ function Hero() {
         <>
             {/* CATEGORY BANNER */}
             <section className="relative w-full">
+
                 {/* Banner Image */}
                 <img
                     src={hospitalbanner}
                     alt="Category Banner"
                     className="
                         w-full
-                        h-[50vh]
-                        sm:h-[50vh]
-                        md:h-[60vh]
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
                         lg:h-[75vh]
                         xl:h-[98vh]
                         object-cover
@@ -64,9 +65,16 @@ function Hero() {
                     "
                 />
 
-                {/* RIGHT Overlay Content */}
-                <div className="absolute inset-0 flex items-center justify-end px-6 sm:px-10 md:px-[80px]">
-                    <div className="max-w-xl text-right">
+                {/* Overlay Content */}
+                <div
+                    className="
+                        absolute inset-0
+                        flex items-center
+                        justify-start md:justify-end
+                        px-6 sm:px-10 md:px-[80px]
+                    "
+                >
+                    <div className="max-w-xl text-left md:text-right">
 
                         {/* Title */}
                         <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-[#474747] leading-snug">
@@ -74,7 +82,15 @@ function Hero() {
                         </h1>
 
                         {/* Divider */}
-                        <div className="ml-auto w-32 sm:w-40 h-[3px] border-b border-dotted mt-3 sm:mt-4 border-[#474747]" />
+                        <div
+                            className="
+                                w-32 sm:w-40 h-[3px]
+                                border-b border-dotted
+                                mt-3 sm:mt-4
+                                border-[#474747]
+                                ml-0 md:ml-auto
+                            "
+                        />
 
                         {/* Description */}
                         <p className="mt-3 sm:mt-4 text-[#474747] text-xs sm:text-sm md:text-base leading-relaxed">
@@ -100,7 +116,7 @@ function Hero() {
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 function Sectiontwo() {
@@ -137,32 +153,31 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center py-16">
-                        <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
-                        <p className="text-[15px] text-gray-600 tracking-wider">
+                        <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
+                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
                 </div>
 
                 {/* First Section */}
-                <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                    {/* Left Image (Fixed Width 650px) */}
-                    <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                <div className="flex flex-col lg:flex-row items-center gap-6">
+                    {/* Left Image */}
+                    <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                         <img
                             src={leftimg1}
                             alt="Fire extinguisher"
-                            className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                         />
                     </div>
 
-                    {/* Right Content (Takes remaining space) */}
-                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                        <div className="max-w-[730px] p-5 md:px-0">
-                            <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                    {/* Right Content */}
+                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                        <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                            <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                                 Specialized Safeguarding
                             </h2>
-                            <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
+                            <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
                                     NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
                                 </li>
@@ -175,12 +190,11 @@ function Sectiontwo() {
                             </ul>
                         </div>
                     </div>
-
                 </div>
 
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7 mt-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -215,10 +229,10 @@ function Sectionthree() {
         <section className="max-w-[1540px] mx-auto px-4 ">
             {/* Header */}
             <div className="text-center py-16">
-                <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                     WHAT WE OFFER
                 </h2>
-                <p className="text-[15px] text-gray-600 tracking-wider">
+                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
@@ -231,7 +245,7 @@ function Sectionthree() {
 
                     {/* TOP CARD */}
                     <div className="relative rounded-xl overflow-hidden 
-            h-[220px] sm:h-[260px] md:h-[300px] lg:h-[288px] 
+            h-[260px] sm:h-[260px] md:h-[300px] lg:h-[288px] 
             group cursor-pointer">
 
                         <img
@@ -245,11 +259,11 @@ function Sectionthree() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-xl sm:text-2xl font-bold mb-2">
+                                <h4 className="text-[20px] sm:text-2xl font-bold mb-2">
                                     Solving the Problem
                                 </h4>
 
-                                <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
+                                <p className="text-white/90 text-[14px] sm:text-[17px] leading-relaxed 
                   transition-all duration-700 ease-out 
                   max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100">
                                     Leveraging tech for superior, cutting-edge manufacturing.
@@ -260,7 +274,7 @@ function Sectionthree() {
 
                     {/* BOTTOM CARD */}
                     <div className="relative rounded-xl overflow-hidden 
-            h-[220px] sm:h-[260px] md:h-[300px] lg:h-[288px] 
+            h-[260px] sm:h-[260px] md:h-[300px] lg:h-[288px] 
             group cursor-pointer">
 
                         <img
@@ -274,11 +288,11 @@ function Sectionthree() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-xl sm:text-2xl font-bold mb-2">
+                                <h4 className="text-[20px] sm:text-2xl font-bold mb-2">
                                     How NYSTAI Products Resolve These Issue?
                                 </h4>
 
-                                <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
+                                <p className="text-white/90 text-[14px] sm:text-[17px] leading-relaxed 
                   transition-all duration-700 ease-out 
                   max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100">
                                     Our dedicated support team ensures seamless integration and ongoing assistance.
@@ -308,12 +322,12 @@ function Sectionthree() {
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                         <div className="transform transition-all duration-1000 group-hover:-translate-y-4">
-                            <h3 className="text-2xl sm:text-3xl font-bold mb-3">Hospitals Lack Innovation</h3>
+                            <h3 className="text-[20px] sm:text-3xl font-bold mb-3">Hospitals Lack Innovation</h3>
 
-                            <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
+                            <p className="text-white/90 text-[14px] sm:text-[17px] leading-relaxed 
                 transition-all duration-1000 ease-out 
                 max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100">
-                                Many hospitals still rely on outdated security systems that are inefficient and hard to manage. NYSTAI offers modern solutions that integrate advanced surveillance, access control, and automation to enhance safety and operational efficiency.
+                                Many hospitals still rely on outdated security systems that are inefficient and hard to manage.
                             </p>
                         </div>
                     </div>
@@ -349,10 +363,10 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4 mb-10">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -362,7 +376,7 @@ function SectionFour() {
                     <img
                         src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&h=500&fit=crop"
                         alt="Healthcare Professional with Digital Interface"
-                        className="w-full h-[400px] object-cover"
+                        className="w-full h-[350px] sm:h-[400px] object-cover"
                     />
                 </div>
 

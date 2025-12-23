@@ -54,9 +54,9 @@ function Hero() {
                     alt="Category Banner"
                     className="
                         w-full
-                        h-[50vh]
-                        sm:h-[50vh]
-                        md:h-[60vh]
+                        h-[70vh]
+                        sm:h-[70vh]
+                        md:h-[70vh]
                         lg:h-[75vh]
                         xl:h-[98vh]
                         object-cover
@@ -138,32 +138,31 @@ function Sectiontwo() {
                     <div>
                         {/* Header */}
                         <div className="text-center py-16">
-                            <h2 className="text-[30px] font-bold text-red-600 mb-2">NYSTAI'S INTERACTIVE FLAT-PANEL DISPLAY (IFPD)</h2>
-                            <p className="text-[15px] text-gray-600 tracking-wider">
+                            <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S INTERACTIVE FLAT-PANEL DISPLAY (IFPD)</h2>
+                            <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                                 The subtext helps customers quickly understand the value or specific
                             </p>
                         </div>
                     </div>
 
                     {/* First Section */}
-                    <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-                        {/* Left Image (Fixed Width 650px) */}
-                        <div className="w-full md:w-[600px] rounded-2xl overflow-hidden group">
+                    <div className="flex flex-col lg:flex-row items-center gap-6">
+                        {/* Left Image */}
+                        <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
                             <img
                                 src={leftimg1}
                                 alt="Fire extinguisher"
-                                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
 
-                        {/* Right Content (Takes remaining space) */}
-                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl h-[400px] flex justify-center items-center">
-                            <div className="max-w-[730px] p-5 md:px-0">
-                                <h2 className="text-2xl md:text-[30px] font-bold text-[#ffc107] mb-6">
+                        {/* Right Content */}
+                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                            <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                                <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
                                     Specialized Safeguarding
                                 </h2>
-                                <ul className="list-disc pl-5 text-[#4a4a4a] md:text-[15px] leading-relaxed space-y-5" style={{ letterSpacing: ".5px" }}>
+                                <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                     <li>
                                         NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
                                     </li>
@@ -176,14 +175,13 @@ function Sectiontwo() {
                                 </ul>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
 
                 {/* Icons */}
-                <div className="flex items-center justify-center py-7 mt-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="flex items-center justify-center py-7 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -216,38 +214,40 @@ function Sectionthree() {
 
     return (
         <>
-            <section className="max-w-[1540px] mx-auto  px-4">
+           <section className="max-w-[1540px] mx-auto px-4 sm:px-4 lg:px-4">
 
                 {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                <div className="text-center py-8 sm:py-12 md:py-16">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         WHAT WE OFFER
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider px-4">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
 
+                {/* Video Card 1 */}
                 <div
-                    className="relative max-w-[1340px] mx-auto rounded-xl overflow-hidden"
+                    className="relative max-w-[1340px] mx-auto rounded-lg sm:rounded-xl overflow-hidden mb-4 sm:mb-6 md:mb-7"
                     style={{ position: "sticky", top: "100px" }}
                 >
-                    {/* Background Video */}
                     <video
                         src={video1}
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="w-full h-auto object-cover"
+                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-auto object-cover"
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-10">
 
                         {/* Glassmorphism Container */}
                         <div className="
-                            max-w-[450px] p-8 rounded-xl
+                            w-full sm:max-w-[380px] md:max-w-[450px] 
+                            p-4 sm:p-6 md:p-8 
+                            rounded-lg sm:rounded-xl
                             bg-white/10
                             backdrop-blur-lg
                             border border-white/20
@@ -255,47 +255,51 @@ function Sectionthree() {
                         ">
 
                             {/* Heading */}
-                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                            <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
                                 Smart • Secure • Scalable
                             </h2>
 
                             {/* Paragraph */}
-                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                            <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                                 Empowering intelligent infrastructure with advanced security,
                                 seamless automation, and scalable IoT solutions.
                             </p>
 
                             {/* Glassmorphism Icons */}
-                            <div className="flex gap-6">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
 
                                 {/* Item 1 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] 
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Data Security
                                     </span>
                                 </div>
 
                                 {/* Item 2 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Smart Control
                                     </span>
                                 </div>
@@ -305,22 +309,28 @@ function Sectionthree() {
                     </div>
                 </div>
 
-                <div className="relative max-w-[1440px] mx-auto rounded-xl overflow-hidden mt-7" style={{ position: "sticky", top: "150px" }}>
+                {/* Video Card 2 */}
+                <div 
+                    className="relative max-w-[1440px] mx-auto rounded-lg sm:rounded-xl overflow-hidden mb-4 sm:mb-6 md:mb-7" 
+                    style={{ position: "sticky", top: "170px" }}
+                >
                     <video
                         src={video3}
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="w-full h-auto"
+                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-auto object-cover"
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-10">
 
                         {/* Glassmorphism Container */}
                         <div className="
-                            max-w-[500px] p-8 rounded-xl
+                            w-full sm:max-w-[420px] md:max-w-[500px]
+                            p-4 sm:p-6 md:p-8
+                            rounded-lg sm:rounded-xl
                             bg-white/10
                             backdrop-blur-lg
                             border border-white/20
@@ -328,47 +338,51 @@ function Sectionthree() {
                         ">
 
                             {/* Heading */}
-                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                            <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
                                 Smart • Secure • Scalable
                             </h2>
 
                             {/* Paragraph */}
-                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                            <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                                 Empowering intelligent infrastructure with advanced security,
                                 seamless automation, and scalable IoT solutions.
                             </p>
 
                             {/* Glassmorphism Icons */}
-                            <div className="flex gap-6">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
 
                                 {/* Item 1 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Data Security
                                     </span>
                                 </div>
 
                                 {/* Item 2 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Smart Control
                                     </span>
                                 </div>
@@ -378,22 +392,25 @@ function Sectionthree() {
                     </div>
                 </div>
 
-                <div className="relative max-w-[1540px] mx-auto rounded-xl overflow-hidden mt-7">
+                {/* Video Card 3 */}
+                <div className="relative max-w-[1540px] mx-auto rounded-lg sm:rounded-xl overflow-hidden">
                     <video
                         src={video1}
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="w-full h-auto"
+                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-auto object-cover"
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-10">
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-10">
 
                         {/* Glassmorphism Container */}
                         <div className="
-                            max-w-[550px] p-8 rounded-xl
+                            w-full sm:max-w-[460px] md:max-w-[550px]
+                            p-4 sm:p-6 md:p-8
+                            rounded-lg sm:rounded-xl
                             bg-white/10
                             backdrop-blur-lg
                             border border-white/20
@@ -401,47 +418,51 @@ function Sectionthree() {
                         ">
 
                             {/* Heading */}
-                            <h2 className="text-white text-2xl md:text-[27px] font-bold mb-5">
+                            <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
                                 Smart • Secure • Scalable
                             </h2>
 
                             {/* Paragraph */}
-                            <p className="text-gray-200 max-w-2xl text-sm md:text-[16px] mb-6 leading-relaxed">
+                            <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                                 Empowering intelligent infrastructure with advanced security,
                                 seamless automation, and scalable IoT solutions.
                             </p>
 
                             {/* Glassmorphism Icons */}
-                            <div className="flex gap-6">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
 
                                 {/* Item 1 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Data Security
                                     </span>
                                 </div>
 
                                 {/* Item 2 */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div className="
                                         flex items-center justify-center
-                                        w-[45px] h-[45px] rounded-full
+                                        w-[40px] h-[40px] sm:w-[45px] sm:h-[45px]
+                                        rounded-full
                                         bg-white/15 backdrop-blur-md
                                         border border-white/30
                                         shadow-lg
+                                        flex-shrink-0
                                     ">
-                                        <ShieldCheck size={20} className="text-white" />
+                                        <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
-                                    <span className="text-white text-sm font-medium">
+                                    <span className="text-white text-xs sm:text-sm font-medium">
                                         Smart Control
                                     </span>
                                 </div>
@@ -459,38 +480,37 @@ function Sectionthree() {
 function SectionFour() {
     return (
         <>
-            <section className="max-w-[1540px] mx-auto px-4">
+           <section className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                <div className="text-center py-12 sm:py-12 md:py-16">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-1 sm:mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px]text-gray-600 tracking-wide sm:tracking-wider px-4">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
 
                 {/* LEFT 6 AND RIGHT 6 */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 pb-8 sm:pb-12 md:pb-16">
                     {/* Left Side - Image */}
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center order-2 lg:order-1">
                         <img
                             src={ifpd2}
                             alt="Person watching cinema content"
-                            className="w-full h-[625px] rounded-lg"
-                            style={{ objectFit: "cover" }}
+                            className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[625px] rounded-lg object-cover"
                         />
                     </div>
 
                     {/* Right Side - Features List */}
-                    <div className="flex flex-col justify-center space-y-8">
+                    <div className="flex flex-col justify-center space-y-5 sm:space-y-6 md:space-y-8 order-1 lg:order-2">
                         {/* Feature 1 */}
                         <div>
-                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                            <h3 className="text-sm sm:text-base md:text-[17px] font-semibold text-[#ffc107] mb-2 sm:mb-3">
                                 01. Adaptable Platform
                             </h3>
-                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
-                                <p className="text-gray-700 text-[15px]">
+                            <div className="border-l-2 sm:border-l-4 border-gray-300 pl-3 sm:pl-4 min-h-[40px] sm:min-h-[50px]">
+                                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
                                     NYSTAI's IFPD allows users to install their own devices and displays, offering a customizable solution for various needs.
                                 </p>
                             </div>
@@ -498,11 +518,11 @@ function SectionFour() {
 
                         {/* Feature 2 */}
                         <div>
-                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                            <h3 className="text-sm sm:text-base md:text-[17px] font-semibold text-[#ffc107] mb-2 sm:mb-3">
                                 02. Seamless Integration
                             </h3>
-                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
-                                <p className="text-gray-700 text-[15px]">
+                            <div className="border-l-2 sm:border-l-4 border-gray-300 pl-3 sm:pl-4 min-h-[40px] sm:min-h-[50px]">
+                                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
                                     Provides a flexible foundation for both education and industry, supporting dynamic learning and efficient meetings.
                                 </p>
                             </div>
@@ -510,11 +530,11 @@ function SectionFour() {
 
                         {/* Feature 3 */}
                         <div>
-                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                            <h3 className="text-sm sm:text-base md:text-[17px] font-semibold text-[#ffc107] mb-2 sm:mb-3">
                                 03. Ultra-Clear Display
                             </h3>
-                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
-                                <p className="text-gray-700 text-[15px]">
+                            <div className="border-l-2 sm:border-l-4 border-gray-300 pl-3 sm:pl-4 min-h-[40px] sm:min-h-[50px]">
+                                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
                                     Enhances engagement and collaboration with a visually stunning display
                                 </p>
                             </div>
@@ -522,11 +542,11 @@ function SectionFour() {
 
                         {/* Feature 4 */}
                         <div>
-                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                            <h3 className="text-sm sm:text-base md:text-[17px] font-semibold text-[#ffc107] mb-2 sm:mb-3">
                                 04. Real-Time Content Sharing
                             </h3>
-                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
-                                <p className="text-gray-700 text-[15px]">
+                            <div className="border-l-2 sm:border-l-4 border-gray-300 pl-3 sm:pl-4 min-h-[40px] sm:min-h-[50px]">
+                                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
                                     Enables interactive communication with multi-touch capabilities and device integration.
                                 </p>
                             </div>
@@ -534,11 +554,11 @@ function SectionFour() {
 
                         {/* Feature 5 */}
                         <div>
-                            <h3 className="text-[17px] font-semibold text-[#ffc107] mb-3">
+                            <h3 className="text-sm sm:text-base md:text-[17px] font-semibold text-[#ffc107] mb-2 sm:mb-3">
                                 05. Versatile Use
                             </h3>
-                            <div className="border-l-4 border-gray-300 pl-4 h-[50px]">
-                                <p className="text-gray-700 text-[15px]">
+                            <div className="border-l-2 sm:border-l-4 border-gray-300 pl-3 sm:pl-4 min-h-[40px] sm:min-h-[50px]">
+                                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
                                     Suitable for classrooms, boardrooms, and beyond, transforming spaces into dynamic, collaborative environments.
                                 </p>
                             </div>
@@ -557,10 +577,10 @@ function SectionFive() {
             <section className="max-w-[1540px] mx-auto px-4 mb-10">
                 {/* Header */}
                 <div className="text-center py-16">
-                    <h2 className="text-[30px] font-bold text-red-600 mb-2">
+                    <h2 className="text-2xl md:text-[28px] lg:text-[30px]  font-bold text-red-600 mb-2">
                         WHERE WE USE
                     </h2>
-                    <p className="text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
                         NYSTAI's IFPD enhances learning in schools, fosters collaboration in colleges and facilitates efficient meetings in industries.
                     </p>
                 </div>
