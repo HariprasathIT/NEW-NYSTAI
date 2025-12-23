@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import smarthomebanner from "../../assets/Images/Allsolutions-Images/Smarthome/smarthomebanner.jpeg"
 
@@ -11,6 +11,11 @@ import icon4 from "../../assets/Images/Allsolutions-Images/Smarthome/icon4.png"
 import featureicon from "../../assets/Images/Allsolutions-Images/Worship/icon.png"
 
 import smar from "../../assets/Images/Allsolutions-Images/Smarthome/smar.jpeg"
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Smarthome = () => {
 
@@ -60,7 +65,7 @@ function Hero() {
 
                         {/* Title */}
                         <h1 className="text-2xl sm:text-3xl md:text-[35px] font-bold text-[#000] leading-snug md:leading-tight">
-                            Enhanced Protection, Anytime
+                            Nystai Smart Home Solutions for Secure & Connected Living
                         </h1>
 
                         {/* Divider */}
@@ -71,8 +76,7 @@ function Hero() {
                             className="mt-3 sm:mt-4 text-gray-800 text-xs sm:text-sm md:text-[17px] leading-relaxed"
                             style={{ lineHeight: "25px" }}
                         >
-                            Add monitoring and emergency support to
-                            <br /> your Nystai Protect Plan.
+                            Protect your family with Nystai smart sensors, AI cameras, hybrid NVRs, and automated alerts designed to secure every corner of your home.
                         </p>
 
                         {/* Button */}
@@ -101,25 +105,25 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
+            title: "24/7 intrusion detection",
             description: "Real-time notifications for security",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
+            title: "App-based control",
             description: "Automated control from one device",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
+            title: "Fire & gas hazard monitoring",
             description: "Proactive monitoring prevents problems",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
+            title: "Hybrid NVR Connectivity",
             description: "Customizable for Any Environment",
             color: "orange"
         }
@@ -236,11 +240,10 @@ function Sectionthree() {
                         />
                         <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
                             <h3 className={`text-[30px] font-bold mb-2 transition duration-300 ${activeCard === 1 ? 'opacity-100' : 'opacity-0'}`}>
-                                Solutions Provided by CCTV, Alarms, and Automation
+                                Home Safety Challenges
                             </h3>
                             <p className={`text-[17px] transition duration-300 ${activeCard === 1 ? 'opacity-100' : 'opacity-0'}`}>
-                                Modern CCTV cameras, alarms, & automation provide real-time security,
-                                control & convenience from a single platform. With live video feeds and instant alerts, homeowners can quickly respond to threats.
+                                Traditional homes lack monitoring and early detection systems, making them vulnerable to accidents and unwanted entry.
                             </p>
                         </div>
                     </div>
@@ -262,10 +265,10 @@ function Sectionthree() {
                         />
                         <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
                             <h3 className={`text-[30px] font-bold mb-2 transition duration-300 ${activeCard === 2 ? 'opacity-100' : 'opacity-0'}`}>
-                                24/7 Monitoring Services
+                                Smart Home Needs
                             </h3>
                             <p className={`text-[17px] transition duration-300 ${activeCard === 2 ? 'opacity-100' : 'opacity-0'}`}>
-                                Professional monitoring ensures your property is protected around the clock with instant response to any security events.
+                                Modern homes require advanced sensors, automated alerts, and remote control for full protection and ease of living.
                             </p>
                         </div>
                     </div>
@@ -287,10 +290,10 @@ function Sectionthree() {
                         />
                         <div className="relative z-10 p-8 h-full flex flex-col justify-end text-white">
                             <h3 className={`text-[30px] font-bold mb-2 transition duration-500 ${activeCard === 3 ? 'opacity-100' : 'opacity-0'}`}>
-                                Advanced Access Control
+                                How Nystai Helps
                             </h3>
                             <p className={`text-[17px] transition duration-500 ${activeCard === 3 ? 'opacity-100' : 'opacity-0'}`}>
-                                Secure entry systems with biometric authentication, smart locks, and keyless access management for complete control over who enters your property.
+                                Nystai connects all your smart sensors, cameras, and alarms into a single ecosystem that protects, monitors, and automates your home in real time.
                             </p>
                         </div>
                     </div>
@@ -304,28 +307,28 @@ function SectionFour() {
     const features = [
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Detect",
+            description: "Sensors identify intrusion, smoke, gas leaks, temperature changes, or water leaks."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Analyze",
+            description: "Nystai controller processes alerts and activates the proper response."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Alert",
+            description: "Notifications sent to your smartphone, alarms, or emergency contacts."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Prevent",
+            description: "Automation triggers sirens, locks, or camera recording automatically."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Monitor & Optimize",
+            description: "Live system monitoring and analytics improve response efficiency."
         }
     ];
     return (
@@ -337,7 +340,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        How the Nystai Smart Home System Works
                     </p>
                 </div>
 
@@ -363,12 +366,38 @@ function SectionFour() {
 }
 
 function SectionFive() {
+    const sectionRef = useRef(null);
+    const imageRef = useRef(null);
+
+    useEffect(() => {
+        gsap.fromTo(
+            imageRef.current,
+            {
+                scale: 0.85,
+                opacity: 0,
+            },
+            {
+                scale: 1,
+                opacity: 1,
+                duration: 1.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 75%",
+                    once: true,
+                },
+            }
+        );
+    }, []);
 
     return (
-        <>
-            <section className="px-4">
-                <img src={smar} alt="smar" className="w-full h-auto rounded-2xl lg:mb-16 mb-5" />
-            </section>
-        </>
-    )
+        <section ref={sectionRef} className="px-4">
+            <img
+                ref={imageRef}
+                src={smar}
+                alt="smar"
+                className="w-full h-auto rounded-2xl lg:mb-16 mb-5 will-change-transform"
+            />
+        </section>
+    );
 }
