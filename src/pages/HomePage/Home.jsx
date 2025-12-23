@@ -865,7 +865,7 @@ function PartnersLogo() {
     return (
         <section className="max-w-[1540px] mx-auto py-5 px-4 bg-white">
 
-            <div className="pb-8 sm:pb-10">
+            <div className="py-8 sm:py-10">
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
                     Partners & <span className="text-[#dc3545]">Testimonials</span>
                 </h2>
@@ -1186,11 +1186,11 @@ const Card2 = () => {
                         <div key={`mobile-${index}`} className="bg-white rounded-[10px] p-5 shadow-[5px_5px_20px_5px_rgba(0,0,0,0.09)] transition-all duration-300 min-h-[180px] flex flex-col gap-[15px] hover:translate-y-[-5px] hover:shadow-[5px_5px_25px_5px_rgba(0,0,0,0.15)] max-sm:min-h-[160px]">
                             <div className="flex items-center gap-[15px]">
                                 <div className="h-[50px] w-[50px] min-w-[50px] rounded-full bg-[#f5f5f5] flex justify-center items-center">
-                                    <img
+                                    {/* <img
                                         src="/IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/homepage-testimonal-logo.webp"
                                         alt="logo"
                                         className="h-5 w-auto"
-                                    />
+                                    /> */}
                                 </div>
                                 <div>
                                     <h4 className="text-black text-sm font-bold m-0 capitalize">{testimonial.name}</h4>

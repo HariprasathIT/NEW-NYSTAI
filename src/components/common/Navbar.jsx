@@ -1,14 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Phone, MessageCircle, ChevronDown, ShoppingBasket, Home, Factory, GraduationCap, Church, Video, Warehouse, Hospital, Building2, ShoppingCart, CarFront } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Menu, X, Phone, ChevronDown, Home, Factory, GraduationCap, Church, Video, Warehouse, Hospital, Building2, ShoppingCart, CarFront } from "lucide-react";
+import { Drawer, Collapse, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import nyslogo from "../../assets/nyslogo.png";
 
 const Navbar = () => {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [productsMegaMenuOpen, setProductsMegaMenuOpen] = useState(false);
@@ -17,6 +13,10 @@ const Navbar = () => {
   const [loading, setLoading] = useState(false);
   const productsTimeoutRef = useRef(null);
   const solutionsTimeoutRef = useRef(null);
+  
+  // Mobile drawer states
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
 
   // Solutions data with icons
   const solutions = [
@@ -49,10 +49,7 @@ const Navbar = () => {
     try {
       const response = await fetch("https://api.nystai.in/api/categories/list");
       const data = await response.json();
-
-      // Sort ASC by name (change key if needed)
       const sorted = data.sort((a, b) => a.name.localeCompare(b.name));
-
       setCategories(sorted);
     } catch (error) {
       console.error("Error fetching categories:", error);
@@ -69,14 +66,15 @@ const Navbar = () => {
     { name: "Support", path: "/support" },
   ];
 
-  // Close all menus function
   const closeAllMenus = () => {
     setProductsMegaMenuOpen(false);
     setSolutionsMegaMenuOpen(false);
     setOpen(false);
+    setMobileProductsOpen(false);
+    setMobileSolutionsOpen(false);
   };
 
-  // Products mega menu handlers
+  // Products mega menu handlers (Desktop)
   const handleProductsMouseEnter = () => {
     if (productsTimeoutRef.current) {
       clearTimeout(productsTimeoutRef.current);
@@ -101,7 +99,7 @@ const Navbar = () => {
     setProductsMegaMenuOpen(false);
   };
 
-  // Solutions mega menu handlers
+  // Solutions mega menu handlers (Desktop)
   const handleSolutionsMouseEnter = () => {
     if (solutionsTimeoutRef.current) {
       clearTimeout(solutionsTimeoutRef.current);
@@ -128,9 +126,20 @@ const Navbar = () => {
 
   const isMegaMenuOpen = productsMegaMenuOpen || solutionsMegaMenuOpen;
 
+  // Toggle mobile dropdowns
+  const toggleMobileProducts = () => {
+    setMobileProductsOpen(!mobileProductsOpen);
+    setMobileSolutionsOpen(false);
+  };
+
+  const toggleMobileSolutions = () => {
+    setMobileSolutionsOpen(!mobileSolutionsOpen);
+    setMobileProductsOpen(false);
+  };
+
   return (
     <>
-      {/* Blur Overlay */}
+      {/* Blur Overlay for Desktop */}
       {isMegaMenuOpen && (
         <div
           className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 transition-all duration-300"
@@ -140,14 +149,13 @@ const Navbar = () => {
 
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${scrolled || isMegaMenuOpen ? "bg-white shadow-md" : "bg-transparent"} `}
+        ${scrolled || isMegaMenuOpen ? "bg-white shadow-md" : "bg-transparent"}`}
       >
         <div className="max-w-[1540px] mx-auto py-4 px-4 grid grid-cols-12 items-center">
-
           {/* Logo */}
           <div className="col-span-2 flex items-center">
             <Link to="/" onClick={closeAllMenus}>
-              <img src={nyslogo} alt="Logo" className="md:h-[50px] w-full" />
+              <img src={nyslogo} alt="NYS Logo" className="md:h-[50px] w-full" />
             </Link>
           </div>
 
@@ -200,28 +208,18 @@ const Navbar = () => {
             >
               <Phone size={15} />
             </a>
-
-
-            {/* <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
-              <MessageCircle size={23} className="text-black hover:text-[#dc3545] transition" />
-            </a>
-
-            <Link to="/cart" onClick={closeAllMenus}>
-              <ShoppingBasket size={23} className="text-black hover:text-[#dc3545] transition" />
-            </Link> */}
           </div>
 
           {/* Mobile Button */}
-          <button className="md:hidden col-span-10 flex justify-end" onClick={() => setOpen(!open)}>
-            {open ? (
-              <X size={30} className={`${scrolled ? "text-black" : "text-black"}`} />
-            ) : (
-              <Menu size={30} className={`${scrolled ? "text-black" : "text-black"}`} />
-            )}
+          <button 
+            className="md:hidden col-span-10 flex justify-end" 
+            onClick={() => setOpen(true)}
+          >
+            <Menu size={15} className="text-black" />
           </button>
         </div>
 
-        {/* Products Mega Menu */}
+        {/* Desktop Products Mega Menu */}
         {productsMegaMenuOpen && (
           <div
             className="hidden md:block absolute left-0 w-full bg-white shadow-lg"
@@ -229,7 +227,7 @@ const Navbar = () => {
             onMouseEnter={handleProductsMegaMenuMouseEnter}
             onMouseLeave={handleProductsMegaMenuMouseLeave}
           >
-            <div className="max-w-[1540px] mx-auto py-5 ">
+            <div className="max-w-[1540px] mx-auto py-5">
               <div className="grid grid-cols-12 py-3 gap-6">
                 <div className="col-span-12 bg-[#fff] rounded-lg">
                   {loading ? (
@@ -273,7 +271,7 @@ const Navbar = () => {
           </div>
         )}
 
-        {/* Solutions Mega Menu */}
+        {/* Desktop Solutions Mega Menu */}
         {solutionsMegaMenuOpen && (
           <div
             className="hidden md:block absolute left-0 w-full bg-white shadow-lg"
@@ -292,7 +290,7 @@ const Navbar = () => {
                           key={solution.id}
                           to={solution.path}
                           onClick={closeAllMenus}
-                          className="uppercase bg-[#fff] rounded-lg overflow-hidden hover:shadow-md transition-shadow h-[50px] flex gap-4 p-4 items-center border border-gray-100 "
+                          className="uppercase bg-[#fff] rounded-lg overflow-hidden hover:shadow-md transition-shadow h-[50px] flex gap-4 p-4 items-center border border-gray-100"
                         >
                           <IconComponent size={23} className="text-[#dc3545]" />
                           <p className="text-sm font-medium text-gray-800 line-clamp-1">
@@ -309,35 +307,178 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white shadow-lg fixed top-[67px] left-0 w-full z-40">
-          <ul className="flex flex-col space-y-4 py-5 px-6 text-gray-700 font-medium">
-            {navLinks.map((link, index) => (
-              <li key={index} className="flex items-center gap-1">
-                <Link
-                  to={link.path}
-                  onClick={closeAllMenus}
-                  className="block"
-                >
-                  {link.name}
-                </Link>
-                {link.dropdown && <ChevronDown size={18} className="text-black" />}
-              </li>
-            ))}
-
-            {/* Icons in Mobile */}
-            <div className="flex items-center space-x-6 pt-3">
-              <a href="tel:+919999999999">
-                <Phone size={28} className="text-black" />
-              </a>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
-                <MessageCircle size={28} className="text-black" />
-              </a>
-            </div>
-          </ul>
+      {/* MUI Mobile Drawer */}
+      <Drawer
+        open={open}
+        onClose={closeAllMenus}
+        className="md:hidden"
+        PaperProps={{
+          sx: {
+            width: 320,
+          }
+        }}
+      >
+        {/* Drawer Header */}
+        <div className="flex items-center justify-between p-4 border-b">
+          <img src={nyslogo} alt="NYS Logo" className="h-[30px]" />
+          <button onClick={closeAllMenus}>
+            <X size={24} className="text-gray-700" />
+          </button>
         </div>
-      )}
+
+        {/* Drawer Content */}
+        <List className="flex-1 overflow-y-auto">
+          {/* Products Dropdown */}
+          <ListItem disablePadding>
+            <ListItemButton onClick={toggleMobileProducts}>
+              <ListItemText 
+                primary="PRODUCTS" 
+                primaryTypographyProps={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  letterSpacing: '0.5px'
+                }}
+              />
+              <ChevronDown
+                size={20}
+                className={`text-orange-500 transition-transform duration-200 ${
+                  mobileProductsOpen ? "rotate-180" : ""
+                }`}
+              />
+            </ListItemButton>
+          </ListItem>
+          
+          <Collapse in={mobileProductsOpen} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding className="bg-gray-50">
+              {loading ? (
+                <div className="py-4 text-center text-gray-500 text-sm">Loading...</div>
+              ) : categories.length > 0 ? (
+                categories.map((category) => (
+                  <ListItem key={category.id} disablePadding>
+                    <ListItemButton 
+                      component={Link} 
+                      to={`/category/${category.id}`}
+                      onClick={closeAllMenus}
+                      sx={{ pl: 4 }}
+                    >
+                      <ListItemIcon sx={{ minWidth: 40 }}>
+                        {category.iconUrl ? (
+                          <img
+                            src={category.iconUrl}
+                            alt={category.name}
+                            className="h-5 w-5 object-contain"
+                          />
+                        ) : (
+                          <div className="h-5 w-5 bg-gray-300 rounded-full flex items-center justify-center">
+                            <span className="text-gray-500 text-xs">?</span>
+                          </div>
+                        )}
+                      </ListItemIcon>
+                      <ListItemText 
+                        primary={category.name}
+                        primaryTypographyProps={{
+                          fontSize: '13px',
+                        }}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+                ))
+              ) : (
+                <div className="py-4 text-center text-gray-500 text-sm">No categories</div>
+              )}
+            </List>
+          </Collapse>
+
+          {/* Integrated Solutions Dropdown */}
+          <ListItem disablePadding>
+            <ListItemButton onClick={toggleMobileSolutions}>
+              <ListItemText 
+                primary="INTEGRATED SOLUTIONS" 
+                primaryTypographyProps={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  letterSpacing: '0.5px'
+                }}
+              />
+              <ChevronDown
+                size={20}
+                className={`text-orange-500 transition-transform duration-200 ${
+                  mobileSolutionsOpen ? "rotate-180" : ""
+                }`}
+              />
+            </ListItemButton>
+          </ListItem>
+          
+          <Collapse in={mobileSolutionsOpen} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding className="bg-gray-50">
+              {solutions.map((solution) => {
+                const IconComponent = solution.icon;
+                return (
+                  <ListItem key={solution.id} disablePadding>
+                    <ListItemButton 
+                      component={Link} 
+                      to={solution.path}
+                      onClick={closeAllMenus}
+                      sx={{ pl: 4 }}
+                    >
+                      <ListItemIcon sx={{ minWidth: 40 }}>
+                        <IconComponent size={20} className="text-[#dc3545]" />
+                      </ListItemIcon>
+                      <ListItemText 
+                        primary={solution.name}
+                        primaryTypographyProps={{
+                          fontSize: '13px',
+                          textTransform: 'uppercase'
+                        }}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
+            </List>
+          </Collapse>
+
+          {/* Other Menu Items */}
+          <ListItem disablePadding>
+            <ListItemButton component={Link} to="/protect" onClick={closeAllMenus}>
+              <ListItemText 
+                primary="PROTECT PLAN" 
+                primaryTypographyProps={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  letterSpacing: '0.5px'
+                }}
+              />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component={Link} to="/service" onClick={closeAllMenus}>
+              <ListItemText 
+                primary="SERVICE" 
+                primaryTypographyProps={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  letterSpacing: '0.5px'
+                }}
+              />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component={Link} to="/support" onClick={closeAllMenus}>
+              <ListItemText 
+                primary="SUPPORT" 
+                primaryTypographyProps={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  letterSpacing: '0.5px'
+                }}
+              />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Drawer>
     </>
   );
 };
