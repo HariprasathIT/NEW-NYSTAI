@@ -272,7 +272,7 @@ function Sectionthree() {
 
                     {/* Custom Tabs */}
                     <div className="mb-12 flex justify-center">
-                        <div className="border-b border-gray-200 max-w-[470px]">
+                        <div className="border-b border-gray-200 max-w-[500px]">
                             {tabs.map((tab, index) => (
                                 <button
                                     key={index}
