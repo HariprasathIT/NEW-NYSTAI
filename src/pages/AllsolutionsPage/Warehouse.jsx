@@ -293,30 +293,31 @@ function SectionFour() {
     const features = [
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Smart Surveillance",
+            description: "CCTV monitoring for complete warehouse visibility."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Access Control",
+            description: "Restricted entry for authorized personnel only."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Anti-Collision Safety",
+            description: "Vehicle and worker collision prevention systems."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Hazard Detection",
+            description: "Early alerts for fire, smoke, and gas leaks."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Operational Monitoring",
+            description: "Real-time tracking of warehouse activities."
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -368,15 +369,15 @@ function SectionFive() {
 
                 {/* GLASS CONTENT CARD */}
                 <div className="
-          absolute bottom-8 left-8
-          max-w-xl
-          rounded-xl
-          p-8 lg:p-10
-          bg-white/10
-          backdrop-blur-xl
-          border border-white/20
-          shadow-2xl
-        ">
+                    absolute bottom-8 left-8
+                    max-w-xl
+                    rounded-xl
+                    p-8 lg:p-10
+                    bg-white/10
+                    backdrop-blur-xl
+                    border border-white/20
+                    shadow-2xl
+                ">
 
                     {/* Heading */}
                     <h2 className="text-2xl lg:text-[25px] font-bold text-[#ffc107] mb-6">

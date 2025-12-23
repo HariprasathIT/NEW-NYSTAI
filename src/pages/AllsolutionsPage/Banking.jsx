@@ -100,29 +100,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "SECURE VIGILANCE",
+            description: "24/7 monitoring for banking areas",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "SMART LOCKERS",
+            description: "Digitally secured locker management",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "ACCESS AUTHORIZATION",
+            description: "Multi-level controlled entry systems",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "RISK OPTIMIZATION",
+            description: "Fraud prevention and threat reduction",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -266,29 +267,30 @@ function SectionFour() {
         {
             icon: featureicon,
             title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            description: "24/7 CCTV monitoring for banks, vaults, and ATM zones."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Smart Locker Systems",
+            description: "Digitally controlled lockers with secure authentication."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Access Control",
+            description: "Multi-level entry control for restricted banking areas."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Instant Alerts",
+            description: "Real-time alerts for unauthorized access or threats."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Risk Management",
+            description: "Proactive monitoring to reduce fraud and security risks."
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">

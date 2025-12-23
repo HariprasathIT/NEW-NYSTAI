@@ -96,26 +96,26 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "ACCESS CONTROL",
+            description: "Unauthorized access prevention in restricted zones",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "SAFETY MONITORING",
+            description: "Early detection of fire, gas leaks, and high temperatures",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "OPERATIONAL VISIBILITY",
+            description: "Complete visibility across factory units and production floors",
             color: "orange"
         },
         {
             icon: icon4,
             title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            description: "Reduced worker risk in hazardous production areas",
             color: "orange"
         }
     ];

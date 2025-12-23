@@ -104,29 +104,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "SPACE VIGILANCE",
+            description: "Real-time parking space monitoring",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "CENTRALIZED CONTROL",
+            description: "Unified management of parking systems",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "SMART GUIDANCE",
+            description: "Predictive parking availability updates",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "FLOW OPTIMIZATION",
+            description: "Reduced congestion and faster parking",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -331,30 +332,31 @@ function SectionFour() {
     const features = [
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Smart Surveillance",
+            description: "Real-time monitoring of parking areas"
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Space Detection",
+            description: "Accurate vacant and occupied slot detection"
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Vehicle Guidance",
+            description: "Guides drivers to available spaces"
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Access Control",
+            description: "Automated vehicle entry and exit"
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Traffic Optimization",
+            description: "Reduced congestion and smooth flow"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">

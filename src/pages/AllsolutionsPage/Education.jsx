@@ -107,29 +107,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "INTERACTIVITY",
+            description: "Touch-based smart classroom displays",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "COLLABORATION",
+            description: "Live content sharing and teamwork",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "VISIBILITY",
+            description: "Clear displays for every learner",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "DIGITAL CONTROL",
+            description: "Centralized classroom device control",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">

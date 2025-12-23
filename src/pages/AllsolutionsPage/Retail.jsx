@@ -102,29 +102,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "STORE VIGILANCE",
+            description: "Real-time monitoring to prevent theft",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "CENTRALIZED CONTROL",
+            description: "Manage all store devices centrally",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "SMART INSIGHTS",
+            description: "Customer and activity behavior analysis",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "STORE OPTIMIZATION",
+            description: "Improve safety and operational efficiency",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">

@@ -106,29 +106,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "LIVE TRACKING",
+            description: "Real-time vehicle location updates",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "FLEET CONTROL",
+            description: "Centralized management of all vehicles",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "ROUTE OPTIMIZATION",
+            description: "Efficient routing and fuel savings",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "SAFETY MONITORING",
+            description: "Driver behavior and vehicle alerts",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -314,29 +315,30 @@ function SectionFour() {
         {
             icon: featureicon,
             title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            description: "Real-time CCTV monitoring with intelligent threat detection."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Smart Access Control",
+            description: "Secure entry management using cards, biometrics, or mobile access."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Instant Alerts",
+            description: "Immediate notifications for security and safety events."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Centralized Management",
+            description: "Unified control of all connected systems from one dashboard."
         },
         {
             icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Ensure safety with real-time monitoring, intelligent CCTV, and access control systems."
+            title: "Scalable Integration",
+            description: "Flexible solutions that adapt to growing infrastructure needs."
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
