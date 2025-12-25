@@ -85,20 +85,20 @@ function Formdesign() {
   return (
     <>
  <div className="max-w-[1540px] mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:pb-12 pb-6">
 
           {/* Left contents */}
           <div className="lg:col-span-4 mx-auto">
             <div className="space-y-8 mt-11 max-w-[300px]">
               <div>
-                <h3 className="text-[#dc3545] text-[30px] font-bold">GET IN TOUCH!</h3>
-                <p className="text-[#000] text-[15px] mt-3 tracking-wide"> Need something cleared up? Here are our most frequently asked questions.</p>
+                <h3 className="text-[#dc3545] sm:text-[30px] text-[20px] font-bold">GET IN TOUCH!</h3>
+                <p className="text-gray-600 text-[14px] mt-3 tracking-wide"> Need something cleared up? Here are our most frequently asked questions.</p>
               </div>
 
               {/* Email Section */}
               <div className="space-y-4 mt-5">
                 <img src={message} alt="" />
-                <h4 className="font-semibold text-lg">Email</h4>
+                <h4 className="font-semibold sm:text-lg">Email</h4>
                 <p className="text-gray-600 text-[15px]">Our friendly team is here to help.</p>
                 <p className="text-[#ffc107] text-[20px] font-bold">Nystai@support.com</p>
               </div>
@@ -128,8 +128,8 @@ function Formdesign() {
 
               <div className="max-w-[870px] mx-auto px-4">
 
-                <h2 className="text-[25px] font-bold mt-7 mb-3">PROSPEROUS FUTURE!</h2>
-                <p className="text-gray-600 text-[15px] mb-10">We'd love to hear from you. Please fill out this form.</p>
+                <h2 className="sm:text-[25px] text-[20px] font-bold mt-7 mb-3">PROSPEROUS FUTURE!</h2>
+                <p className="text-gray-600 text-[14px] mb-10">We'd love to hear from you. Please fill out this form.</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 h-auto sm:h-[110px]">
 

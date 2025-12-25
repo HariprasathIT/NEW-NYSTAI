@@ -127,9 +127,9 @@ function Sectiontwo() {
 
                     <div>
                         {/* Header */}
-                        <div className="text-center py-16">
-                            <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">INDUSTRY SOLUTIONS</h2>
-                            <p className="ttext-sm md:text-[15px] text-gray-600 tracking-wider">
+                        <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">INDUSTRY SOLUTIONS</h2>
+                            <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                                 The subtext helps customers quickly understand the value or specific
                             </p>
                         </div>
@@ -184,7 +184,7 @@ function Sectiontwo() {
                                         className="w-14 h-14 object-contain"
                                     />
                                 </div>
-                                <h3 className="text-[#dc3545] font-bold text-xl mb-3 tracking-wide">
+                                <h3 className="text-[#dc3545] font-bold sm:text-xl text-[16px] mb-3 tracking-wide">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -254,11 +254,11 @@ function Sectionthree() {
         <section className="w-full max-w-[1520px] mx-auto bg-[#f9f9f9] rounded-lg mt-6 sm:mt-10 px-4 sm:px-6 lg:px-8">
             <div className='py-5 sm:py-8 lg:py-10'>
                 {/* Header */}
-                <div className="text-center py-6 sm:py-8 lg:py-10">
-                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         WHAT WE OFFER
                     </h2>
-                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider px-4">
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider px-4">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -448,11 +448,11 @@ function SectionFour() {
         <>
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         Features
                     </h2>
-                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>

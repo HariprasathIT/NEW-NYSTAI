@@ -152,9 +152,9 @@ function Sectiontwo() {
 
                 <div>
                     {/* Header */}
-                    <div className="text-center py-16">
-                        <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
-                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                    <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
+                        <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
@@ -207,7 +207,7 @@ function Sectiontwo() {
                                         className="w-14 h-14 object-contain"
                                     />
                                 </div>
-                                <h3 className="text-[#dc3545] font-bold text-xl mb-3 tracking-wide">
+                                <h3 className="text-[#dc3545] font-bold sm:text-xl text-[16px] mb-3 tracking-wide">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -228,11 +228,11 @@ function Sectionthree() {
     return (
         <section className="max-w-[1540px] mx-auto px-4 ">
             {/* Header */}
-            <div className="text-center py-16">
-                <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+            <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                     WHAT WE OFFER
                 </h2>
-                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
@@ -259,7 +259,7 @@ function Sectionthree() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-[20px] sm:text-2xl font-bold mb-2">
+                                <h4 className="text-[18px] sm:text-2xl font-bold mb-2">
                                     Solving the Problem
                                 </h4>
 
@@ -288,7 +288,7 @@ function Sectionthree() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-[20px] sm:text-2xl font-bold mb-2">
+                                <h4 className="text-[18px] sm:text-2xl font-bold mb-2">
                                     How NYSTAI Products Resolve These Issue?
                                 </h4>
 
@@ -322,7 +322,7 @@ function Sectionthree() {
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                         <div className="transform transition-all duration-1000 group-hover:-translate-y-4">
-                            <h3 className="text-[20px] sm:text-3xl font-bold mb-3">Hospitals Lack Innovation</h3>
+                            <h3 className="text-[18px] sm:text-3xl font-bold mb-3">Hospitals Lack Innovation</h3>
 
                             <p className="text-white/90 text-[14px] sm:text-[17px] leading-relaxed 
                 transition-all duration-1000 ease-out 
@@ -362,11 +362,11 @@ function SectionFour() {
         <>
             <section className="max-w-[1540px] mx-auto px-4 mb-10">
                 {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -384,7 +384,7 @@ function SectionFour() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
-                            <h3 className="text-[19px] text-[#212529] font-semibold mb-5 min-h-[60px]">
+                            <h3 className="text-[18px] text-[#212529] font-semibold sm:mb-5 mb-3 min-h-[60px]">
                                 {feature.title}
                             </h3>
                             <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-grow">

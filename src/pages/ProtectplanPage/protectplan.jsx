@@ -98,11 +98,11 @@ function SectionTwo() {
         <>
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
-                <header className="text-center py-16">
-                    <h1 className="text-3xl md:text-[35px] font-bold text-red-600 mb-3">
+                <header className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h1 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-3">
                         Security Excellence
                     </h1>
-                    <p className="text-gray-600 text-sm md:text-[15px] max-w-2xl mx-auto">
+                    <p className="text-[14px] md:text-[15px] text-gray-600 max-w-2xl mx-auto">
                         NYSTAI Protect Plan: Revolutionizing Security
                         and Efficiency Across Industries
                     </p>
@@ -236,9 +236,9 @@ function SectionThree() {
             <div className="max-w-[1540px] mx-auto mb-10">
 
                 {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-[35px] font-bold text-red-600 mb-2">Key Features</h2>
-                    <p className="text-[15px] text-gray-600">
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">Key Features</h2>
+                    <p className="text-[14px] md:text-[15px] text-gray-600">
                         Maiden Unified All-in-One Video, Alarm & Access Control Platform
                     </p>
                 </div>
@@ -326,7 +326,7 @@ function SectionThree() {
                                 <div className="pb-3">
                                     <BadgeCheck />
                                 </div>
-                                <p className="text-[#000] text-[17px] text-center max-w-[400px] px-4">
+                                <p className="text-[#000] text-[14px] text-center max-w-[400px] px-4">
                                     {feature.text}
                                 </p>
                             </div>

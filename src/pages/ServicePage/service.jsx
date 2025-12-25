@@ -101,11 +101,11 @@ function SectionTwo() {
     return (
         <section className="max-w-[1540px] mx-auto px-4">
             {/* Header */}
-            <div className="text-center py-16">
-                <h2 className="text-3xl md:text-[35px] font-bold text-red-600 mb-2">
+            <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                     How We Work
                 </h2>
-                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
@@ -132,7 +132,7 @@ function SectionTwo() {
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                         <div className="transform transition-all duration-1000 group-hover:-translate-y-4">
-                            <h3 className="text-2xl sm:text-[25px] font-bold mb-3">Strategic Planning</h3>
+                            <h3 className="text-[18px] sm:text-[25px] font-bold mb-2">Strategic Planning</h3>
 
                             <p className="text-white/90 text-sm sm:text-[17px] leading-relaxed 
                                 transition-all duration-1000 ease-out 
@@ -163,7 +163,7 @@ function SectionTwo() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-xl sm:text-[25px] font-bold mb-2">
+                                <h4 className="text-[18px] sm:text-[25px] font-bold mb-2">
                                     Team Collaboration
                                 </h4>
 
@@ -193,7 +193,7 @@ function SectionTwo() {
 
                         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 text-white">
                             <div className="transform transition-all duration-700 group-hover:-translate-y-3">
-                                <h4 className="text-xl sm:text-[25px] font-bold mb-2">
+                                <h4 className="text-[18px] sm:text-[25px] font-bold mb-2">
                                     Data Analytics
                                 </h4>
 
@@ -218,11 +218,11 @@ function SectionThree() {
     return (
         <section className="max-w-[1540px] mx-auto px-4">
             {/* Header */}
-            <div className="text-center py-16">
-                <h2 className="text-3xl md:text-[35px] font-bold text-red-600 mb-2">
+            <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                     Our Services
                 </h2>
-                <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
@@ -315,7 +315,7 @@ function SectionFiveFAQ() {
         <section className="py-5 md:py-20">
             <div className="max-w-[1540px] mx-auto px-4">
 
-                <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 gap-4 items-center rounded-[15px]">
+                <div className="bg-[#f9f9f9] grid grid-cols-1 lg:grid-cols-2 sm:gap-4 gap-0 items-center rounded-[15px]">
 
                     {/* LEFT IMAGE */}
                     <div className="w-full">
@@ -335,11 +335,11 @@ function SectionFiveFAQ() {
                     <div className="max-w-[690px] mx-auto p-5 sm:p-8 lg:p-0">
 
                         {/* Heading */}
-                        <div className="text-center lg:text-left mb-8">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-[#dc3545]">
+                        <div className="text-center lg:text-left sm:py-16 py-8 md:py-12 lg:py-16">
+                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-[#dc3545]">
                                 FREQUENTLY ASKED QUESTIONS
                             </h2>
-                            <p className="text-gray-600 mt-2 text-sm sm:text-base tracking-wide">
+                            <p className="text-gray-600 mt-2 text-[14px] md:text-[15px] ">
                                 Maiden Unified All-in-One Video, Alarm & Access Control Platform
                             </p>
                         </div>

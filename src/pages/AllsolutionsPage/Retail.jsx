@@ -132,9 +132,9 @@ function Sectiontwo() {
 
                 <div>
                     {/* Header */}
-                    <div className="text-center py-16">
-                        <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI’S BANKING SOLUTION</h2>
-                        <p className="text-sm md:text-[15px] text-gray-600 tracking-wider">
+                    <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI’S BANKING SOLUTION</h2>
+                        <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
@@ -187,7 +187,7 @@ function Sectiontwo() {
                                         className="w-14 h-14 object-contain"
                                     />
                                 </div>
-                                <h3 className="text-[#dc3545] font-bold text-xl mb-3 tracking-wide">
+                                <h3 className="text-[#dc3545] font-bold sm:text-xl text-[16px] mb-3 tracking-wide">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -219,20 +219,20 @@ function Sectionthree() {
     };
     return (
 
-        <section className="py-12 md:py-20">
+        <section className="py-8 md:py-20">
             <div className="max-w-[1540px] mx-auto px-4">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center rounded-[15px]">
 
                     {/* LEFT CONTENT */}
-                    <div className="max-w-[650px] mx-auto p-6 sm:p-8 lg:p-0">
+                    <div className="max-w-[650px] mx-auto p-0 sm:p-8 lg:p-0">
 
                         {/* Heading */}
                         <div className="text-center lg:text-left mb-8">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-[#dc3545]">
+                            <h2 className="text-[18px] sm:text-3xl font-bold text-[#dc3545]">
                                 What We Offer ?
                             </h2>
-                            <p className="text-gray-600 mt-2 text-sm sm:text-base tracking-wide">
+                            <p className="text-gray-600 mt-2 text-[14px] sm:text-base tracking-wide">
                                 Maiden Unified All-in-One Video, Alarm & Access Control Platform
                             </p>
                         </div>
@@ -286,6 +286,7 @@ function Sectionthree() {
                                 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]
                                 object-cover rounded-[15px]
                                 transition-all duration-300
+                                mt-4 lg:mt-0
                             "
                         />
                     </div>
@@ -305,7 +306,7 @@ function SectionFour() {
             <section className="max-w-[1540px] mx-auto px-4">
 
                 {/* Main Content Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center pb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center sm:pb-16 pb-8">
 
                     {/* Left Side - Image Grid */}
                     <div className="">
@@ -318,10 +319,10 @@ function SectionFour() {
 
                     {/* Right Side - Content */}
                     <div>
-                        <h1 className="text-2xl sm:text-3xl font-bold text-[#dc3545] mb-6">
+                        <h1 className="text-[18px] sm:text-3xl font-bold text-[#dc3545] mb-4">
                             NYSTAI’S RETAIL BUSINESS
                         </h1>
-                        <p className="text-gray-600 leading-relaxed mb-8">
+                        <p className="text-gray-600 text-[14px] sm:text-[16px] leading-relaxed mb-8">
                             We are pioneering leaders in advanced surveillance solutions designed to elevate security across diverse environments. Our commitment to excellence drives us to deliver cutting-edge technologies that ensure safety, efficiency, and peace of mind for our clients. With a comprehensive portfolio that includes state-of-the-art CCTV systems, intelligent video analytics, and integrated management software, we empower businesses and institutions to protect their assets and enhance operational effectiveness.
                         </p>
 
@@ -331,7 +332,7 @@ function SectionFour() {
                             <div>
                                 <div className="flex items-center gap-3">
                                     <div className="w-5 h-5 rounded-full border-2 border-gray-400"></div>
-                                    <span className="text-gray-700">Doorbell Video Cameras</span>
+                                    <span className="text-gray-700 text-[14px] sm:text-[16px]">Doorbell Video Cameras</span>
                                 </div>
                                 <div className="h-[1px] w-full bg-gray-200 mt-4"></div>
                             </div>
@@ -339,7 +340,7 @@ function SectionFour() {
                             <div>
                                 <div className="flex items-center gap-3">
                                     <div className="w-5 h-5 rounded-full border-2 border-gray-400"></div>
-                                    <span className="text-gray-700">Burglary Sensor Detection</span>
+                                    <span className="text-gray-700 text-[14px] sm:text-[16px]">Burglary Sensor Detection</span>
                                 </div>
                                 <div className="h-[1px] w-full bg-gray-200 mt-4"></div>
                             </div>
@@ -347,7 +348,7 @@ function SectionFour() {
                             <div>
                                 <div className="flex items-center gap-3">
                                     <div className="w-5 h-5 rounded-full border-2 border-gray-400"></div>
-                                    <span className="text-gray-700">Smart Home Security - II</span>
+                                    <span className="text-gray-700 text-[14px] sm:text-[16px]">Smart Home Security - II</span>
                                 </div>
                                 <div className="h-[1px] w-full bg-gray-200 mt-4"></div>
                             </div>
@@ -355,7 +356,7 @@ function SectionFour() {
                             <div>
                                 <div className="flex items-center gap-3">
                                     <div className="w-5 h-5 rounded-full border-2 border-gray-400"></div>
-                                    <span className="text-gray-700">In Home Consultation</span>
+                                    <span className="text-gray-700 text-[14px] sm:text-[16px]">In Home Consultation</span>
                                 </div>
                                 <div className="h-[1px] w-full bg-gray-200 mt-4"></div>
                             </div>
@@ -363,7 +364,7 @@ function SectionFour() {
                             <div>
                                 <div className="flex items-center gap-3">
                                     <div className="w-5 h-5 rounded-full border-2 border-gray-400"></div>
-                                    <span className="text-gray-700">24/7 Alarm Monitoring</span>
+                                    <span className="text-gray-700 text-[14px] sm:text-[16px]">24/7 Alarm Monitoring</span>
                                 </div>
                                 <div className="h-[1px] w-full bg-gray-200 mt-4"></div>
                             </div>

@@ -98,9 +98,9 @@ function Sectiontwo() {
 
                     <div>
                         {/* Header */}
-                        <div className="text-center py-16">
-                            <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S WORSHIP SOLUTION</h2>
-                            <p className="text-sm md:text-[15px]text-gray-600 tracking-wider">
+                        <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S WORSHIP SOLUTION</h2>
+                            <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                                 The subtext helps customers quickly understand the value or specific
                             </p>
                         </div>
@@ -155,7 +155,7 @@ function Sectiontwo() {
                                         className="w-14 h-14 object-contain"
                                     />
                                 </div>
-                                <h3 className="text-[#dc3545] font-bold text-xl mb-3 tracking-wide">
+                                <h3 className="text-[#dc3545] font-bold sm:text-xl text-[16px] mb-3 tracking-wide">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -200,12 +200,12 @@ function Sectionthree() {
 
     return (
         <>
-            <section className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center py-8 sm:py-12 md:py-16">
-                    <h2 className="text-2xl md:text-[28px] lg:text-[30px]  font-bold text-red-600 mb-2 sm:mb-3">
+            <section className="max-w-[1540px] mx-auto ">
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2 sm:mb-3">
                         WHAT WE OFFER
                     </h2>
-                    <p className="text-sm md:text-[15px] text-gray-600 tracking-wide px-4">
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wide px-4">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -312,11 +312,11 @@ function SectionFour() {
         <>
             <section className="max-w-[1540px] mx-auto px-4">
                 {/* Header */}
-                <div className="text-center py-16">
-                    <h2 className="text-2xl md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                <div className="text-center  sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         FEATURES
                     </h2>
-                    <p className="text-sm md:text-[15px]text-gray-600 tracking-wider">
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
                         The subtext helps customers quickly understand the value or specific
                     </p>
                 </div>
@@ -328,10 +328,10 @@ function SectionFour() {
                             <div className="w-15 h-15 flex items-center justify-center mb-6">
                                 <img src={feature.icon} alt="feature icon" className="w-full h-[72px] object-contain" />
                             </div>
-                            <h3 className="text-[20px] font-semibold mb-3">
+                            <h3 className="sm:text-xl text-[16px]  font-semibold mb-3">
                                 {feature.title}
                             </h3>
-                            <p className="text-[15px] text-gray-600">
+                            <p className="text-sm text-gray-600">
                                 {feature.description}
                             </p>
                         </div>
