@@ -236,17 +236,17 @@ function ProductCategories() {
     }, []);
 
     return (
-        <section className="md:py-16 py-16 bg-white">
+        <section className="sm:py-16 py-8 md:py-12 lg:py-16 bg-white">
             <div className="max-w-[1540px] mx-auto px-4">
                 <div className="w-full flex flex-col md:flex-row justify-between md:items-start gap-4">
 
                     {/* Left Text */}
                     <div>
-                        <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
+                        <h2 className="text-[20px] md:text-[28px] lg:text-[30px]  font-bold tracking-wide leading-snug">
                             PRODUCT <span className="text-[#dc3545]">CATEGORIES</span>
                         </h2>
 
-                        <p className="mt-3 text-gray-600 max-w-3xl text-sm sm:text-base leading-relaxed tracking-wider">
+                        <p className="mt-3 text-gray-600 max-w-3xl text-[14px] md:text-[15px] leading-relaxed tracking-wider">
                             The subtext helps customers quickly understand the value or specific
                         </p>
                     </div>
@@ -260,9 +260,10 @@ function ProductCategories() {
                             bg-[#dc3545] text-white 
                             font-medium rounded-full shadow
                             hover:bg-red-700 transition-all duration-300
+                            text-[14px] md:text-[15px]
                     "
                     >
-                        View More <span className="text-lg">→</span>
+                        View More <span className="">→</span>
                     </button>
 
                 </div>
@@ -292,7 +293,7 @@ function ProductCategories() {
 
                             {/* Title + Line + Description */}
                             <div className="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-all duration-500 p-8">
-                                <div className="text-white font-semibold text-2xl drop-shadow-lg md:text-left">
+                                <div className="text-white font-semibold text-[20px] sm:text-2xl drop-shadow-lg md:text-left">
                                     {card.title}
                                 </div>
                                 <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] md:mt-5 mt-3 mb-2"></div>
@@ -351,7 +352,7 @@ function ServicesSection() {
 
     return (
         <>
-            <section className="py-16 bg-[#f5f5f5] rounded-2xl">
+            <section className="sm:py-16 py-8 md:py-12 lg:py-16 bg-[#f5f5f5] rounded-2xl">
                 <div className="max-w-[1540px] mx-auto px-4">
 
                     {/* Heading Row */}
@@ -359,24 +360,25 @@ function ServicesSection() {
 
                         {/* Heading + Subtext */}
                         <div>
-                            <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
+                            <h2 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold tracking-wide leading-snug">
                                 OUR TOP-SELLING <span className="text-[#dc3545]">PRODUCTS</span>
                             </h2>
-                            <p className="text-gray-600 mt-1 text-sm sm:text-base tracking-wide">
+                            <p className="text-gray-600 mt-1 text-[14px] md:text-[15px] tracking-wide">
                                 The subtext helps customers quickly understand the value.
                             </p>
                         </div>
 
                         {/* Button */}
                         <button className="
-        w-[160px] md:w-auto lg:w-auto
-        flex items-center justify-center sm:justify-start 
-        gap-2 px-6 py-2
-        bg-[#ffffff70] text-[#1a1a1a] 
-        font-medium rounded-full shadow
-        hover:bg-[#ffffff] transition-all duration-300
-    ">
-                            View More <span className="text-lg">→</span>
+                            w-[160px] md:w-auto lg:w-auto
+                            flex items-center justify-center sm:justify-start 
+                            gap-2 px-6 py-2
+                            bg-[#ffffff70] text-[#1a1a1a] 
+                            font-medium rounded-full shadow
+                            hover:bg-[#ffffff] transition-all duration-300
+                            text-[14px] md:text-[15px]
+                        ">
+                            View More <span className="">→</span>
                         </button>
                     </div>
 
@@ -428,7 +430,7 @@ function TopSellCard({ item, active, setActive }) {
                     {/*  Dotted Line under H2 */}
                     <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] mb-3"></div>
 
-                    <p className="text-[12px] opacity-80">{item.desc}</p>
+                    <p className="text-[14px] opacity-80">{item.desc}</p>
                 </div>
             )}
 
@@ -503,12 +505,12 @@ function SolutionsSection() {
     return (
         <>
             {/* Heading */}
-            <div className="pt-16 px-4 max-w-[1540px] mx-auto">
-                <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
+            <div className="sm:py-16 py-8 md:py-12 lg:py-16 px-4 max-w-[1540px] mx-auto">
+                <h2 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold tracking-wide leading-snug">
                     NYSTAI-IoT <span className="text-[#dc3545]">SOLUTIONS</span>
                 </h2>
 
-                <p className="mt-3 text-gray-600 text-sm sm:text-base tracking-wider leading-relaxed">
+                <p className="mt-3 text-gray-600 text-[14px] md:text-[15px] tracking-wider leading-relaxed">
                     The subtext helps customers quickly understand the value or specific
                 </p>
             </div>
@@ -630,26 +632,26 @@ function Waterlevelontroller() {
                                 src={Waterlevel}
                                 alt="Water Level Controller"
                                 className="
-                        w-full h-[320px] sm:h-[420px] md:h-[500px] lg:h-[580px]
-                        object-cover rounded-2xl
-                        transition-transform duration-500 ease-out
-                        hover:scale-110
-                    "
+                                    w-full h-[320px] sm:h-[420px] md:h-[500px] lg:h-[580px]
+                                    object-cover rounded-2xl
+                                    transition-transform duration-500 ease-out
+                                    hover:scale-110
+                                "
                             />
                         </div>
 
                         {/* Right Content */}
                         <div className="
-                rounded-2xl bg-[#f9f9f9]
-                flex flex-col justify-center
-                p-6 sm:p-10
-            ">
+                            rounded-2xl bg-[#f9f9f9]
+                            flex flex-col justify-center
+                            p-6 sm:p-10
+                        ">
 
                             <div className="max-w-[600px] lg:h-[500px] mx-auto flex items-center">
 
                                 <div className="">
 
-                                    <h2 className="text-2xl sm:text-2xl md:text-[36px] font-bold text-gray-900 mb-4 leading-tight">
+                                    <h2 className="text-[20px] sm:text-2xl md:text-[36px] font-bold text-gray-900 mb-4 leading-snug">
                                         Automated <span className="text-red-500">Water Level Controller</span>
                                     </h2>
 
@@ -664,8 +666,8 @@ function Waterlevelontroller() {
                                     {/* Features */}
                                     <div className="space-y-4 mb-6">
                                         <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Shield className="w-5 h-5 text-white" />
+                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                                             </div>
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Automated water level control with real-time monitoring.
@@ -673,8 +675,8 @@ function Waterlevelontroller() {
                                         </div>
 
                                         <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Wifi className="w-5 h-5 text-white" />
+                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Wifi className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                                             </div>
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 10 Kilometer range for flexible installation with Access.
@@ -682,8 +684,8 @@ function Waterlevelontroller() {
                                         </div>
 
                                         <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Smartphone className="w-5 h-5 text-white" />
+                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Smartphone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                                             </div>
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Mobile and Desktop connectivity for remote access.
@@ -691,8 +693,8 @@ function Waterlevelontroller() {
                                         </div>
 
                                         <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Smartphone className="w-5 h-5 text-white" />
+                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
+                                                <Smartphone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                                             </div>
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Mobile and Desktop connectivity for remote access.
@@ -810,7 +812,7 @@ function WhyNystai() {
                                 />
                             )}
                             <div className="p-6 space-y-3">
-                                <h3 className="text-xl font-bold text-[#dc3545]">
+                                <h3 className="text-[18px] font-bold text-[#dc3545]">
                                     {section.title}
                                 </h3>
                                 <p className="text-[14px] text-gray-600 leading-relaxed">
@@ -892,8 +894,8 @@ function PartnersLogo() {
     return (
         <section className="max-w-[1540px] mx-auto py-5 px-4 bg-white">
 
-            <div className="py-8 sm:py-10">
-                <h2 className="text-2xl sm:text-3xl font-bold tracking-wide leading-snug">
+            <div className="sm:py-16 py-8 md:py-12 lg:py-16 ">
+                <h2 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold tracking-wide leading-snug">
                     Partners & <span className="text-[#dc3545]">Testimonials</span>
                 </h2>
             </div>
@@ -1151,7 +1153,7 @@ const Card2 = () => {
         }
       `}</style>
 
-            <div className="flex justify-center items-center gap-10 px-5 py-15 w-full h-[325px] my-[70px] overflow-hidden max-lg:gap-[30px] max-md:flex-col max-md:gap-10 max-md:py-10">
+            <div className="flex justify-center items-center gap-10 px-5 py-15 w-full h-[325px] sm:my-[70px] my-7 overflow-hidden max-lg:gap-[30px] max-md:flex-col max-md:gap-10 max-md:py-10">
                 {/* Left Column */}
                 <div className="testimonial-column flex flex-col gap-5 w-[500px] animate-scroll-60 max-lg:w-[330px] max-md:w-full max-md:max-w-[400px] max-md:hidden">
                     {duplicatedTestimonials.map((testimonial, index) => (

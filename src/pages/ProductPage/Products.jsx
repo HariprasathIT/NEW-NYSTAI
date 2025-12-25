@@ -265,12 +265,12 @@ const ProductModal = ({ product, onClose, open }) => {
           {/* LEFT: IMAGE GALLERY */}
           <div className="space-y-4">
             {/* MAIN IMAGE DISPLAY */}
-            <div className="w-full h-[400px] bg-[#f9f9f9] rounded-xl flex justify-center items-center overflow-hidden">
+            <div className="w-full sm:h-[400px] h-[300px] bg-[#f9f9f9] rounded-xl flex justify-center items-center overflow-hidden">
               {galleryImages.length > 0 ? (
                 <img
                   src={galleryImages[selectedImageIndex]?.imageUrl}
                   alt={`main-image`}
-                  className="h-[300px] w-auto object-contain"
+                  className="sm:h-[300px] h-[200px] w-auto object-contain"
                 />
               ) : (
                 <p className="text-gray-400">No images available</p>
@@ -283,7 +283,7 @@ const ProductModal = ({ product, onClose, open }) => {
                 <div
                   key={index}
                   onClick={() => setSelectedImageIndex(index)}
-                  className={`flex-shrink-0 w-[136px] h-[136px] bg-[#f9f9f9] rounded-lg border-[1px] flex items-center justify-center cursor-pointer transition ${selectedImageIndex === index
+                  className={`flex-shrink-0 sm:w-[136px] sm:h-[136px] w-[110px] h-[110px] bg-[#f9f9f9] rounded-lg border-[1px] flex items-center justify-center cursor-pointer transition ${selectedImageIndex === index
                     ? "border-[#ffc107]"
                     : "border-gray-200 hover:border-[#ffc107]"
                     }`}
@@ -291,7 +291,7 @@ const ProductModal = ({ product, onClose, open }) => {
                   <img
                     src={img.imageUrl}
                     alt={`thumb-${index}`}
-                    className="h-[80px] w-auto object-contain"
+                    className="h-[60px] w-auto object-contain"
                   />
                 </div>
               ))}
@@ -302,14 +302,14 @@ const ProductModal = ({ product, onClose, open }) => {
           <div className="space-y-5">
 
             {/* PRODUCT NAME */}
-            <h2 className="text-3xl font-extrabold text-[#0c2239] leading-normal tracking-tight">
+            <h2 className="sm:text-3xl text-[20px] font-extrabold text-[#0c2239] leading-normal tracking-tight">
               {product.name}
             </h2>
 
             {/* SMART FEATURES SECTION */}
             {smartFeatures.length > 0 && (
               <div className="mt-3">
-                <h3 className="text-[17px] font-semibold mb-3">Smart Features:</h3>
+                <h3 className="text-[17px] font-bold mb-3">Smart Features:</h3>
 
                 <div className="flex gap-6 flex-wrap social-links">
                   {smartFeatures.map((icon) => (
@@ -331,7 +331,7 @@ const ProductModal = ({ product, onClose, open }) => {
 
             {/* MAIN DESCRIPTION */}
             {product.mainDesc && (
-              <p className="text-gray-600 text-[15px] leading-relaxed">
+              <p className="text-gray-600 text-[14px] leading-relaxed">
                 {product.mainDesc}
               </p>
             )}
@@ -347,7 +347,7 @@ const ProductModal = ({ product, onClose, open }) => {
                   {product.keyFeatures.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-[#ffc107] text-lg font-bold">✔</span>
-                      <p className="text-gray-700 text-[15px] leading-relaxed">
+                      <p className="text-gray-700 text-[14px] leading-relaxed">
                         {feature}
                       </p>
                     </li>
