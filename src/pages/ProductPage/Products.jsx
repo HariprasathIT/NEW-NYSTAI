@@ -211,16 +211,16 @@ const ProductModal = ({ product, onClose, open }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Prevent body scroll when modal is open
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [open]);
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'unset';
+  //   }
+  //   return () => {
+  //     document.body.style.overflow = 'unset';
+  //   };
+  // }, [open]);
 
   // Reset to first image when modal opens
   useEffect(() => {
