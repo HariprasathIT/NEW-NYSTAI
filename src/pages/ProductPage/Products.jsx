@@ -63,12 +63,12 @@ const Productpage = () => {
       </div>
 
 
-      <div className="max-w-[1540px] mx-auto px-4 py-16 ">
+      <div className="max-w-[1540px] mx-auto px-4 py-5 md:py-16">
         {/* CATEGORY TITLE */}
-        <h1 className="text-2xl font-bold text-[#dc3545] tracking-wide">{category.name}</h1>
+        <h1 className="sm:text-2xl text-[18px] font-bold text-[#dc3545] tracking-wide">{category.name}</h1>
 
         {/* PRODUCTS GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 sm:mt-10">
           {category.products.map((product) => (
             <div
               key={product.id}
@@ -78,8 +78,8 @@ const Productpage = () => {
               <div className="flex justify-between items-center w-full p-5">
                 {/* LEFT TEXT */}
                 <div>
-                  <h2 className="text-[18px] leading-snug tracking-wide">{product.name}</h2>
-                  <p className="text-gray-500 text-[13px] leading-loose">{product.subName}</p>
+                  <h2 className="text-[15px] sm:text-[18px] leading-snug tracking-wide">{product.name}</h2>
+                  <p className="text-gray-500 text-[12px] sm:text-[13px] leading-loose">{product.subName}</p>
                 </div>
 
                 {/* RIGHT BUTTON */}
