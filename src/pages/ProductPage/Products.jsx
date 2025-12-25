@@ -134,7 +134,7 @@ const ProductImageSlider = ({ images, productId }) => {
 
   return (
     <div
-      className="relative bg-[#f0f0f0] h-[320px] w-full rounded-t-xl overflow-hidden"
+      className="relative bg-[#f0f0f0] sm:h-[320px] h-[260px] w-full rounded-t-xl overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -153,11 +153,11 @@ const ProductImageSlider = ({ images, productId }) => {
         {galleryImages.length > 0 ? (
           galleryImages.map((img, index) => (
             <SwiperSlide key={`${productId}-${index}`}>
-              <div className="w-full h-[320px] flex items-center justify-center">
+              <div className="w-full sm:h-[320px] h-[250px] flex items-center justify-center">
                 <img
                   src={img.imageUrl}
                   alt={`${img.type}-${index}`}
-                  className={`h-[190px] w-auto object-contain transition-transform duration-300 ease-in-out ${isHovered ? "scale-110" : "scale-100"
+                  className={`sm:h-[190px] h-[160px] w-auto object-contain transition-transform duration-300 ease-in-out ${isHovered ? "scale-110" : "scale-100"
                     }`}
                 />
 
