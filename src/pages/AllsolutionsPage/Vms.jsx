@@ -336,33 +336,39 @@ function Sectionthree() {
 }
 
 function SectionFour() {
-    const features = [
-        {
-            icon: featureicon,
-            title: "Advanced Surveillance",
-            description: "Real-time CCTV monitoring with intelligent threat detection."
-        },
-        {
-            icon: featureicon,
-            title: "Smart Access Control",
-            description: "Secure entry management using cards, biometrics, or mobile access."
-        },
-        {
-            icon: featureicon,
-            title: "Instant Alerts",
-            description: "Immediate notifications for security and safety events."
-        },
-        {
-            icon: featureicon,
-            title: "Centralized Management",
-            description: "Unified control of all connected systems from one dashboard."
-        },
-        {
-            icon: featureicon,
-            title: "Scalable Integration",
-            description: "Flexible solutions that adapt to growing infrastructure needs."
-        }
-    ];
+const features = [
+    {
+        icon: featureicon,
+        title: "Capture",
+        description:
+            "360° cameras, dashboard cameras, and interior cameras continuously capture vehicle and surroundings activity."
+    },
+    {
+        icon: featureicon,
+        title: "Process",
+        description:
+            "Mobile NVR/MDVR systems store video footage, analyze driving behavior, and track vehicle location using GPS."
+    },
+    {
+        icon: featureicon,
+        title: "Alert",
+        description:
+            "The system sends instant alerts for unsafe driving, unauthorized stops, route deviations, or accidents."
+    },
+    {
+        icon: featureicon,
+        title: "Monitor",
+        description:
+            "Live video feeds and system status can be monitored centrally through a single dashboard."
+    },
+    {
+        icon: featureicon,
+        title: "Review",
+        description:
+            "Recorded footage and analytics help with audits, incident investigation, evidence collection, and training."
+    }
+];
+
 
     return (
         <>
@@ -419,7 +425,7 @@ function SectionFive() {
                         loop
                         muted
                         playsInline
-                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-auto object-cover"
+                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-[600px] object-cover"
                     />
 
                     {/* Overlay */}
@@ -448,7 +454,7 @@ function SectionFive() {
                             </p>
 
                             {/* Glassmorphism Icons */}
-                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
+                            <div className="flex sm:flex-row gap-3 sm:gap-4 md:gap-6">
 
                                 {/* Item 1 */}
                                 <div className="flex items-center gap-3 sm:gap-4">

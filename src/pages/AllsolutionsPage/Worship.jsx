@@ -383,7 +383,7 @@ function SectionFive() {
                             </p>
 
                             {/* Glassmorphism Icons */}
-                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
+                            <div className="flex sm:flex-row gap-3 sm:gap-4 md:gap-6">
 
                                 {/* Item 1 */}
                                 <div className="flex items-center gap-3 sm:gap-4">

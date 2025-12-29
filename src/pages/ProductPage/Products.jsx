@@ -290,7 +290,7 @@ const ProductModal = ({ product, onClose, open }) => {
                 >
                   <img
                     src={img.imageUrl}
-                    alt={`thumb-${index}`}
+                    alt={`thumb-${index}`}z
                     className="h-[60px] w-auto object-contain"
                   />
                 </div>
