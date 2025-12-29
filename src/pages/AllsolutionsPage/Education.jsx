@@ -227,7 +227,7 @@ function Sectionthree() {
                         WHAT WE OFFER
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider px-4">
-                        The subtext helps customers quickly understand the value or specific
+                        Smart tools that enhance teaching and learning
                     </p>
                 </div>
 
@@ -250,7 +250,7 @@ function Sectionthree() {
 
                         {/* Glassmorphism Container */}
                         <div className="
-                            w-full sm:max-w-[380px] md:max-w-[450px] 
+                            w-full sm:max-w-[380px] md:max-w-[500px] 
                             p-4 sm:p-6 md:p-8 
                             rounded-lg sm:rounded-xl
                             bg-white/10
@@ -261,13 +261,12 @@ function Sectionthree() {
 
                             {/* Heading */}
                             <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
-                                Smart • Secure • Scalable
+                                Challenges in Education Spaces
                             </h2>
 
                             {/* Paragraph */}
                             <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
-                                Empowering intelligent infrastructure with advanced security,
-                                seamless automation, and scalable IoT solutions.
+                                Traditional classrooms struggle with outdated boards, poor audio systems, and lack of digital teaching tools.
                             </p>
 
                             {/* Glassmorphism Icons */}
@@ -344,13 +343,12 @@ function Sectionthree() {
 
                             {/* Heading */}
                             <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
-                                Smart • Secure • Scalable
+                                Smart Education Requirements
                             </h2>
 
                             {/* Paragraph */}
                             <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
-                                Empowering intelligent infrastructure with advanced security,
-                                seamless automation, and scalable IoT solutions.
+                                Modern education needs IFPDs, digital boards, strong audio communication, and easy classroom management tools.
                             </p>
 
                             {/* Glassmorphism Icons */}
@@ -424,13 +422,12 @@ function Sectionthree() {
 
                             {/* Heading */}
                             <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
-                                Smart • Secure • Scalable
+                                How Nystai Helps
                             </h2>
 
                             {/* Paragraph */}
                             <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
-                                Empowering intelligent infrastructure with advanced security,
-                                seamless automation, and scalable IoT solutions.
+                               Nystai transforms classrooms using interactive displays, wireless microphones, broadcasting systems, and digital teaching tools that enhance the learning experience for both teachers and students.
                             </p>
 
                             {/* Glassmorphism Icons */}
@@ -492,7 +489,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wide sm:tracking-wider px-4">
-                        The subtext helps customers quickly understand the value or specific
+                        Features that enhance teaching, collaboration, and classroom engagement
                     </p>
                 </div>
 

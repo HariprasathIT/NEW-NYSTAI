@@ -144,7 +144,7 @@ function Sectiontwo() {
             color: "orange"
         }
     ];
-    
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -155,7 +155,7 @@ function Sectiontwo() {
                             NYSTAI'S HOME AUTOMATION
                         </h2>
                         <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            Connected solutions that bring comfort, safety, and control to modern homes
                         </p>
                     </div>
 
@@ -224,7 +224,7 @@ function Sectiontwo() {
 
 function Sectionthree() {
     const [activeCard, setActiveCard] = useState(1);
-    
+
     const cards = [
         {
             id: 1,
@@ -257,7 +257,7 @@ function Sectionthree() {
                     WHAT WE OFFER
                 </h2>
                 <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider px-4">
-                    The subtext helps customers quickly understand the value or specific
+                    Smart solutions that enhance comfort, safety, and everyday convenience at home
                 </p>
             </div>
 
@@ -302,17 +302,15 @@ function Sectionthree() {
                         <img
                             src={card.image}
                             alt={card.alt}
-                            className={`w-full object-cover opacity-80 transition-all duration-300 ${
-                                activeCard === card.id ? 'h-[350px]' : 'h-[200px]'
-                            }`}
+                            className={`w-full object-cover opacity-80 transition-all duration-300 ${activeCard === card.id ? 'h-[350px]' : 'h-[200px]'
+                                }`}
                         />
                         <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
                             <h3 className="sm:text-xl text-[18px] font-bold mb-2">
                                 {card.title}
                             </h3>
-                            <p className={`text-sm transition-all duration-300 ${
-                                activeCard === card.id ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'
-                            }`}>
+                            <p className={`text-sm transition-all duration-300 ${activeCard === card.id ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'
+                                }`}>
                                 {card.description}
                             </p>
                         </div>

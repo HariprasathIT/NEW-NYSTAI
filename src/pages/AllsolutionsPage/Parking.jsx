@@ -240,7 +240,7 @@ function Sectionthree() {
                     Our Services
                 </h2>
                 <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                    The subtext helps customers quickly understand the value or specific
+                    End-to-end AI-powered parking solutions for efficient vehicle and space management
                 </p>
             </div>
 
@@ -250,13 +250,19 @@ function Sectionthree() {
                 <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full order-2 lg:order-1">
                     <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                         <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Deployment Services
+                            Challenges Without Smart Parking
                         </h2>
 
                         <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
-                            <li>We focus on the seamless deployment of systems, technologies, and solutions tailored to your needs.</li>
-                            <li>Our team manages everything from initial setup to full operational integration.</li>
-                            <li>We minimize downtime and ensure optimal performance during deployment.</li>
+                            <li>
+                                Manual parking systems lead to traffic congestion and inefficient vehicle movement.
+                            </li>
+                            <li>
+                                Lack of real-time visibility results in poor parking space utilization.
+                            </li>
+                            <li>
+                                Drivers and operators face delays, confusion, and increased operational stress.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -293,13 +299,19 @@ function Sectionthree() {
                 <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                     <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                         <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Deployment Services
+                            AI-Powered Parking Solutions
                         </h2>
 
                         <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
-                            <li>We focus on seamless deployment of systems and technologies.</li>
-                            <li>Our team handles setup through full operational integration.</li>
-                            <li>We minimize downtime and ensure optimal performance.</li>
+                            <li>
+                                AI systems use ANPR cameras and ultrasonic sensors to detect vehicles and parking availability.
+                            </li>
+                            <li>
+                                Integrated camera and lighting systems guide vehicles efficiently within parking areas.
+                            </li>
+                            <li>
+                                Automated monitoring helps reduce congestion and improve overall parking flow.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -313,13 +325,19 @@ function Sectionthree() {
                 <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full order-2 lg:order-1">
                     <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                         <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                            Deployment Services
+                            How NYSTAI Delivers Smarter Parking
                         </h2>
 
                         <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
-                            <li>We focus on the seamless deployment of systems, technologies, and solutions tailored to your needs.</li>
-                            <li>Our team manages everything from initial setup to full operational integration.</li>
-                            <li>We minimize downtime and ensure optimal performance during deployment.</li>
+                            <li>
+                                NYSTAI combines ANPR cameras, ultrasonic sensors, and MDVR systems for accurate vehicle detection.
+                            </li>
+                            <li>
+                                Our solutions automate entry, exit, and parking control with minimal human intervention.
+                            </li>
+                            <li>
+                                Real-time monitoring ensures smooth operations, improved efficiency, and safer parking environments.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -376,7 +394,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Key features that enable automated parking management and smooth vehicle flow
                     </p>
                 </div>
 

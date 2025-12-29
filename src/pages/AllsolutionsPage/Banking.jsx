@@ -234,7 +234,7 @@ function Sectionthree() {
                     WHAT WE OFFER
                 </h2>
                 <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                    The subtext helps customers quickly understand the value or specific
+                    Secure solutions designed to protect assets and manage banking operations
                 </p>
             </div>
 
@@ -320,7 +320,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Key features designed to enhance security and control in banking environments
                     </p>
                 </div>
 

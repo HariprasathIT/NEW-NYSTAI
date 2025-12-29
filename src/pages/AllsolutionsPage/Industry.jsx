@@ -252,14 +252,14 @@ function Sectionthree() {
 
     return (
         <section className="w-full max-w-[1520px] mx-auto bg-[#f9f9f9] rounded-lg mt-6 sm:mt-10 px-4 sm:px-6 lg:px-8">
-            <div className='py-5 sm:py-8 lg:py-10'>
+            <div className=''>
                 {/* Header */}
                 <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
                     <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
                         WHAT WE OFFER
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider px-4">
-                        The subtext helps customers quickly understand the value or specific
+                        Industrial solutions that enhance safety, monitoring, and operational efficiency
                     </p>
                 </div>
 
@@ -452,7 +452,7 @@ function SectionFour() {
                         Features
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Core features designed to support safety, control, and efficiency in industrial operations
                     </p>
                 </div>
 

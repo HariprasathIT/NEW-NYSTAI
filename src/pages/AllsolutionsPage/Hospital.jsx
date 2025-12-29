@@ -237,7 +237,7 @@ function Sectionthree() {
                     WHAT WE OFFER
                 </h2>
                 <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                    The subtext helps customers quickly understand the value or specific
+                    Smart solutions designed to improve safety, monitoring, and efficiency in hospitals
                 </p>
             </div>
 
@@ -371,7 +371,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Key features designed to support safety, monitoring, and care in hospitals
                     </p>
                 </div>
 

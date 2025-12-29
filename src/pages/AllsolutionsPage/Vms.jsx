@@ -18,7 +18,11 @@ import threecardimg1 from "../../assets/Images/Allsolutions-Images/Worship/cardi
 import threecardimg2 from "../../assets/Images/Allsolutions-Images/Worship/cardimg2.jpeg"
 import threecardimg3 from "../../assets/Images/Allsolutions-Images/Worship/cardimg3.jpeg"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Vms/featureicon.png"
+import featureicon1 from "../../assets/Images/Allsolutions-Images/Vms/features-icon1.png"
+import featureicon2 from "../../assets/Images/Allsolutions-Images/Vms/features-icon2.png"
+import featureicon3 from "../../assets/Images/Allsolutions-Images/Vms/features-icon3.png"
+import featureicon4 from "../../assets/Images/Allsolutions-Images/Vms/features-icon4.png"
+import featureicon5 from "../../assets/Images/Allsolutions-Images/Vms/features-icon5.png"
 
 import vmsvideo1 from "../../assets/Images/Allsolutions-Images/Vms/vms-video-1.mp4"
 
@@ -266,7 +270,7 @@ function Sectionthree() {
                     WHAT WE OFFER
                 </h2>
                 <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                    The subtext helps customers quickly understand the value or specific
+                    Systems designed to manage vehicle entry, exit, and parking operations
                 </p>
             </div>
 
@@ -338,31 +342,31 @@ function Sectionthree() {
 function SectionFour() {
     const features = [
         {
-            icon: featureicon,
+            icon: featureicon1,
             title: "Capture",
             description:
                 "360° cameras, dashboard cameras, and interior cameras continuously capture vehicle and surroundings activity."
         },
         {
-            icon: featureicon,
+            icon: featureicon2,
             title: "Process",
             description:
                 "Mobile NVR/MDVR systems store video footage, analyze driving behavior, and track vehicle location using GPS."
         },
         {
-            icon: featureicon,
+            icon: featureicon3,
             title: "Alert",
             description:
                 "The system sends instant alerts for unsafe driving, unauthorized stops, route deviations, or accidents."
         },
         {
-            icon: featureicon,
+            icon: featureicon4,
             title: "Monitor",
             description:
                 "Live video feeds and system status can be monitored centrally through a single dashboard."
         },
         {
-            icon: featureicon,
+            icon: featureicon5,
             title: "Review",
             description:
                 "Recorded footage and analytics help with audits, incident investigation, evidence collection, and training."
@@ -379,7 +383,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Essential features for vehicle management systems
                     </p>
                 </div>
 
@@ -407,16 +411,7 @@ function SectionFour() {
 function SectionFive() {
     return (
         <>
-            <section className="px-4 mb-7">
-                {/* Header */}
-                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
-                        FEATURES OF AI-VMS
-                    </h2>
-                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
-                    </p>
-                </div>
+            <section className="px-4 sm:my-10 my-4">
 
                 <div className="relative w-full mx-auto rounded-xl overflow-hidden">
                     <video
@@ -444,13 +439,13 @@ function SectionFive() {
 
                             {/* Heading */}
                             <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-[27px] font-bold mb-3 sm:mb-4 md:mb-5">
-                                Smart • Secure • Scalable
+                                Automated • Accurate • Efficient
                             </h2>
 
                             {/* Paragraph */}
                             <p className="text-gray-200 text-xs sm:text-sm md:text-[15px] lg:text-[16px] mb-4 sm:mb-5 md:mb-6 leading-relaxed">
-                                Empowering intelligent infrastructure with advanced security,
-                                seamless automation, and scalable IoT solutions.
+                                Managing vehicle entry, parking, and movement using camera-based systems,
+                                sensors, and real-time monitoring for smoother operations.
                             </p>
 
                             {/* Glassmorphism Icons */}
@@ -470,7 +465,7 @@ function SectionFive() {
                                         <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
                                     <span className="text-white text-xs sm:text-sm font-medium">
-                                        Data Security
+                                        Vehicle Detection
                                     </span>
                                 </div>
 
@@ -488,7 +483,7 @@ function SectionFive() {
                                         <ShieldCheck size={18} className="text-white sm:w-5 sm:h-5" />
                                     </div>
                                     <span className="text-white text-xs sm:text-sm font-medium">
-                                        Smart Control
+                                        Parking Control
                                     </span>
                                 </div>
 

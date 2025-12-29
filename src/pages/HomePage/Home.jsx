@@ -61,6 +61,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import wlcicon1 from "../../assets/Images/HomePage-Images/wlcicon1.png"
+import wlcicon2 from "../../assets/Images/HomePage-Images/wlcicon2.png"
+import wlcicon3 from "../../assets/Images/HomePage-Images/wlcicon3.png"
+import wlcicon4 from "../../assets/Images/HomePage-Images/wlcicon4.png"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -247,7 +252,7 @@ function ProductCategories() {
                         </h2>
 
                         <p className="mt-3 text-gray-600 max-w-3xl text-[14px] md:text-[15px] leading-relaxed tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            Explore a range of smart home products designed for comfort, safety, and everyday convenience
                         </p>
                     </div>
 
@@ -364,7 +369,7 @@ function ServicesSection() {
                                 OUR TOP-SELLING <span className="text-[#dc3545]">PRODUCTS</span>
                             </h2>
                             <p className="text-gray-600 mt-1 text-[14px] md:text-[15px] tracking-wide">
-                                The subtext helps customers quickly understand the value.
+                                Most trusted smart home products chosen for reliability, performance, and daily comfort
                             </p>
                         </div>
 
@@ -511,7 +516,7 @@ function SolutionsSection() {
                 </h2>
 
                 <p className="mt-3 text-gray-600 text-[14px] md:text-[15px] tracking-wider leading-relaxed">
-                    The subtext helps customers quickly understand the value or specific
+                    Comprehensive IoT solutions designed to enhance safety, efficiency, and connectivity across environments
                 </p>
             </div>
 
@@ -655,7 +660,7 @@ function Waterlevelontroller() {
                                         Automated <span className="text-red-500">Water Level Controller</span>
                                     </h2>
 
-                                    <p className="text-gray-600 text-[14px] sm:text-[17px] leading-relaxed mb-6">
+                                    <p className="text-gray-600 text-[14px] sm:text-[17px] leading-relaxed mb-6" style={{ textAlign: "justify" }}>
                                         Introducing our Automated Water Level Controller with a built-in level monitor and
                                         1000-meter range, ensuring efficient water management for your home or business.
                                         With a 1-year warranty, this system guarantees reliability, automates water usage,
@@ -665,42 +670,53 @@ function Waterlevelontroller() {
 
                                     {/* Features */}
                                     <div className="space-y-4 mb-6">
+
                                         <div className="flex items-center gap-3">
-                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                                            </div>
+                                            <img
+                                                src={wlcicon1}
+                                                alt="Feature icon"
+                                                className="w-4 h-4 sm:w-9 sm:h-9 object-contain"
+                                            />
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Automated water level control with real-time monitoring.
                                             </span>
                                         </div>
 
                                         <div className="flex items-center gap-3">
-                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Wifi className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                                            </div>
+                                            <img
+                                                src={wlcicon2}
+                                                alt="Feature icon"
+                                                className="w-4 h-4 sm:w-9 sm:h-9 object-contain"
+                                            />
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 10 Kilometer range for flexible installation with Access.
                                             </span>
                                         </div>
 
                                         <div className="flex items-center gap-3">
-                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Smartphone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                                            </div>
+                                            <img
+                                                src={wlcicon3}
+                                                alt="Feature icon"
+                                                className="w-4 h-4 sm:w-9 sm:h-9 object-contain"
+                                            />
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
                                                 Mobile and Desktop connectivity for remote access.
                                             </span>
                                         </div>
 
                                         <div className="flex items-center gap-3">
-                                            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[#ffc107] flex items-center justify-center flex-shrink-0">
-                                                <Smartphone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                                            </div>
+                                            <img
+                                                src={wlcicon4}
+                                                alt="Feature icon"
+                                                className="w-4 h-4 sm:w-9 sm:h-9 object-contain"
+                                            />
                                             <span className="text-gray-700 tracking-wide text-[14px] sm:text-base">
-                                                Mobile and Desktop connectivity for remote access.
+                                                Ideal for residential, agricultural, and industrial use.
                                             </span>
                                         </div>
+
                                     </div>
+
 
                                     {/* Button */}
                                     {/* <button className="
@@ -763,10 +779,10 @@ function WhyNystai() {
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };
-        
+
         checkMobile();
         window.addEventListener('resize', checkMobile);
-        
+
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 

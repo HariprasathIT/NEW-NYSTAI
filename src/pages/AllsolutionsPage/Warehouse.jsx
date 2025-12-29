@@ -248,17 +248,14 @@ function Sectionthree() {
     }, []);
 
     return (
-        <section
-            ref={sectionRef}
-            className="bg-[#2c2c2c] rounded-xl mt-10"
-        >
+        <section ref={sectionRef} className="bg-[#2c2c2c] rounded-xl mt-10">
             {/* Header */}
             <div className="text-center  sm:py-16 py-8 md:py-12 lg:py-16">
                 <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-[#ffc107] mb-2">
                     WHAT WE OFFER
                 </h2>
                 <p className="text-[14px] md:text-[15px] text-gray-400 tracking-wider px-4">
-                    The subtext helps customers quickly understand the value or specific
+                    Systems that help reduce risks and improve safety across warehouse spaces
                 </p>
             </div>
 
@@ -335,7 +332,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Key features designed to improve safety and efficiency in warehouse operations
                     </p>
                 </div>
 
@@ -362,7 +359,7 @@ function SectionFour() {
 
 function SectionFive() {
     return (
-        <section className="max-w-[1540px] mx-auto px-4 sm:mt-14 mt-4 sm:mb-10 mb-4">
+        <section className="px-4 sm:mt-14 mt-4 sm:mb-10 mb-4">
             <div className="
                 relative
                 h-[500px] sm:h-[480px] md:h-[550px] lg:h-[600px]
