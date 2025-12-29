@@ -3,16 +3,20 @@ import { useState, useEffect } from 'react'
 import worshipbanner from "../../assets/Images/Allsolutions-Images/Worship/worshipbanner.jpeg"
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Industry/leftimg1.jpg"
-import icon1 from "../../assets/Images/Allsolutions-Images/Industry/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Industry/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Industry/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Industry/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Worship/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Worship/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Worship/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Worship/icon4.png"
 
 import threecardimg1 from "../../assets/Images/Allsolutions-Images/Worship/cardimg1.jpeg"
 import threecardimg2 from "../../assets/Images/Allsolutions-Images/Worship/cardimg2.jpeg"
 import threecardimg3 from "../../assets/Images/Allsolutions-Images/Worship/cardimg3.jpeg"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Worship/icon.png"
+import featureicon1 from "../../assets/Images/Allsolutions-Images/Worship/features-icon1.png"
+import featureicon2 from "../../assets/Images/Allsolutions-Images/Worship/features-icon2.png"
+import featureicon3 from "../../assets/Images/Allsolutions-Images/Worship/features-icon3.png"
+import featureicon4 from "../../assets/Images/Allsolutions-Images/Worship/features-icon4.png"
+import featureicon5 from "../../assets/Images/Allsolutions-Images/Worship/features-icon5.png"
 
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
 import { ShieldCheck } from 'lucide-react'
@@ -90,6 +94,7 @@ function Sectiontwo() {
         }
     ];
 
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -99,9 +104,11 @@ function Sectiontwo() {
                     <div>
                         {/* Header */}
                         <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S WORSHIP SOLUTION</h2>
+                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                                NYSTAI'S AI VMS
+                            </h2>
                             <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                                The subtext helps customers quickly understand the value or specific
+                                AI-powered vehicle management with smart parking and number plate recognition
                             </p>
                         </div>
                     </div>
@@ -121,19 +128,21 @@ function Sectiontwo() {
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                             <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                                 <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                    Specialized Safeguarding
+                                    AI Vehicle Management System
                                 </h2>
+
                                 <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                     <li>
-                                        NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                        AI VMS manages vehicle movement using smart parking systems and automated number plate recognition.
                                     </li>
                                     <li>
-                                        Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                        Integrated cameras and sensors monitor entry, exit, and parking availability in real time.
                                     </li>
                                     <li>
-                                        With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                        Centralized dashboards provide access control, alerts, and analytics for efficient vehicle management.
                                     </li>
                                 </ul>
+
                             </div>
                         </div>
                     </div>
@@ -282,27 +291,27 @@ function CardItem({ card, activeCard, setActiveCard }) {
 function SectionFour() {
     const features = [
         {
-            icon: featureicon,
+            icon: featureicon1,
             title: "Advanced Surveillance",
             description: "Real-time CCTV monitoring with intelligent threat detection."
         },
         {
-            icon: featureicon,
+            icon: featureicon2,
             title: "Smart Access Control",
             description: "Secure entry management using cards, biometrics, or mobile access."
         },
         {
-            icon: featureicon,
+            icon: featureicon3,
             title: "Instant Alerts",
             description: "Immediate notifications for security and safety events."
         },
         {
-            icon: featureicon,
+            icon: featureicon4,
             title: "Centralized Monitoring",
             description: "Unified control and visibility across all connected systems."
         },
         {
-            icon: featureicon,
+            icon: featureicon5,
             title: "Scalable Architecture",
             description: "Flexible solutions that grow with your infrastructure needs."
         }
@@ -317,7 +326,7 @@ function SectionFour() {
                         FEATURES
                     </h2>
                     <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                        The subtext helps customers quickly understand the value or specific
+                        Key features that ensure safety, control, and smooth operations
                     </p>
                 </div>
 

@@ -17,10 +17,10 @@ import video3 from "../../assets/Images/Allsolutions-Images/Education/video3.mp4
 
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Education/leftimg1.jpeg"
-import icon1 from "../../assets/Images/Allsolutions-Images/Industry/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Industry/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Industry/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Industry/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Education/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Education/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Education/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Education/icon4.png"
 
 
 const Education = () => {
@@ -131,6 +131,7 @@ function Sectiontwo() {
         }
     ];
 
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -138,9 +139,11 @@ function Sectiontwo() {
                     <div>
                         {/* Header */}
                         <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S INTERACTIVE FLAT-PANEL DISPLAY (IFPD)</h2>
+                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                                NYSTAI'S INTERACTIVE FLAT-PANEL DISPLAY (IFPD)
+                            </h2>
                             <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                                The subtext helps customers quickly understand the value or specific
+                                Smart classroom solutions designed for interactive and engaging learning
                             </p>
                         </div>
                     </div>
@@ -160,19 +163,21 @@ function Sectiontwo() {
                         <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                             <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                                 <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                    Specialized Safeguarding
+                                    Smart Classroom Technology
                                 </h2>
+
                                 <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                     <li>
-                                        NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                        Interactive Flat Panel Displays enable touch-based teaching, digital writing, and multimedia learning in classrooms.
                                     </li>
                                     <li>
-                                        Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                        Teachers and students can collaborate easily using live screen sharing, annotations, and interactive content.
                                     </li>
                                     <li>
-                                        With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                        Centralized digital control improves classroom efficiency and enhances the overall learning experience.
                                     </li>
                                 </ul>
+
                             </div>
                         </div>
                     </div>
@@ -214,7 +219,7 @@ function Sectionthree() {
 
     return (
         <>
-           <section className="max-w-[1540px] mx-auto px-4 sm:px-4 lg:px-4">
+            <section className="max-w-[1540px] mx-auto px-4 sm:px-4 lg:px-4">
 
                 {/* Header */}
                 <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
@@ -310,8 +315,8 @@ function Sectionthree() {
                 </div>
 
                 {/* Video Card 2 */}
-                <div 
-                    className="relative max-w-[1440px] mx-auto rounded-lg sm:rounded-xl overflow-hidden mb-4 sm:mb-6 md:mb-7" 
+                <div
+                    className="relative max-w-[1440px] mx-auto rounded-lg sm:rounded-xl overflow-hidden mb-4 sm:mb-6 md:mb-7"
                     style={{ position: "sticky", top: "170px" }}
                 >
                     <video
@@ -480,7 +485,7 @@ function Sectionthree() {
 function SectionFour() {
     return (
         <>
-           <section className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
                     <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-1 sm:mb-2">

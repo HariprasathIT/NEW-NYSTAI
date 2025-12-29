@@ -236,7 +236,7 @@ const Navbar = () => {
             onMouseEnter={handleProductsMegaMenuMouseEnter}
             onMouseLeave={handleProductsMegaMenuMouseLeave}
           >
-            <div className="max-w-[1540px] mx-auto py-5">
+            <div className="max-w-[1540px] mx-auto py-5 px-4">
               <div className="grid grid-cols-12 py-3 gap-6">
                 <div className="col-span-12 bg-[#fff] rounded-lg">
                   {loading ? (
@@ -288,7 +288,7 @@ const Navbar = () => {
             onMouseEnter={handleSolutionsMegaMenuMouseEnter}
             onMouseLeave={handleSolutionsMegaMenuMouseLeave}
           >
-            <div className="max-w-[1540px] mx-auto py-5">
+            <div className="max-w-[1540px] mx-auto py-5 px-4">
               <div className="grid grid-cols-12 py-3 gap-6">
                 <div className="col-span-12 bg-[#fff] rounded-lg">
                   <div className="grid grid-cols-5 gap-4">

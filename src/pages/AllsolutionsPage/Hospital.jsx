@@ -8,10 +8,10 @@ import ser1 from "../../assets/Images/Allsolutions-Images/Hospital/cardimgone.jp
 import ser2 from "../../assets/Images/Allsolutions-Images/Hospital/cardimgtwo.jpeg"
 import ser3 from "../../assets/Images/Allsolutions-Images/Hospital/cardimgthree.jpeg"
 
-import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Hospital/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Hospital/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Hospital/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Hospital/icon4.png"
 
 import { ArrowRight } from 'lucide-react';
 
@@ -123,29 +123,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "PATIENT SAFETY",
+            description: "Continuous monitoring of critical areas",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "SYSTEM INTEGRATION",
+            description: "Connected sensors and hospital systems",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "EARLY ALERTS",
+            description: "Immediate alerts for abnormal conditions",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "SMART MANAGEMENT",
+            description: "Adaptable solutions for hospital workflows",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -153,9 +154,11 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                            NYSTAI'S HOSPITAL SOLUTION
+                        </h2>
                         <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            Smart sensor-based solutions for safer and more efficient healthcare environments
                         </p>
                     </div>
                 </div>
@@ -175,17 +178,18 @@ function Sectiontwo() {
                     <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                         <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                Specialized Safeguarding
+                                Intelligent Healthcare Safety
                             </h2>
+
                             <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
-                                    NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                    NYSTAI deploys smart sensors and surveillance systems to monitor critical hospital areas in real time.
                                 </li>
                                 <li>
-                                    Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                    Environmental sensors help detect fire, gas leaks, temperature changes, and other safety risks early.
                                 </li>
                                 <li>
-                                    With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                    Centralized monitoring enables quick alerts, efficient response, and improved patient and staff safety.
                                 </li>
                             </ul>
                         </div>

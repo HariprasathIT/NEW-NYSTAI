@@ -4,17 +4,21 @@ import bankingbanner from "../../assets/Images/Allsolutions-Images/Banking/banki
 
 import leftimg1 from "../../assets/Images/Allsolutions-Images/Banking/leftimg1.jpeg"
 
-import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Banking/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Banking/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Banking/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Banking/icon4.png"
 
 import gridimg1 from "../../assets/Images/Allsolutions-Images/Banking/gridimg1.jpeg"
 import gridimg2 from "../../assets/Images/Allsolutions-Images/Banking/gridimg2.jpeg"
 import gridimg3 from "../../assets/Images/Allsolutions-Images/Banking/gridimg3.jpeg"
 import gridimg4 from "../../assets/Images/Allsolutions-Images/Banking/gridimg4.jpeg"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Banking/icon.png"
+import featureicon1 from "../../assets/Images/Allsolutions-Images/Banking/features-icon1.png"
+import featureicon2 from "../../assets/Images/Allsolutions-Images/Banking/features-icon2.png"
+import featureicon3 from "../../assets/Images/Allsolutions-Images/Banking/features-icon3.png"
+import featureicon4 from "../../assets/Images/Allsolutions-Images/Banking/features-icon4.png"
+import featureicon5 from "../../assets/Images/Allsolutions-Images/Banking/features-icon5.png"
 
 const Banking = () => {
 
@@ -117,28 +121,29 @@ function Sectiontwo() {
         {
             icon: icon1,
             title: "SECURE VIGILANCE",
-            description: "24/7 monitoring for banking areas",
+            description: "24/7 CCTV monitoring for bank premises",
             color: "orange"
         },
         {
             icon: icon2,
             title: "SMART LOCKERS",
-            description: "Digitally secured locker management",
+            description: "Digitally secured locker systems",
             color: "orange"
         },
         {
             icon: icon3,
             title: "ACCESS AUTHORIZATION",
-            description: "Multi-level controlled entry systems",
+            description: "Controlled entry for restricted areas",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "RISK OPTIMIZATION",
-            description: "Fraud prevention and threat reduction",
+            title: "THREAT PREVENTION",
+            description: "Burglar alarms and risk reduction",
             color: "orange"
         }
     ];
+
 
     return (
         <>
@@ -147,9 +152,11 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI’S BANKING SOLUTION</h2>
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                            NYSTAI’S BANKING SOLUTION
+                        </h2>
                         <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            Advanced security and automation solutions designed for modern banking environments
                         </p>
                     </div>
                 </div>
@@ -169,17 +176,18 @@ function Sectiontwo() {
                     <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                         <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                Specialized Safeguarding
+                                Intelligent Banking Security
                             </h2>
+
                             <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
-                                    NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                    NYSTAI deploys CCTV surveillance and burglar alarm systems to protect banking halls, vaults, and ATMs.
                                 </li>
                                 <li>
-                                    Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                    Smart lockers and access control systems ensure secure handling of valuables and restricted areas.
                                 </li>
                                 <li>
-                                    With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                    Centralized monitoring enables instant alerts, rapid response, and enhanced operational security.
                                 </li>
                             </ul>
                         </div>
@@ -277,27 +285,27 @@ function Sectionthree() {
 function SectionFour() {
     const features = [
         {
-            icon: featureicon,
+            icon: featureicon1,
             title: "Advanced Surveillance",
             description: "24/7 CCTV monitoring for banks, vaults, and ATM zones."
         },
         {
-            icon: featureicon,
+            icon: featureicon2,
             title: "Smart Locker Systems",
             description: "Digitally controlled lockers with secure authentication."
         },
         {
-            icon: featureicon,
+            icon: featureicon3,
             title: "Access Control",
             description: "Multi-level entry control for restricted banking areas."
         },
         {
-            icon: featureicon,
+            icon: featureicon4,
             title: "Instant Alerts",
             description: "Real-time alerts for unauthorized access or threats."
         },
         {
-            icon: featureicon,
+            icon: featureicon5,
             title: "Risk Management",
             description: "Proactive monitoring to reduce fraud and security risks."
         }

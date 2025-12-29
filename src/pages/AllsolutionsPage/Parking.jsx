@@ -11,12 +11,16 @@ import threecardimg2 from "../../assets/Images/Allsolutions-Images/Parking/cardi
 import threecardimg3 from "../../assets/Images/Allsolutions-Images/Parking/cardimg3.jpg"
 
 
-import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Parking/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Parking/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Parking/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Parking/icon4.png"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Vms/featureicon.png"
+import featureicon1 from "../../assets/Images/Allsolutions-Images/Parking/features-icon1.png"
+import featureicon2 from "../../assets/Images/Allsolutions-Images/Parking/features-icon2.png"
+import featureicon3 from "../../assets/Images/Allsolutions-Images/Parking/features-icon3.png"
+import featureicon4 from "../../assets/Images/Allsolutions-Images/Parking/features-icon4.png"
+import featureicon5 from "../../assets/Images/Allsolutions-Images/Parking/features-icon5.png"
 
 import video1 from "../../assets/Images/Allsolutions-Images/Education/video1.mp4"
 
@@ -120,29 +124,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "SPACE VIGILANCE",
-            description: "Real-time parking space monitoring",
+            title: "AREA MONITORING",
+            description: "Continuous view of parking zones",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZED CONTROL",
-            description: "Unified management of parking systems",
+            title: "SYSTEM ACCESS",
+            description: "Video access across mobile and desktop",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "SMART GUIDANCE",
-            description: "Predictive parking availability updates",
+            title: "SURROUND VIEW",
+            description: "All-angle vehicle visual coverage",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "FLOW OPTIMIZATION",
-            description: "Reduced congestion and faster parking",
+            title: "OUTDOOR READY",
+            description: "Reliable operation in open environments",
             color: "orange"
         }
     ];
+
 
     return (
         <>
@@ -151,9 +156,11 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px]  font-bold text-red-600 mb-2">NYSTAI'S HOSPITAL SOLUTION</h2>
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                            NYSTAI'S PARKING SOLUTION
+                        </h2>
                         <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            IoT-based parking management using cameras, MDVR, and vehicle video systems
                         </p>
                     </div>
                 </div>
@@ -173,17 +180,18 @@ function Sectiontwo() {
                     <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                         <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                Specialized Safeguarding
+                                Parking Monitoring & Control
                             </h2>
+
                             <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
-                                    NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                    MDVR systems enable live and recorded video access on both mobile and desktop platforms.
                                 </li>
                                 <li>
-                                    Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                    Dash cameras and 360° vision systems provide complete coverage of parking zones and vehicle movement.
                                 </li>
                                 <li>
-                                    With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                    Waterproof VMS ensures reliable operation in outdoor and harsh parking environments.
                                 </li>
                             </ul>
                         </div>
@@ -333,27 +341,27 @@ function Sectionthree() {
 function SectionFour() {
     const features = [
         {
-            icon: featureicon,
+            icon: featureicon1,
             title: "Smart Surveillance",
             description: "Real-time monitoring of parking areas"
         },
         {
-            icon: featureicon,
+            icon: featureicon2,
             title: "Space Detection",
             description: "Accurate vacant and occupied slot detection"
         },
         {
-            icon: featureicon,
+            icon: featureicon3,
             title: "Vehicle Guidance",
             description: "Guides drivers to available spaces"
         },
         {
-            icon: featureicon,
+            icon: featureicon4,
             title: "Access Control",
             description: "Automated vehicle entry and exit"
         },
         {
-            icon: featureicon,
+            icon: featureicon5,
             title: "Traffic Optimization",
             description: "Reduced congestion and smooth flow"
         }

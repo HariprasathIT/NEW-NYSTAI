@@ -242,7 +242,7 @@ function ProductCategories() {
 
                     {/* Left Text */}
                     <div>
-                        <h2 className="text-[20px] md:text-[28px] lg:text-[30px]  font-bold tracking-wide leading-snug">
+                        <h2 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold tracking-wide leading-snug">
                             PRODUCT <span className="text-[#dc3545]">CATEGORIES</span>
                         </h2>
 
@@ -274,7 +274,7 @@ function ProductCategories() {
                         <div
                             key={i}
                             ref={(el) => (cardRefs.current[i] = el)}
-                            className="clip-card group"
+                            className="clip-card group rounded-xl"
                         >
                             {/* Inside Image */}
                             <img

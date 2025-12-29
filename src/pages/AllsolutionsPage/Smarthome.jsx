@@ -8,7 +8,11 @@ import icon2 from "../../assets/Images/Allsolutions-Images/Smarthome/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Smarthome/icon3.png"
 import icon4 from "../../assets/Images/Allsolutions-Images/Smarthome/icon4.png"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Worship/icon.png"
+import featureicon1 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon1.png"
+import featureicon2 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon2.png"
+import featureicon3 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon3.png"
+import featureicon4 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon4.png"
+import featureicon5 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon5.png"
 
 import smar from "../../assets/Images/Allsolutions-Images/Smarthome/smar.jpeg"
 
@@ -322,27 +326,27 @@ function Sectionthree() {
 function SectionFour() {
     const features = [
         {
-            icon: featureicon,
+            icon: featureicon1,
             title: "Detect",
             description: "Sensors identify intrusion, smoke, gas leaks, temperature changes, or water leaks."
         },
         {
-            icon: featureicon,
+            icon: featureicon2,
             title: "Analyze",
             description: "Nystai controller processes alerts and activates the proper response."
         },
         {
-            icon: featureicon,
+            icon: featureicon3,
             title: "Alert",
             description: "Notifications sent to your smartphone, alarms, or emergency contacts."
         },
         {
-            icon: featureicon,
+            icon: featureicon4,
             title: "Prevent",
             description: "Automation triggers sirens, locks, or camera recording automatically."
         },
         {
-            icon: featureicon,
+            icon: featureicon5,
             title: "Monitor & Optimize",
             description: "Live system monitoring and analytics improve response efficiency."
         }

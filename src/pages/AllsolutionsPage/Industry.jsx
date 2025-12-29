@@ -96,77 +96,77 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "ACCESS CONTROL",
-            description: "Unauthorized access prevention in restricted zones",
+            title: "CCTV SURVEILLANCE",
+            description: "Continuous monitoring of industrial areas to prevent unauthorized access",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "SAFETY MONITORING",
-            description: "Early detection of fire, gas leaks, and high temperatures",
+            title: "FIRE & SAFETY",
+            description: "Early detection using fire alarms, sirens, and safety sensors",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "OPERATIONAL VISIBILITY",
-            description: "Complete visibility across factory units and production floors",
+            title: "INDUSTRIAL NVR",
+            description: "Centralized video storage and monitoring for industrial operations",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Reduced worker risk in hazardous production areas",
+            title: "ACCESS & SENSORS",
+            description: "Access control and sensors for restricted and critical zones",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
 
-                <div>
 
-                    <div>
-                        {/* Header */}
-                        <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                            <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">INDUSTRY SOLUTIONS</h2>
-                            <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                                The subtext helps customers quickly understand the value or specific
-                            </p>
-                        </div>
+                {/* Header */}
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                        INDUSTRIAL SOLUTIONS
+                    </h2>
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
+                        Intelligent security and automation systems designed for industrial environments
+                    </p>
+                </div>
+
+                {/* First Section */}
+                <div className="flex flex-col lg:flex-row items-center gap-6">
+                    {/* Left Image */}
+                    <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
+                        <img
+                            src={leftimg1}
+                            alt="Fire extinguisher"
+                            className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
                     </div>
 
-                    {/* First Section */}
-                    <div className="flex flex-col lg:flex-row items-center gap-6">
-                        {/* Left Image */}
-                        <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
-                            <img
-                                src={leftimg1}
-                                alt="Fire extinguisher"
-                                className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
-                            />
-                        </div>
+                    {/* Right Content */}
+                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                        <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                            <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
+                                Industrial Safety & Automation
+                            </h2>
 
-                        {/* Right Content */}
-                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
-                            <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
-                                <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                    Specialized Safeguarding
-                                </h2>
-                                <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
-                                    <li>
-                                        NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                                    </li>
-                                    <li>
-                                        Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                                    </li>
-                                    <li>
-                                        With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
+                                <li>
+                                    NYSTAI deploys industrial-grade CCTV cameras and NVR systems to ensure continuous surveillance across factories, warehouses, and restricted zones.
+                                </li>
+                                <li>
+                                    Fire alarms, sirens, shutter sensors, and environmental sensors provide early warnings and rapid response to safety threats.
+                                </li>
+                                <li>
+                                    Integrated access control and centralized monitoring help industries improve security, reduce risks, and maintain operational efficiency.
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
-
                 </div>
 
                 {/* Icons */}
@@ -270,11 +270,10 @@ function Sectionthree() {
                             <button
                                 key={index}
                                 onClick={() => setActiveTab(index)}
-                                className={`px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base lg:text-xl font-medium transition-all duration-300 relative whitespace-nowrap ${
-                                    activeTab === index
-                                        ? 'text-[#ffc107]'
-                                        : 'text-gray-400 hover:text-gray-500'
-                                }`}
+                                className={`px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base lg:text-xl font-medium transition-all duration-300 relative whitespace-nowrap ${activeTab === index
+                                    ? 'text-[#ffc107]'
+                                    : 'text-gray-400 hover:text-gray-500'
+                                    }`}
                             >
                                 {tab}
                                 {activeTab === index && (

@@ -118,76 +118,76 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "LIVE TRACKING",
-            description: "Real-time vehicle location updates",
+            title: "SMART PARKING",
+            description: "Automated parking guidance and monitoring",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "FLEET CONTROL",
-            description: "Centralized management of all vehicles",
+            title: "ANPR",
+            description: "Number plate detection and logging",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ROUTE OPTIMIZATION",
-            description: "Efficient routing and fuel savings",
+            title: "ENTRY & EXIT",
+            description: "Controlled vehicle access management",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "SAFETY MONITORING",
-            description: "Driver behavior and vehicle alerts",
+            title: "SENSOR INTEGRATION",
+            description: "Vehicle presence and space sensing",
             color: "orange"
         }
     ];
+
 
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
 
-                <div>
-                    {/* Header */}
-                    <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI'S AI VMS</h2>
-                        <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
-                        </p>
+                {/* Header */}
+                <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
+                    <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                        NYSTAI'S AI VMS
+                    </h2>
+                    <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
+                        AI-powered vehicle management with smart parking and number plate recognition
+                    </p>
+                </div>
+
+                {/* First Section */}
+                <div className="flex flex-col lg:flex-row items-center gap-6">
+                    {/* Left Image */}
+                    <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
+                        <img
+                            src={leftimg1}
+                            alt="Fire extinguisher"
+                            className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
                     </div>
 
+                    {/* Right Content */}
+                    <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
+                        <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
+                            <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
+                                AI Vehicle Management System
+                            </h2>
 
-                    {/* First Section */}
-                    <div className="flex flex-col lg:flex-row items-center gap-6">
-                        {/* Left Image */}
-                        <div className="w-full lg:w-[600px] rounded-2xl overflow-hidden group">
-                            <img
-                                src={leftimg1}
-                                alt="Fire extinguisher"
-                                className="w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
-                            />
-                        </div>
-
-                        {/* Right Content */}
-                        <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
-                            <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
-                                <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                    Specialized Safeguarding
-                                </h2>
-                                <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
-                                    <li>
-                                        NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
-                                    </li>
-                                    <li>
-                                        Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
-                                    </li>
-                                    <li>
-                                        With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
+                                <li>
+                                    AI VMS manages vehicle movement using smart parking systems and automated number plate recognition.
+                                </li>
+                                <li>
+                                    Integrated cameras and sensors monitor entry, exit, and parking availability in real time.
+                                </li>
+                                <li>
+                                    Centralized dashboards provide access control, alerts, and analytics for efficient vehicle management.
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
                 </div>
 
                 {/* Icons */}
@@ -216,7 +216,7 @@ function Sectiontwo() {
                     </div>
                 </div>
 
-            </section>
+            </section >
         </>
     )
 }
@@ -336,38 +336,38 @@ function Sectionthree() {
 }
 
 function SectionFour() {
-const features = [
-    {
-        icon: featureicon,
-        title: "Capture",
-        description:
-            "360° cameras, dashboard cameras, and interior cameras continuously capture vehicle and surroundings activity."
-    },
-    {
-        icon: featureicon,
-        title: "Process",
-        description:
-            "Mobile NVR/MDVR systems store video footage, analyze driving behavior, and track vehicle location using GPS."
-    },
-    {
-        icon: featureicon,
-        title: "Alert",
-        description:
-            "The system sends instant alerts for unsafe driving, unauthorized stops, route deviations, or accidents."
-    },
-    {
-        icon: featureicon,
-        title: "Monitor",
-        description:
-            "Live video feeds and system status can be monitored centrally through a single dashboard."
-    },
-    {
-        icon: featureicon,
-        title: "Review",
-        description:
-            "Recorded footage and analytics help with audits, incident investigation, evidence collection, and training."
-    }
-];
+    const features = [
+        {
+            icon: featureicon,
+            title: "Capture",
+            description:
+                "360° cameras, dashboard cameras, and interior cameras continuously capture vehicle and surroundings activity."
+        },
+        {
+            icon: featureicon,
+            title: "Process",
+            description:
+                "Mobile NVR/MDVR systems store video footage, analyze driving behavior, and track vehicle location using GPS."
+        },
+        {
+            icon: featureicon,
+            title: "Alert",
+            description:
+                "The system sends instant alerts for unsafe driving, unauthorized stops, route deviations, or accidents."
+        },
+        {
+            icon: featureicon,
+            title: "Monitor",
+            description:
+                "Live video feeds and system status can be monitored centrally through a single dashboard."
+        },
+        {
+            icon: featureicon,
+            title: "Review",
+            description:
+                "Recorded footage and analytics help with audits, incident investigation, evidence collection, and training."
+        }
+    ];
 
 
     return (

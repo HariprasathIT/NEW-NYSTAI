@@ -6,10 +6,10 @@ import leftimg1 from "../../assets/Images/Allsolutions-Images/Retail/leftimg1.jp
 
 import imgleftcard from "../../assets/Images/Allsolutions-Images/Retail/imgleftcard.jpeg"
 
-import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Retail/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Retail/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Retail/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Retail/icon4.png"
 
 import Faqimg1 from "../../assets/Images/Services-Images/FAQIMG1.jpeg"
 import Faqimg2 from "../../assets/Images/Services-Images/faqimg2.jpeg"
@@ -103,25 +103,25 @@ function Sectiontwo() {
         {
             icon: icon1,
             title: "STORE VIGILANCE",
-            description: "Real-time monitoring to prevent theft",
+            description: "Live monitoring to reduce theft",
             color: "orange"
         },
         {
             icon: icon2,
             title: "CENTRALIZED CONTROL",
-            description: "Manage all store devices centrally",
+            description: "Unified control of store systems",
             color: "orange"
         },
         {
             icon: icon3,
             title: "SMART INSIGHTS",
-            description: "Customer and activity behavior analysis",
+            description: "Customer movement and activity data",
             color: "orange"
         },
         {
             icon: icon4,
             title: "STORE OPTIMIZATION",
-            description: "Improve safety and operational efficiency",
+            description: "Safer and smoother store operations",
             color: "orange"
         }
     ];
@@ -133,9 +133,11 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">NYSTAI’S BANKING SOLUTION</h2>
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-red-600 mb-2">
+                            NYSTAI’S RETAIL SOLUTION
+                        </h2>
                         <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            Advanced monitoring and analytics for safer and smarter retail spaces
                         </p>
                     </div>
                 </div>
@@ -155,19 +157,21 @@ function Sectiontwo() {
                     <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                         <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                Specialized Safeguarding
+                                Retail Safety & Operations
                             </h2>
+
                             <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
-                                    NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                    NYSTAI deploys CCTV surveillance and alarm systems to reduce theft and enhance store security.
                                 </li>
                                 <li>
-                                    Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                    In-store analytics provide visibility into customer movement and activity patterns.
                                 </li>
                                 <li>
-                                    With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                    Centralized systems help retailers monitor operations, respond quickly, and maintain efficiency.
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -264,7 +268,7 @@ function Sectionthree() {
 
                                     <div
                                         className={`transition-all duration-300 ${openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-                                        } overflow-hidden`}
+                                            } overflow-hidden`}
                                     >
                                         <p className="px-4 sm:px-6 pb-4 text-gray-700 text-sm sm:text-base">
                                             {faq.answer}

@@ -8,17 +8,21 @@ import overlayimg from "../../assets/Images/Allsolutions-Images/Warehouse/overla
 
 import tiltimg from "../../assets/Images/Allsolutions-Images/Warehouse/tiltimg.png"
 
-import icon1 from "../../assets/Images/Allsolutions-Images/Vms/icon1.png"
-import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
-import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
-import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
+import icon1 from "../../assets/Images/Allsolutions-Images/Warehouse/icon1.png"
+import icon2 from "../../assets/Images/Allsolutions-Images/Warehouse/icon2.png"
+import icon3 from "../../assets/Images/Allsolutions-Images/Warehouse/icon3.png"
+import icon4 from "../../assets/Images/Allsolutions-Images/Warehouse/icon4.png"
 
 import gridimg1 from "../../assets/Images/Allsolutions-Images/Banking/gridimg1.jpeg"
 import gridimg2 from "../../assets/Images/Allsolutions-Images/Banking/gridimg2.jpeg"
 import gridimg3 from "../../assets/Images/Allsolutions-Images/Banking/gridimg3.jpeg"
 import gridimg4 from "../../assets/Images/Allsolutions-Images/Banking/gridimg4.jpeg"
 
-import featureicon from "../../assets/Images/Allsolutions-Images/Banking/icon.png"
+import featureicon1 from "../../assets/Images/Allsolutions-Images/Warehouse/features-icon1.png"
+import featureicon2 from "../../assets/Images/Allsolutions-Images/Warehouse/features-icon2.png"
+import featureicon3 from "../../assets/Images/Allsolutions-Images/Warehouse/features-icon3.png"
+import featureicon4 from "../../assets/Images/Allsolutions-Images/Warehouse/features-icon4.png"
+import featureicon5 from "../../assets/Images/Allsolutions-Images/Warehouse/features-icon5.png"
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -110,29 +114,30 @@ function Sectiontwo() {
     const features = [
         {
             icon: icon1,
-            title: "VIGILANCE",
-            description: "Real-time notifications for security",
+            title: "ANTI-COLLISION",
+            description: "Prevents vehicle and worker accidents",
             color: "orange"
         },
         {
             icon: icon2,
-            title: "CENTRALIZATION",
-            description: "Automated control from one device",
+            title: "FORKLIFT CAMERA",
+            description: "Improved visibility during operations",
             color: "orange"
         },
         {
             icon: icon3,
-            title: "ANTICIPATION",
-            description: "Proactive monitoring prevents problems",
+            title: "FIRE DETECTION",
+            description: "Early fire and smoke detection",
             color: "orange"
         },
         {
             icon: icon4,
-            title: "OPTIMIZATION",
-            description: "Customizable for Any Environment",
+            title: "SMART HELMET",
+            description: "Real-time worker safety monitoring",
             color: "orange"
         }
     ];
+
     return (
         <>
             <section className="max-w-[1540px] mx-auto px-4">
@@ -140,9 +145,11 @@ function Sectiontwo() {
                 <div>
                     {/* Header */}
                     <div className="text-center sm:py-16 py-8 md:py-12 lg:py-16">
-                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-[#dc3545] mb-2">NYSTAI'S WAREHOUSE SOLUTIONS</h2>
+                        <h2 className="text-[18px] md:text-[28px] lg:text-[30px] font-bold text-[#dc3545] mb-2">
+                            NYSTAI'S WAREHOUSE SOLUTIONS
+                        </h2>
                         <p className="text-[14px] md:text-[15px] text-gray-600 tracking-wider">
-                            The subtext helps customers quickly understand the value or specific
+                            Smart safety and monitoring solutions designed for modern warehouses
                         </p>
                     </div>
                 </div>
@@ -162,19 +169,21 @@ function Sectiontwo() {
                     <div className="flex-1 bg-[#f9f9f9] rounded-2xl flex items-center h-auto lg:h-[420px] w-full">
                         <div className="max-w-[730px] p-5 md:px-6 lg:px-8 w-full">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-bold text-[#ffc107] mb-6">
-                                Specialized Safeguarding
+                                Warehouse Safety & Intelligence
                             </h2>
+
                             <ul className="list-disc pl-6 text-gray-700 text-sm lg:text-[15px] leading-relaxed space-y-4 lg:space-y-5 tracking-wide">
                                 <li>
-                                    NYSTAI integrates CCTV, alarms, and advanced automation into a wired setup designed for large-scale industrial environments, ensuring stable and uninterrupted operation.
+                                    Anti-collision systems and forklift cameras help prevent accidents in high-traffic warehouse zones.
                                 </li>
                                 <li>
-                                    Our solutions include solar-powered systems that reduce energy costs, improve efficiency, and support long-term sustainability for industrial facilities.
+                                    Fire detection cameras provide early alerts to protect inventory, infrastructure, and personnel.
                                 </li>
                                 <li>
-                                    With live monitoring and proactive control systems, industries can prevent issues, enhance safety, and optimize operations—all managed from a single centralized platform.
+                                    Smart helmets and centralized monitoring improve worker safety and operational awareness.
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -291,27 +300,27 @@ function Sectionthree() {
 function SectionFour() {
     const features = [
         {
-            icon: featureicon,
+            icon: featureicon1,
             title: "Smart Surveillance",
             description: "CCTV monitoring for complete warehouse visibility."
         },
         {
-            icon: featureicon,
+            icon: featureicon2,
             title: "Access Control",
             description: "Restricted entry for authorized personnel only."
         },
         {
-            icon: featureicon,
+            icon: featureicon3,
             title: "Anti-Collision Safety",
             description: "Vehicle and worker collision prevention systems."
         },
         {
-            icon: featureicon,
+            icon: featureicon4,
             title: "Hazard Detection",
             description: "Early alerts for fire, smoke, and gas leaks."
         },
         {
-            icon: featureicon,
+            icon: featureicon5,
             title: "Operational Monitoring",
             description: "Real-time tracking of warehouse activities."
         }
@@ -353,7 +362,7 @@ function SectionFour() {
 
 function SectionFive() {
     return (
-        <section className="max-w-[1540px] mx-auto px-4 my-4">
+        <section className="max-w-[1540px] mx-auto px-4 sm:mt-14 mt-4 sm:mb-10 mb-4">
             <div className="
                 relative
                 h-[500px] sm:h-[480px] md:h-[550px] lg:h-[600px]
