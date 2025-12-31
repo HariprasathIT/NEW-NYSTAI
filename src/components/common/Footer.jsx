@@ -15,12 +15,12 @@ const NystaiFooter = () => {
             <p className="py-6 sm:py-8 text-sm text-gray-500">
               Trusted in more than 100 countries & 5 million customers. Have any query?
             </p>
-            <a 
-              href="/support" 
+            <Link 
+              to="/support" 
               className="inline-block py-2.5 px-5 bg-[#dc3545] rounded-full shadow-sm text-xs text-white transition-all duration-500 hover:bg-[#c82333]"
             >
               Contact us
-            </a>
+            </Link>
           </div>
 
           {/* Company Links */}
@@ -28,24 +28,24 @@ const NystaiFooter = () => {
             <h4 className="text-lg text-gray-900 font-medium mb-4 sm:mb-7">Company</h4>
             <ul className="text-sm space-y-3 sm:space-y-4">
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Career
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Compliance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Quality Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -55,24 +55,24 @@ const NystaiFooter = () => {
             <h4 className="text-lg text-gray-900 font-medium mb-4 sm:mb-7">Support</h4>
             <ul className="text-sm space-y-3 sm:space-y-4">
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Submit a Ticket
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Consultations
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Where to Buy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -82,24 +82,24 @@ const NystaiFooter = () => {
             <h4 className="text-lg text-gray-900 font-medium mb-4 sm:mb-7">Solutions</h4>
             <ul className="text-sm space-y-3 sm:space-y-4">
               <li>
-                <a href="/solutions/smarthome" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/solutions/smarthome" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Smart Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/solutions/industrial" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/solutions/industrial" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Industrial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/solutions/education" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/solutions/education" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Education
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/solutions/vms" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/solutions/vms" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   AI-VMS
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -109,19 +109,19 @@ const NystaiFooter = () => {
             <h4 className="text-lg text-gray-900 font-medium mb-4 sm:mb-7">Legal</h4>
             <ul className="text-sm space-y-3 sm:space-y-4">
               <li>
-                <a href="/privacy-policy" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/privacy-policy" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/warranty" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/warranty" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Warranty
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/termsandservices" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <Link to="/termsandservices" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
                   Terms & Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -132,15 +132,15 @@ const NystaiFooter = () => {
             <p className="text-sm text-gray-500 leading-6 mb-4 sm:mb-7">
               Subscribe to get the latest news from us
             </p>
-            <a 
-              href="/support" 
+            <Link 
+              to="/support" 
               className="inline-flex items-center justify-center gap-2 border border-[#dc3545] rounded-full py-3 px-6 text-sm text-[#dc3545] font-semibold transition-all duration-500 hover:bg-[#dc3545] hover:text-white"
             >
               Subscribe
               <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
