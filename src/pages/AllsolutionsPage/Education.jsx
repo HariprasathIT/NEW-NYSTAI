@@ -398,7 +398,7 @@ function Sectionthree() {
                 {/* Video Card 3 */}
                 <div className="relative max-w-[1540px] mx-auto rounded-lg sm:rounded-xl overflow-hidden">
                     <video
-                        src={video1}
+                        src={video3}
                         autoPlay
                         loop
                         muted

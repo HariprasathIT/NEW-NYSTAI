@@ -148,7 +148,7 @@ const NystaiFooter = () => {
         <div className="py-6 sm:py-7 border-t border-gray-200">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
             <span className="text-sm text-gray-500 text-center lg:text-left">
-              ©<a href="https://pagedone.io/" className="hover:text-gray-900 transition-colors">pagedone</a> 2024, All rights reserved.
+            Copyright © 2024 All Rights Reserved by ADHIBA TECHNOLOGIES PRIVATE LIMITED
             </span>
             
             {/* Social Media Icons */}

@@ -191,7 +191,7 @@ const Navbar = () => {
                     sm:text-[13px]     /* small devices */
                     md:text-[12px]     /* tablets */
                     lg:text-[12px]     /* laptops */
-                    xl:text-[14px]     /* large screens */
+                    xl:text-[15px]     /* large screens */
                     transition
                     hover:text-[#dc3545]
                   "
@@ -329,7 +329,7 @@ const Navbar = () => {
       >
         {/* Drawer Header */}
         <div className="flex items-center justify-between p-4 border-b">
-          <img src={nyslogo} alt="NYS Logo" className="h-[30px]" />
+          <img src={nyslogo} alt="NYS Logo" className="h-[40px]" />
           <button onClick={closeAllMenus}>
             <X size={24} className="text-gray-700" />
           </button>
