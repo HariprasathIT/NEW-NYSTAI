@@ -151,7 +151,7 @@ function HeroSection() {
 
                                     {/* Description */}
                                     <div className="overflow-hidden mt-3 sm:mt-4">
-                                        <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
+                                        <p className="text-gray-700 text-[14px] sm:text-sm md:text-base leading-relaxed">
                                             {item.desc}
                                         </p>
                                     </div>
