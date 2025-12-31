@@ -4,12 +4,12 @@ import BannerImg1 from "../../assets/Images/HomePage-Images/HeroBanner/banner1.p
 import BannerImg2 from "../../assets/Images/HomePage-Images/HeroBanner/banner2.webp"
 import BannerImg3 from "../../assets/Images/HomePage-Images/HeroBanner/banner3.jpg"
 
-import Cat1 from "../../assets/Images/HomePage-Images/product-categories/cat-5.jpg";
+import Cat1 from "../../assets/Images/HomePage-Images/product-categories/nvr-new-1.png";
 import Cat2 from "../../assets/Images/HomePage-Images/product-categories/cat-3.png";
 import Cat3 from "../../assets/Images/HomePage-Images/product-categories/cat-2.png";
 import Cat4 from "../../assets/Images/HomePage-Images/product-categories/cat-4.png";
 
-import sell1 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling1.png"
+import sell1 from "../../assets/Images/HomePage-Images/Top-selling/nvr-new.png"
 import sell2 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling2.png"
 import sell3 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling3.png"
 import sell4 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling4.png"
