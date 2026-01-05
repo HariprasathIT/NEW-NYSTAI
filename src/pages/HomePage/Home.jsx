@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import BannerImg1 from "../../assets/Images/HomePage-Images/HeroBanner/banner1.png"
+import BannerImg1 from "../../assets/Images/HomePage-Images/HeroBanner/banner1.jpeg"
 import BannerImg2 from "../../assets/Images/HomePage-Images/HeroBanner/banner2.webp"
 import BannerImg3 from "../../assets/Images/HomePage-Images/HeroBanner/banner3.jpg"
 
@@ -12,7 +12,7 @@ import Cat4 from "../../assets/Images/HomePage-Images/product-categories/AIIoTDe
 import sell1 from "../../assets/Images/HomePage-Images/Top-selling/nvr-new.png"
 import sell2 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling2.png"
 import sell3 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling3.png" 
-import sell4 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling4.png"
+import sell4 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling5.jpg"
 
 import WhynysImg1 from "../../assets/Images/HomePage-Images/WhyNystai/whynys1.png";
 import WhynysImg2 from "../../assets/Images/HomePage-Images/WhyNystai/whynys2.png";
