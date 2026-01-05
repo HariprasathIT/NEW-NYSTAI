@@ -153,11 +153,22 @@ const Navbar = () => {
       >
         <div className="max-w-[1540px] mx-auto py-4 px-4 grid grid-cols-12 items-center">
           {/* Logo */}
-          <div className="col-span-2 flex items-center">
+          <div className="col-span-6 md:col-span-2 flex items-center">
             <Link to="/" onClick={closeAllMenus}>
-              <img src={nyslogo} alt="NYS Logo" className="md:h-[50px] w-full" />
+              <img
+                src={nyslogo}
+                alt="NYS Logo"
+                className="
+                  h-[40px]        /* mobile height */
+                  sm:h-[45px]
+                  md:h-[60px]     /* desktop height */
+                  w-auto
+                  max-w-[160px]   /* prevent too big */
+                "
+              />
             </Link>
           </div>
+
 
           {/* Desktop Menu */}
           <ul
@@ -221,11 +232,12 @@ const Navbar = () => {
 
           {/* Mobile Button */}
           <button
-            className="md:hidden col-span-10 flex justify-end"
+            className="md:hidden col-span-6 flex justify-end"
             onClick={() => setOpen(true)}
           >
-            <Menu size={15} className="text-black" />
+            <Menu size={18} className="text-black" />
           </button>
+
         </div>
 
         {/* Desktop Products Mega Menu */}

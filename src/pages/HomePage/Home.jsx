@@ -4,14 +4,14 @@ import BannerImg1 from "../../assets/Images/HomePage-Images/HeroBanner/banner1.p
 import BannerImg2 from "../../assets/Images/HomePage-Images/HeroBanner/banner2.webp"
 import BannerImg3 from "../../assets/Images/HomePage-Images/HeroBanner/banner3.jpg"
 
-import Cat1 from "../../assets/Images/HomePage-Images/product-categories/nvr-new-1.png";
-import Cat2 from "../../assets/Images/HomePage-Images/product-categories/cat-3.png";
-import Cat3 from "../../assets/Images/HomePage-Images/product-categories/cat-2.png";
-import Cat4 from "../../assets/Images/HomePage-Images/product-categories/cat-4.png";
+import Cat1 from "../../assets/Images/HomePage-Images/product-categories/HomeAutomation.jpg";
+import Cat2 from "../../assets/Images/HomePage-Images/product-categories/SmartSensors.jpg";
+import Cat3 from "../../assets/Images/HomePage-Images/product-categories/CCTVCameras.jpg";
+import Cat4 from "../../assets/Images/HomePage-Images/product-categories/AIIoTDevices.jpg";
 
 import sell1 from "../../assets/Images/HomePage-Images/Top-selling/nvr-new.png"
 import sell2 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling2.png"
-import sell3 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling3.png"
+import sell3 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling3.png" 
 import sell4 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling4.png"
 
 import WhynysImg1 from "../../assets/Images/HomePage-Images/WhyNystai/whynys1.png";
@@ -48,7 +48,7 @@ import partner20 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-2
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { ArrowRight, Plus, Shield, Wifi, Smartphone } from "lucide-react";
+import { ArrowRight, Plus, Shield, Wifi, Smartphone, ShieldCheck } from "lucide-react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
@@ -66,6 +66,8 @@ import wlcicon2 from "../../assets/Images/HomePage-Images/wlcicon2.png"
 import wlcicon3 from "../../assets/Images/HomePage-Images/wlcicon3.png"
 import wlcicon4 from "../../assets/Images/HomePage-Images/wlcicon4.png"
 
+import vmsvideo1 from "../../assets/Images/Allsolutions-Images/Vms/vms-video-1.mp4"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -77,6 +79,7 @@ const Home = () => {
 
     return (
         <div className="w-full">
+            {/* <Homevideo /> */}
             <HeroSection />
             <ProductCategories />
             <ServicesSection />
@@ -92,6 +95,34 @@ const Home = () => {
 
 export default Home;
 
+function Homevideo() {
+    return (
+        <>
+            <section className="px-4 mt-4 mx-auto">
+
+                <div className="relative w-full mx-auto rounded-xl overflow-hidden">
+                    <video
+                        src={sampleVideo1}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-[350px] sm:h-[350px] md:h-[450px] lg:h-[800px] object-cover"
+                    />
+
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-10">
+
+                       
+                    </div>
+
+                </div>
+
+
+            </section>
+        </>
+    )
+}
 
 function HeroSection() {
 
@@ -510,7 +541,7 @@ function SolutionsSection() {
     return (
         <>
             {/* Heading */}
-            <div className="sm:py-16 py-8 md:py-12 lg:py-16 px-4 max-w-[1540px] mx-auto">
+            <div className="sm:py-16 py-8 md:py-16 lg:py-16 px-4 max-w-[1540px] mx-auto">
                 <h2 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold tracking-wide leading-snug">
                     NYSTAI-IoT <span className="text-[#dc3545]">SOLUTIONS</span>
                 </h2>
@@ -522,10 +553,10 @@ function SolutionsSection() {
 
             {/* Slider Section */}
             <section>
-                <div className="relative my-10 sm:px-4">
+                <div className="relative sm:mb-5 mb-0 px-4">
                     <Slider {...settings}>
                         {slides.map((slide, i) => (
-                            <div key={i} className="px-2">
+                            <div key={i} className="">
                                 <div className="
                                     relative w-full 
                                     h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] 

@@ -78,7 +78,7 @@ const Productpage = () => {
               <div className="flex justify-between items-center w-full p-5">
                 {/* LEFT TEXT */}
                 <div>
-                  <h2 className="text-[15px] sm:text-[18px] leading-snug tracking-wide">{product.name}</h2>
+                  <h2 className="text-[15px] sm:text-[18px] leading-snug tracking-wide mb-1">{product.name}</h2>
                   <p className="text-gray-500 text-[12px] sm:text-[13px] leading-loose">{product.subName}</p>
                 </div>
 

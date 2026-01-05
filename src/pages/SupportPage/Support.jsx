@@ -84,7 +84,7 @@ function Hero() {
 function Formdesign() {
   return (
     <>
- <div className="max-w-[1540px] mx-auto px-4">
+      <div className="max-w-[1540px] mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:pb-12 pb-6">
 
           {/* Left contents */}
