@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import BannerImg1 from "../../assets/Images/HomePage-Images/HeroBanner/banner1.jpeg"
 import BannerImg2 from "../../assets/Images/HomePage-Images/HeroBanner/banner2.webp"
-import BannerImg3 from "../../assets/Images/HomePage-Images/HeroBanner/banner3.jpg"
+import BannerImg3 from "../../assets/Images/HomePage-Images/HeroBanner/banner3.jpeg"
 
 import Cat1 from "../../assets/Images/HomePage-Images/product-categories/HomeAutomation.jpg";
 import Cat2 from "../../assets/Images/HomePage-Images/product-categories/SmartSensors.jpg";
@@ -11,7 +11,7 @@ import Cat4 from "../../assets/Images/HomePage-Images/product-categories/AIIoTDe
 
 import sell1 from "../../assets/Images/HomePage-Images/Top-selling/nvr-new.png"
 import sell2 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling2.png"
-import sell3 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling3.png" 
+import sell3 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling3.png"
 import sell4 from "../../assets/Images/HomePage-Images/Top-selling/TopSelling5.jpg"
 
 import WhynysImg1 from "../../assets/Images/HomePage-Images/WhyNystai/whynys1.png";
@@ -113,7 +113,7 @@ function Homevideo() {
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-10">
 
-                       
+
                     </div>
 
                 </div>
