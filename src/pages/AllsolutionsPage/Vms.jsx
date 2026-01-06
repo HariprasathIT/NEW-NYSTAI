@@ -14,10 +14,6 @@ import icon2 from "../../assets/Images/Allsolutions-Images/Vms/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Vms/icon3.png"
 import icon4 from "../../assets/Images/Allsolutions-Images/Vms/icon4.png"
 
-import threecardimg1 from "../../assets/Images/Allsolutions-Images/Worship/cardimg1.jpeg"
-import threecardimg2 from "../../assets/Images/Allsolutions-Images/Worship/cardimg2.jpeg"
-import threecardimg3 from "../../assets/Images/Allsolutions-Images/Worship/cardimg3.jpeg"
-
 import featureicon1 from "../../assets/Images/Allsolutions-Images/Vms/features-icon1.png"
 import featureicon2 from "../../assets/Images/Allsolutions-Images/Vms/features-icon2.png"
 import featureicon3 from "../../assets/Images/Allsolutions-Images/Vms/features-icon3.png"
@@ -25,6 +21,10 @@ import featureicon4 from "../../assets/Images/Allsolutions-Images/Vms/features-i
 import featureicon5 from "../../assets/Images/Allsolutions-Images/Vms/features-icon5.png"
 
 import vmsvideo1 from "../../assets/Images/Allsolutions-Images/Vms/vms-video-1.mp4"
+
+import whatweoff1 from "../../assets/Images/Allsolutions-Images/Vms/whatweoff1.jpg"
+import whatweoff2 from "../../assets/Images/Allsolutions-Images/Vms/whatweoff2.jpg"
+import whatweoff3 from "../../assets/Images/Allsolutions-Images/Vms/whatweoff3.jpg"
 
 const Vms = () => {
 
@@ -248,17 +248,17 @@ function Sectionthree() {
         {
             title: "Challenges Without VMS:",
             description: "Modern CCTV cameras, alarms, and automation provide real-time security, control, and convenience from a single platform. With live video feeds and instant alerts, homeowners can quickly respond to threats.",
-            image: "https://images.unsplash.com/photo-1593642532400-2682810df593?w=1600&h=900&fit=crop"
+            image: whatweoff1
         },
         {
             title: "Integrated Security Solutions:",
             description: "Seamlessly manage all your security devices from one central hub. Monitor, control, and receive notifications in real-time for complete peace of mind.",
-            image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=900&fit=crop"
+            image: whatweoff2
         },
         {
             title: "24/7 Monitoring & Control:",
             description: "Stay connected to your property at all times with advanced monitoring capabilities. Access live feeds, review footage, and control your security system from anywhere.",
-            image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1600&h=900&fit=crop"
+            image: whatweoff3
         }
     ];
 

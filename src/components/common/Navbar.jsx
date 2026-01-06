@@ -11,8 +11,7 @@ const Navbar = () => {
   const [solutionsMegaMenuOpen, setSolutionsMegaMenuOpen] = useState(false);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
-  const productsTimeoutRef = useRef(null);
-  const solutionsTimeoutRef = useRef(null);
+  const megaMenuRef = useRef(null);
 
   // Mobile drawer states
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
@@ -44,6 +43,19 @@ const Navbar = () => {
     fetchCategories();
   }, []);
 
+  // Click outside to close mega menus
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (megaMenuRef.current && !megaMenuRef.current.contains(event.target)) {
+        setProductsMegaMenuOpen(false);
+        setSolutionsMegaMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const fetchCategories = async () => {
     setLoading(true);
     try {
@@ -59,11 +71,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "Products", path: "/", dropdown: true, hasMegaMenu: true, type: "products" },
-    { name: "Integrated Solutions", path: "/", dropdown: true, hasMegaMenu: true, type: "solutions" },
-    { name: "Protect Plan", path: "/protect" },
-    { name: "Service", path: "/service" },
-    { name: "Support", path: "/support" },
+    { name: "PRODUCTS", path: "/", dropdown: true, hasMegaMenu: true, type: "products" },
+    { name: "INTEGRATED SOLUTIONS", path: "/", dropdown: true, hasMegaMenu: true, type: "solutions" },
+    { name: "PROTECT PLAN", path: "/protect" },
+    { name: "SERVICE", path: "/service" },
+    { name: "SUPPORT", path: "/support" },
   ];
 
   const closeAllMenus = () => {
@@ -74,54 +86,17 @@ const Navbar = () => {
     setMobileSolutionsOpen(false);
   };
 
-  // Products mega menu handlers (Desktop)
-  const handleProductsMouseEnter = () => {
-    if (productsTimeoutRef.current) {
-      clearTimeout(productsTimeoutRef.current);
-    }
+  // Toggle handlers for desktop dropdowns
+  const toggleProductsMenu = (e) => {
+    e.preventDefault();
+    setProductsMegaMenuOpen(!productsMegaMenuOpen);
     setSolutionsMegaMenuOpen(false);
-    setProductsMegaMenuOpen(true);
   };
 
-  const handleProductsMouseLeave = () => {
-    productsTimeoutRef.current = setTimeout(() => {
-      setProductsMegaMenuOpen(false);
-    }, 100);
-  };
-
-  const handleProductsMegaMenuMouseEnter = () => {
-    if (productsTimeoutRef.current) {
-      clearTimeout(productsTimeoutRef.current);
-    }
-  };
-
-  const handleProductsMegaMenuMouseLeave = () => {
+  const toggleSolutionsMenu = (e) => {
+    e.preventDefault();
+    setSolutionsMegaMenuOpen(!solutionsMegaMenuOpen);
     setProductsMegaMenuOpen(false);
-  };
-
-  // Solutions mega menu handlers (Desktop)
-  const handleSolutionsMouseEnter = () => {
-    if (solutionsTimeoutRef.current) {
-      clearTimeout(solutionsTimeoutRef.current);
-    }
-    setProductsMegaMenuOpen(false);
-    setSolutionsMegaMenuOpen(true);
-  };
-
-  const handleSolutionsMouseLeave = () => {
-    solutionsTimeoutRef.current = setTimeout(() => {
-      setSolutionsMegaMenuOpen(false);
-    }, 100);
-  };
-
-  const handleSolutionsMegaMenuMouseEnter = () => {
-    if (solutionsTimeoutRef.current) {
-      clearTimeout(solutionsTimeoutRef.current);
-    }
-  };
-
-  const handleSolutionsMegaMenuMouseLeave = () => {
-    setSolutionsMegaMenuOpen(false);
   };
 
   const isMegaMenuOpen = productsMegaMenuOpen || solutionsMegaMenuOpen;
@@ -148,6 +123,7 @@ const Navbar = () => {
       )}
 
       <nav
+        ref={megaMenuRef}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
         ${scrolled || isMegaMenuOpen ? "bg-white shadow-md" : "bg-transparent"}`}
       >
@@ -180,39 +156,52 @@ const Navbar = () => {
               <li
                 key={index}
                 className="uppercase flex items-center gap-1 tracking-wide relative"
-                onMouseEnter={
-                  link.type === "products"
-                    ? handleProductsMouseEnter
-                    : link.type === "solutions"
-                      ? handleSolutionsMouseEnter
-                      : undefined
-                }
-                onMouseLeave={
-                  link.type === "products"
-                    ? handleProductsMouseLeave
-                    : link.type === "solutions"
-                      ? handleSolutionsMouseLeave
-                      : undefined
-                }
               >
-                <Link
-                  to={link.path}
-                  className="
-                    text-[12px]        /* mobile */
-                    sm:text-[13px]     /* small devices */
-                    md:text-[12px]     /* tablets */
-                    lg:text-[12px]     /* laptops */
-                    xl:text-[15px]     /* large screens */
-                    transition
-                    hover:text-[#dc3545]
-                  "
-                  onClick={closeAllMenus}
-                >
-                  {link.name}
-                </Link>
-
-                {link.dropdown && (
-                  <ChevronDown size={18} className="text-black" />
+                {link.type === "products" || link.type === "solutions" ? (
+                  <button
+                    onClick={link.type === "products" ? toggleProductsMenu : toggleSolutionsMenu}
+                    className="
+                      text-[12px]        /* mobile */
+                      sm:text-[13px]     /* small devices */
+                      md:text-[12px]     /* tablets */
+                      lg:text-[12px]     /* laptops */
+                      xl:text-[15px]     /* large screens */
+                      transition
+                      hover:text-[#dc3545]
+                      flex items-center gap-1
+                    "
+                  >
+                    {link.name}
+                    {link.dropdown && (
+                      <ChevronDown 
+                        size={18} 
+                        className={`text-black transition-transform duration-200 ${
+                          (link.type === "products" && productsMegaMenuOpen) ||
+                          (link.type === "solutions" && solutionsMegaMenuOpen)
+                            ? "rotate-180"
+                            : ""
+                        }`}
+                      />
+                    )}
+                  </button>
+                ) : (
+                  <>
+                    <Link
+                      to={link.path}
+                      className="
+                        text-[12px]        /* mobile */
+                        sm:text-[13px]     /* small devices */
+                        md:text-[12px]     /* tablets */
+                        lg:text-[12px]     /* laptops */
+                        xl:text-[15px]     /* large screens */
+                        transition
+                        hover:text-[#dc3545]
+                      "
+                      onClick={closeAllMenus}
+                    >
+                      {link.name}
+                    </Link>
+                  </>
                 )}
               </li>
             ))}
@@ -245,8 +234,6 @@ const Navbar = () => {
           <div
             className="hidden md:block absolute left-0 w-full bg-white shadow-lg"
             style={{ top: "100%", borderRadius: "0px 0px 20px 20px", borderTop: "1px solid #00000021" }}
-            onMouseEnter={handleProductsMegaMenuMouseEnter}
-            onMouseLeave={handleProductsMegaMenuMouseLeave}
           >
             <div className="max-w-[1540px] mx-auto py-5 px-4">
               <div className="grid grid-cols-12 py-3 gap-6">
@@ -297,8 +284,6 @@ const Navbar = () => {
           <div
             className="hidden md:block absolute left-0 w-full bg-white shadow-lg"
             style={{ top: "100%", borderRadius: "0px 0px 20px 20px", borderTop: "1px solid #00000021" }}
-            onMouseEnter={handleSolutionsMegaMenuMouseEnter}
-            onMouseLeave={handleSolutionsMegaMenuMouseLeave}
           >
             <div className="max-w-[1540px] mx-auto py-5 px-4">
               <div className="grid grid-cols-12 py-3 gap-6">

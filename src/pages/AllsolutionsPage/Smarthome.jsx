@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 
 import smarthomebanner from "../../assets/Images/Allsolutions-Images/Smarthome/smarthomebanner.jpeg"
 
-import leftimg1 from "../../assets/Images/Allsolutions-Images/Smarthome/leftimg1.jpeg"
+import leftimg1 from "../../assets/Images/Allsolutions-Images/Smarthome/leftimg1.jpg"
 import icon1 from "../../assets/Images/Allsolutions-Images/Smarthome/icon1.png"
 import icon2 from "../../assets/Images/Allsolutions-Images/Smarthome/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Smarthome/icon3.png"
@@ -13,6 +13,10 @@ import featureicon2 from "../../assets/Images/Allsolutions-Images/Smarthome/feat
 import featureicon3 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon3.png"
 import featureicon4 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon4.png"
 import featureicon5 from "../../assets/Images/Allsolutions-Images/Smarthome/features-icon5.png"
+
+import whatweoff1 from "../../assets/Images/Allsolutions-Images/Smarthome/whatweoff1.jpg"
+import whatweoff2 from "../../assets/Images/Allsolutions-Images/Smarthome/whatweoff2.jpg"
+import whatweoff3 from "../../assets/Images/Allsolutions-Images/Smarthome/whatweoff3.jpg"
 
 import smar from "../../assets/Images/Allsolutions-Images/Smarthome/smar.jpeg"
 
@@ -230,21 +234,21 @@ function Sectionthree() {
             id: 1,
             title: "Home Safety Challenges",
             description: "Traditional homes lack monitoring and early detection systems, making them vulnerable to accidents and unwanted entry.",
-            image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80",
+            image: whatweoff1,
             alt: "CCTV Security"
         },
         {
             id: 2,
             title: "Smart Home Needs",
             description: "Modern homes require advanced sensors, automated alerts, and remote control for full protection and ease of living.",
-            image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&q=80",
+            image: whatweoff2,
             alt: "Security Monitoring"
         },
         {
             id: 3,
             title: "How Nystai Helps",
             description: "Nystai connects all your smart sensors, cameras, and alarms into a single ecosystem that protects, monitors, and automates your home in real time.",
-            image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+            image: whatweoff3,
             alt: "Access Control"
         }
     ];

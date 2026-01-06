@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 
 import warehousebanner from "../../assets/Images/Allsolutions-Images/Warehouse/warehousebanner.jpeg"
 
-import leftimg1 from "../../assets/Images/Allsolutions-Images/Warehouse/leftimg1.jpeg"
+import leftimg1 from "../../assets/Images/Allsolutions-Images/Warehouse/leftimg1.jpg"
 
 import overlayimg from "../../assets/Images/Allsolutions-Images/Warehouse/overlaybigimg.jpeg"
 

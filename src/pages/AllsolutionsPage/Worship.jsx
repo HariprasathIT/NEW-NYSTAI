@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 import worshipbanner from "../../assets/Images/Allsolutions-Images/Worship/worshipbanner.jpeg"
 
-import leftimg1 from "../../assets/Images/Allsolutions-Images/Industry/leftimg1.jpg"
+import leftimg1 from "../../assets/Images/Allsolutions-Images/Worship/leftimg1.jpg"
 import icon1 from "../../assets/Images/Allsolutions-Images/Worship/icon1.png"
 import icon2 from "../../assets/Images/Allsolutions-Images/Worship/icon2.png"
 import icon3 from "../../assets/Images/Allsolutions-Images/Worship/icon3.png"
