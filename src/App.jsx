@@ -1,23 +1,3 @@
-// import './App.css'
-// import Navbar from './components/common/Navbar'
-// import Home from './pages/HomePage/Home'
-
-// function App() {
-
-//   return (
-//     <>
-//       <Navbar />
-//       <div className="">
-//         <Home />
-//       </div>
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -46,6 +26,7 @@ import Warehouse from "./pages/AllsolutionsPage/Warehouse";
 import PrivacyPolicy from "./pages/policies/policy/privacypolicy";
 import Warranty from "./pages/policies/warranty/warranty";
 import Termsandconditions from "./pages/policies/Terms/termsconditions";
+import WhatsappFloat from "./components/floaticons/WhatsappFloat";
 
 // IMPORT CATEGORY PAGE
 
@@ -78,6 +59,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <WhatsappFloat />
 
       <Routes>
 

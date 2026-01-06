@@ -322,7 +322,7 @@ function Sectionthree() {
                                 {/* Content */}
                                 <div className="relative h-full flex flex-col justify-end p-5 sm:p-6 md:p-8 lg:p-10">
                                     <div className="max-w-4xl">
-                                        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight">
+                                        <h3 className="text-2xl sm:text-[28px] md:text-[30px] lg:text-[30px] font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight">
                                             {slide.title}
                                         </h3>
                                         <p className="text-sm sm:text-base md:text-[17px] text-white/90 leading-relaxed max-w-3xl line-clamp-3 sm:line-clamp-4 md:line-clamp-none">

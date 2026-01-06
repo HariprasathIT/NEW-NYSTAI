@@ -48,7 +48,7 @@ import partner20 from "../../assets/Images/HomePage-Images/PartnerLogo/partner-2
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { ArrowRight, Plus, Shield, Wifi, Smartphone, ShieldCheck } from "lucide-react";
+import { ArrowRight, Plus, Shield, Wifi, Smartphone, ShieldCheck, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
@@ -213,7 +213,7 @@ function HeroSection() {
 }
 
 function ProductCategories() {
-    const cardRefs = useRef([]);
+    const sliderRef = useRef(null);
 
     const cardData = [
         {
@@ -223,7 +223,6 @@ function ProductCategories() {
                 "Home automation solutions controlling lighting, appliances, climate, doors, and security systems, offering convenience, comfort, remote access, voice integration, energy savings, and seamless smart living for modern households.",
             number: "01"
         },
-
         {
             title: "Smart Sensors",
             img: Cat2,
@@ -231,7 +230,6 @@ function ProductCategories() {
                 "Smart sensors detecting motion, temperature, humidity, gas, and vibrations, enabling automation, safety, energy efficiency, and real-time alerts for responsive, modern, and intelligent smart environments across multiple applications.",
             number: "02"
         },
-
         {
             title: "CCTV Cameras",
             img: Cat3,
@@ -239,7 +237,6 @@ function ProductCategories() {
                 "High-definition CCTV cameras offering clear monitoring, night vision, motion alerts, and reliable security coverage for homes, offices, warehouses, and industries with strong surveillance features ensuring continuous protection.",
             number: "03"
         },
-
         {
             title: "AI IoT Devices",
             img: Cat4,
@@ -247,35 +244,86 @@ function ProductCategories() {
                 "AI-powered IoT devices enabling predictive automation, remote monitoring, real-time insights, seamless connectivity, and enhanced performance for smart homes, businesses, industries, and technology-driven environments requiring efficiency and intelligence.",
             number: "04"
         },
+        {
+            title: "Smart Lighting",
+            img: Cat1,
+            description:
+                "Smart lighting systems with customizable colors, brightness control, scheduling, and voice commands for creating perfect ambiance, saving energy, and enhancing home aesthetics with intelligent illumination solutions.",
+            number: "05"
+        },
+        {
+            title: "Security Systems",
+            img: Cat2,
+            description:
+                "Advanced security systems with alarm monitoring, door/window sensors, smart locks, and instant alerts providing comprehensive protection for homes and businesses with cutting-edge technology and reliable performance.",
+            number: "06"
+        },
+        {
+            title: "Smart Thermostats",
+            img: Cat3,
+            description:
+                "Intelligent thermostats learning your preferences, optimizing temperature control, reducing energy costs, and providing remote climate management for ultimate comfort and efficiency in modern smart homes.",
+            number: "07"
+        },
+        {
+            title: "Voice Assistants",
+            img: Cat4,
+            description:
+                "Smart voice assistants enabling hands-free control, music playback, information access, device integration, and seamless home automation through natural voice commands for modern convenience and connectivity.",
+            number: "08"
+        },
+        {
+            title: "Smart Appliances",
+            img: Cat1,
+            description:
+                "Connected appliances including refrigerators, washing machines, ovens, and more with remote control, automation features, energy monitoring, and smart notifications for enhanced convenience and efficiency.",
+            number: "09"
+        },
+        {
+            title: "Energy Management",
+            img: Cat2,
+            description:
+                "Smart energy management systems tracking consumption, optimizing usage, providing detailed analytics, and enabling cost savings through intelligent monitoring and automated control of power-consuming devices.",
+            number: "10"
+        },
     ];
 
-    useEffect(() => {
-        gsap.fromTo(
-            cardRefs.current,
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
             {
-                opacity: 0,
-                y: 60,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
             },
             {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-                duration: 1,
-                stagger: 0.2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: cardRefs.current[0],
-                    start: "top 80%",
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             }
-        );
-    }, []);
+        ]
+    };
 
     return (
         <section className="sm:py-16 py-8 md:py-12 lg:py-16 bg-white">
             <div className="max-w-[1540px] mx-auto px-4">
                 <div className="w-full flex flex-col md:flex-row justify-between md:items-start gap-4">
-
                     {/* Left Text */}
                     <div>
                         <h2 className="text-[20px] md:text-[28px] lg:text-[30px] font-bold tracking-wide leading-snug">
@@ -287,65 +335,58 @@ function ProductCategories() {
                         </p>
                     </div>
 
-                    {/* Right Button */}
-                    <button
-                        className="
-                            w-[160px] md:w-auto lg:w-auto
-                            flex items-center justify-center md:justify-start
-                            gap-2 px-6 py-2
-                            bg-[#dc3545] text-white 
-                            font-medium rounded-full shadow
-                            hover:bg-red-700 transition-all duration-300
-                            text-[14px] md:text-[15px]
-                    "
-                    >
-                        View More <span className="">→</span>
-                    </button>
-
+                    {/* Navigation Arrows */}
+                    <div className="flex items-center gap-3">
+                        <button
+                            onClick={() => sliderRef.current?.slickPrev()}
+                            className="w-10 h-10 sm:h-12 sm:w-12 rounded-full bg-[#dc3545] text-white flex items-center justify-center hover:bg-red-700 transition-all duration-300 shadow-lg cursor-pointer"
+                        >
+                            <ChevronLeft className="w-4 h-4 sm:h-6 sm:w-6" />
+                        </button>
+                        <button
+                            onClick={() => sliderRef.current?.slickNext()}
+                            className="w-10 h-10 sm:h-12 sm:w-12 rounded-full bg-[#dc3545] text-white flex items-center justify-center hover:bg-red-700 transition-all duration-300 shadow-lg cursor-pointer"
+                        >
+                            <ChevronRight className="w-4 h-4 sm:h-6 sm:w-6" />
+                        </button>
+                    </div>
                 </div>
 
-                {/* Cards */}
-                <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {cardData.map((card, i) => (
-                        <div
-                            key={i}
-                            ref={(el) => (cardRefs.current[i] = el)}
-                            className="clip-card group rounded-xl"
-                        >
-                            {/* Inside Image */}
-                            <img
-                                src={card.img}
-                                alt={card.title}
-                                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:blur-md group-hover:scale-110"
-                            />
+                {/* React Slick Slider */}
+                <div className="mt-5">
+                    <Slider ref={sliderRef} {...settings}>
+                        {cardData.map((card, i) => (
+                            <div key={i} className="pr-2">
+                                <div className="relative rounded-xl overflow-hidden group clip-card cursor-pointer">
+                                    {/* Inside Image */}
+                                    <img
+                                        src={card.img}
+                                        alt={card.title}
+                                        className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:blur-md group-hover:scale-110"
+                                    />
 
-                            {/* Overlay on hover */}
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-500" />
+                                    {/* Overlay on hover */}
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-500" />
 
-                            {/* Number Label (BOTTOM-LEFT) */}
-                            {/* <div className="absolute bottom-0 left-0 text-[#000] text-6xl font-black drop-shadow-2xl opacity-70 leading-none">
-                                {card.number}
-                            </div> */}
+                                    {/* Title + Line + Description */}
+                                    <div className="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-all duration-500 p-8">
+                                        <div className="text-white font-semibold text-[20px] sm:text-2xl drop-shadow-lg md:text-left">
+                                            {card.title}
+                                        </div>
+                                        <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] md:mt-5 mt-3 mb-2"></div>
+                                        <p className="text-white text-[14px] mt-2 md:text-left">{card.description}</p>
+                                    </div>
 
-                            {/* Title + Line + Description */}
-                            <div className="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-all duration-500 p-8">
-                                <div className="text-white font-semibold text-[20px] sm:text-2xl drop-shadow-lg md:text-left">
-                                    {card.title}
-                                </div>
-                                <div className="w-2/6 border-t-2 border-dotted border-[#ffffff50] md:mt-5 mt-3 mb-2"></div>
-                                <p className="text-white text-[14px] mt-2 md:text-left ">{card.description}</p>
-                            </div>
-
-                            {/* Arrow button */}
-                            <div className="absolute bottom-5 right-7 opacity-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer">
-                                <div className="w-8 h-8 bg-white text-black rounded-full flex items-center justify-center text-2xl font-bold
-        group-hover:scale-125 group-hover:translate-x-2 transition-all duration-500 shadow-lg">
-                                    <ArrowRight className="h-[15px]" />
+                                    {/* Arrow button */}
+                                    <div className="absolute bottom-5 right-7 opacity-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer">
+                                        <div className="w-8 h-8 bg-white text-black rounded-full flex items-center justify-center text-2xl font-bold group-hover:scale-125 group-hover:translate-x-2 transition-all duration-500 shadow-lg">
+                                            <ArrowRight className="h-[15px]" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                    ))}
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </section>
@@ -368,14 +409,14 @@ function ServicesSection() {
             img: sell2,
             title: "Wireless Sensor",
             desc: "Highly accurate wireless sensor for real-time monitoring.",
-            height: "215px"
+            height: "220px"
         },
         {
             id: 3,
             img: sell3,
             title: "Security Camera",
             desc: "Crystal-clear surveillance with night vision and mobile alerts.",
-            height: "215px"
+            height: "220px"
         },
         {
             id: 4,
@@ -421,13 +462,13 @@ function ServicesSection() {
 
 
                     {/* GRID LAYOUT */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10">
 
                         {/* LEFT — Big Image */}
                         <TopSellCard item={items[0]} active={active} setActive={setActive} />
 
                         {/* MIDDLE — Two Stacked */}
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-2">
                             <TopSellCard item={items[1]} active={active} setActive={setActive} />
                             <TopSellCard item={items[2]} active={active} setActive={setActive} />
                         </div>
@@ -448,7 +489,7 @@ function TopSellCard({ item, active, setActive }) {
 
     return (
         <div
-            className="rounded-2xl overflow-hidden relative border border-white/40 transition-all duration-300"
+            className="rounded-xl overflow-hidden relative border border-white/40 transition-all duration-300"
             style={{ height: item.height }}
         >
             {/* IMAGE */}
